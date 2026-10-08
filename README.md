@@ -33,6 +33,9 @@ A free vocabulary app for English learners in Bangladesh, with English and Benga
 | `index.html` | The whole app (pages, word lists, quizzes and styles) |
 | `manifest.webmanifest` | Name, colors and icons for installing the app |
 | `sw.js` | Lets the app open offline |
+| `privacy.html` | Privacy page linked from the app |
+| `sitemap.xml`, `robots.txt` | Help search engines find the app |
+| `CHANGELOG.md` | List of updates |
 | `icons/` | App icons (Posh logo) (`posh-icon-192.png`, `posh-icon-512.png`, `posh-maskable-512.png`, `posh-apple-touch-icon.png`) |
 
 Keep `manifest.webmanifest`, `sw.js` and the `icons` folder in the same place as `index.html`.

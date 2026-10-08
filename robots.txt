@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kutubbahar2018-cpu.github.io/Project-Vocabulary/sitemap.xml
