@@ -50,6 +50,10 @@ If people still see an old version after an update, open `sw.js` and change the 
 
 Progress, favorites and quiz history are saved **only in each learner's own browser**. Nothing is sent to a server. Clearing the browser's site data, using a private tab, or switching to another device or browser starts fresh.
 
+## Anonymous usage counts
+
+The live site uses [GoatCounter](https://www.goatcounter.com/) to count visits and a few actions (for example a level finished or a quiz taken). It uses no cookies and never sends usernames, words learned or any other personal data. It only runs on the github.io site, not when the page is opened from a file.
+
 ## Credits
 
 Created by **Md Kutub Uddin Bahar**, BBA (Banking & Insurance), University of Dhaka.
