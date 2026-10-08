@@ -4105,4 +4105,21 @@ document.addEventListener('submit',ev=>{if(ev.target&&ev.target.id==='lf'){ev.st
 try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist()}catch(_){}
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
 </script>
+<script>
+(()=>{const std=matchMedia('(display-mode: standalone)').matches||navigator.standalone;if(std)return;
+let dis=false;try{dis=localStorage.getItem('pv_inst_x')==='1'}catch(_){}if(dis)return;
+const ios=/iphone|ipad|ipod/i.test(navigator.userAgent)&&!window.MSStream;let dp=null,tip=false;
+const st=document.createElement('style');st.textContent='#instbar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:70;display:flex;align-items:center;gap:.6rem;max-width:calc(100vw - 32px);padding:.55rem .7rem .55rem 1rem;background:var(--card,#fff);color:var(--tx,#2a2440);border:1px solid var(--bd,#e7e0f6);border-radius:999px;box-shadow:0 8px 24px rgba(84,51,181,.22);font-size:.88rem}#instbar[hidden]{display:none}#instbar span{min-width:0}#instbar button{font:inherit;cursor:pointer;border:0;border-radius:999px}#instgo{background:var(--pr,#7c5cd6);color:#fff;padding:.4rem .9rem;font-weight:600;flex:none}#instx{background:transparent;color:var(--mu,#766f92);font-size:1.2rem;line-height:1;padding:.2rem .5rem;flex:none}';document.head.appendChild(st);
+const b=document.createElement('div');b.id='instbar';b.hidden=true;b.setAttribute('role','region');b.innerHTML='<span id="insttx"></span><button id="instgo" type="button"></button><button id="instx" type="button">×</button>';
+const bn=()=>document.documentElement.lang==='bn';
+function paint(){const T=bn()?{a:'Project শব্দ ইনস্টল করুন',g:'ইনস্টল',i:'শেয়ার বাটনে ট্যাপ করে “Add to Home Screen” বেছে নিন',c:'বন্ধ করুন',ok:'ঠিক আছে'}:{a:'Install Project শব্দ on your device',g:'Install',i:'Tap Share, then “Add to Home Screen”',c:'Close',ok:'Got it'};
+document.getElementById('insttx').textContent=tip?T.i:T.a;document.getElementById('instgo').textContent=tip?T.ok:T.g;document.getElementById('instx').setAttribute('aria-label',T.c)}
+function show(){if(!b.isConnected)document.body.appendChild(b);paint();b.hidden=false}
+function hide(save){b.hidden=true;if(save){try{localStorage.setItem('pv_inst_x','1')}catch(_){}}}
+document.addEventListener('click',ev=>{if(ev.target.id==='instgo'){if(dp){dp.prompt();dp.userChoice.then(()=>{dp=null;hide(false)},()=>hide(false))}else if(ios&&!tip){tip=true;paint()}else hide(true)}else if(ev.target.id==='instx')hide(true)});
+addEventListener('beforeinstallprompt',e=>{e.preventDefault();dp=e;show()});addEventListener('appinstalled',()=>hide(false));
+if(ios)addEventListener('load',()=>setTimeout(show,2500));
+new MutationObserver(()=>{if(!b.hidden)paint()}).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+})();
+</script>
 </body></html>
