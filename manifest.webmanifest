@@ -1,13 +1,13 @@
 {
- "name": "Project শব্দ",
- "short_name": "Project শব্দ",
+ "name": "Posh — Vocabulary",
+ "short_name": "Posh",
  "description": "New words every day. প্রতিদিন নতুন শব্দ।",
  "start_url": "./index.html",
  "scope": "./",
  "display": "standalone",
  "orientation": "portrait",
- "background_color": "#faf8fe",
- "theme_color": "#7c5cd6",
+ "background_color": "#f5f8f7",
+ "theme_color": "#0e5a5c",
  "lang": "en",
  "icons": [
   {

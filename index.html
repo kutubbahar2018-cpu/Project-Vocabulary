@@ -1,11 +1,11 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#7c5cd6"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Project শব্দ"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Project শব্দ — প্রতিদিন নতুন শব্দ, প্রতিদিন নতুন তুমি · New words every day. A new you.</title>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0e5a5c"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Posh"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Posh — প্রতিদিন নতুন শব্দ · New words every day</title>
 <meta name="description" content="Turn your vocabulary list into a structured daily learning experience with interactive flashcards, quizzes, and progress tracking.">
 <meta property="og:title" content="Project শব্দ — প্রতিদিন নতুন শব্দ, প্রতিদিন নতুন তুমি · New words every day. A new you."><meta property="og:description" content="Turn your vocabulary list into a structured daily learning experience with interactive flashcards, quizzes, and progress tracking.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2048'%3E%3Cdefs%3E%3ClinearGradient%20id='g'%20x1='0'%20y1='0'%20x2='1'%20y2='1'%3E%3Cstop%20offset='0'%20stop-color='%239b7df0'/%3E%3Cstop%20offset='1'%20stop-color='%235433b5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width='48'%20height='48'%20rx='14'%20fill='url(%23g)'/%3E%3Cpath%20d='M7%2014q8-3.5%2017%201.5v22.5q-9-4.5-17-1.5z'%20fill='%23fff'/%3E%3Cpath%20d='M41%2014q-8-3.5-17%201.5v22.5q9-4.5%2017-1.5z'%20fill='%23e6dcfb'/%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f7f4fd;--card:#fff;--tx:#2a2440;--mu:#766f92;--bd:#e7e0f6;--soft:#efe9fc;--pr:#7c5cd6;--ok:#6d4fc2;--okb:#ece6fb;--wa:#7a5bc0;--wab:#f3effc;--er:#9a4a9a;--erb:#f7eaf7;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}
-:root[data-t=dark]{--bg:#15121f;--card:#1e1a2d;--tx:#ece8f8;--mu:#a59ec2;--bd:#322b4a;--soft:#2a2340;--pr:#b4a0f5;--ok:#c8b8fa;--okb:#2a2345;--wa:#a995ec;--wab:#251f3a;--er:#e3a0e0;--erb:#33203a}
+:root{--bg:#f5f8f7;--card:#ffffff;--tx:#15211f;--mu:#5f6b69;--bd:#dce5e3;--soft:#f5f8f7;--pr:#0e5a5c;--ok:#3f7d5a;--okb:#eaf4ed;--wa:#c58a3a;--wab:#fbf1dd;--er:#b84a4a;--erb:#f9eaea;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}
+:root[data-t=dark]{--bg:#15211f;--card:#22332f;--tx:#f5f8f7;--mu:#b7c6c3;--bd:#3a4b49;--soft:#1b2b29;--pr:#7fb8b4;--ok:#7fb897;--okb:#1f3428;--wa:#e0b26a;--wab:#3a2c1a;--er:#d98c8c;--erb:#3d2727}
 *{box-sizing:border-box}html,body{margin:0}html{scroll-padding-top:70px;scroll-behavior:smooth}
 body{background:var(--bg);color:var(--tx);font:15px/1.65 Manrope,'Hind Siliguri',system-ui,sans-serif;min-height:100%}
 h1,h2,h3{line-height:1.25;margin:0 0 .5rem;font-weight:650}h1{font-size:1.6rem}h2{font-size:1.15rem}h3{font-size:1rem}p{margin:.3rem 0}a{color:var(--pr)}
@@ -22,14 +22,14 @@ body.nos aside,body.nos #mb{display:none!important}body.nos main{margin:0 auto}
 .grid{display:grid;gap:.75rem;grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}.g2{grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr))}
 button,.b{font:inherit;font-weight:500;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:10px;padding:.5rem .95rem;cursor:pointer;min-height:42px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:.4rem;transition:transform .12s,border-color .15s,background .15s,opacity .15s}
 button:hover:not(:disabled){border-color:var(--pr);background:var(--soft)}button:active:not(:disabled),.b:active{transform:scale(.97)}button:disabled{opacity:.45;cursor:default}
-.pri{background:var(--pr);color:#fff;border-color:var(--pr)}.pri:hover:not(:disabled){background:var(--pr);filter:brightness(1.08)}:root[data-t=dark] .pri{color:#1b1230}
+.pri{background:var(--pr);color:#fff;border-color:var(--pr)}.pri:hover:not(:disabled){background:var(--pr);filter:brightness(1.08)}:root[data-t=dark] .pri{color:#15211f}
 :focus-visible{outline:2px solid var(--pr);outline-offset:2px}
 .ok{background:var(--okb);color:var(--ok);border-color:transparent}.warn{background:var(--wab);color:var(--wa);border-color:transparent}
 .bar{height:6px;background:var(--bd);border-radius:9px;overflow:hidden;margin:.4rem 0}.bar i{display:block;height:100%;background:var(--pr);border-radius:9px;transition:width .4s;animation:grow .8s cubic-bezier(.2,.8,.2,1)}@keyframes grow{from{width:0}}
 .mu{color:var(--mu)}.big{font-size:1.6rem;font-weight:650}.row{display:flex;gap:.5rem;flex-wrap:wrap;margin:.6rem 0}.row>*{flex:1}
 .badge{display:inline-block;padding:.05rem .55rem;border-radius:99px;font-size:.78rem;font-weight:500;background:var(--soft);color:var(--mu)}
 .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0}.chip{min-height:30px;padding:.1rem .75rem;border-radius:99px;font-size:.85rem;background:var(--soft);border-color:transparent;text-transform:capitalize}.chip.hi{background:var(--erb);color:var(--er)}
-.day{text-decoration:none;color:inherit}.day:hover,.st:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(124,92,214,.14);border-color:var(--pr)}.day.locked{opacity:.45;pointer-events:none}
+.day{text-decoration:none;color:inherit}.day:hover,.st:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(14,90,92,.14);border-color:var(--pr)}.day.locked{opacity:.45;pointer-events:none}
 .st{border-left:4px solid var(--cc)}.st:hover svg{animation:bob .6s}@keyframes bob{50%{transform:translateY(-4px)}}
 .vc{perspective:900px}.vc .inner{position:relative;min-height:180px;transition:transform .55s cubic-bezier(.2,.8,.2,1);transform-style:preserve-3d;cursor:pointer}
 .vc.flip .inner{transform:rotateY(180deg)}.face{position:absolute;inset:0;backface-visibility:hidden;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:1rem;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;overflow:auto}
@@ -39,29 +39,29 @@ button:hover:not(:disabled){border-color:var(--pr);background:var(--soft)}button
 .opt{display:block;width:100%;text-align:left;margin:.4rem 0;justify-content:flex-start;padding:.75rem 1rem}.opt:hover:not(:disabled){transform:translateX(3px)}.opt.sel{border-color:var(--pr);background:var(--soft)}.opt.right{background:var(--okb);border-color:var(--ok);animation:pop .25s}.opt.wrong{background:var(--erb);border-color:var(--er)}@keyframes pop{50%{transform:scale(1.02)}}
 .nv{display:grid;grid-template-columns:repeat(auto-fill,minmax(46px,1fr));gap:.4rem}.nv button{padding:.2rem}.nv .cur{border-color:var(--pr);border-width:2px}
 input,select{font:inherit;padding:.55rem .75rem;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--tx);min-height:42px}
-.hero{text-align:center;padding:2rem 0}.ov{position:fixed;inset:0;background:rgba(30,20,60,.5);display:flex;align-items:center;justify-content:center;z-index:12;padding:1rem}
+.hero{text-align:center;padding:2rem 0}.ov{position:fixed;inset:0;background:rgba(21,33,31,.5);display:flex;align-items:center;justify-content:center;z-index:12;padding:1rem}
 .err{background:var(--erb);color:var(--er);padding:.7rem 1rem;border-radius:10px;margin:.8rem 0}
-.hero2{position:relative;overflow:hidden;background:linear-gradient(135deg,#7c5cd6,#a891f0);color:#fff;border-radius:16px;padding:1.4rem;margin:1rem 0;display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+.hero2{position:relative;overflow:hidden;background:linear-gradient(135deg,#0e5a5c,#5f6b69);color:#fff;border-radius:16px;padding:1.4rem;margin:1rem 0;display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
 .hero2>*{position:relative;z-index:1}.hero2::before,.hero2::after{content:'';position:absolute;border-radius:50%;background:rgba(255,255,255,.13);animation:float 9s ease-in-out infinite}
 .hero2::before{width:190px;height:190px;right:-50px;top:-70px}.hero2::after{width:110px;height:110px;left:38%;bottom:-55px;animation-delay:-4s}@keyframes float{50%{transform:translate(-16px,12px)}}
-.hero2 .bar{background:rgba(255,255,255,.3);width:100%}.hero2 .bar i{background:#fff}.hero2 .b{background:#fff;color:#5b3fb8;border:0;font-weight:600}@keyframes ringg{from{stroke-dashoffset:213.6}}
+.hero2 .bar{background:rgba(255,255,255,.3);width:100%}.hero2 .bar i{background:#fff}.hero2 .b{background:#fff;color:#15211f;border:0;font-weight:600}@keyframes ringg{from{stroke-dashoffset:213.6}}
 button.bk{margin-bottom:.8rem;min-height:36px;padding:.2rem .8rem;color:var(--mu)}
 .pill{border:1px solid var(--ok);color:var(--ok);border-radius:99px;padding:.15rem .7rem;font-size:.8rem;text-align:center}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok);margin-right:.4rem;animation:pulse 1.8s infinite}@keyframes pulse{50%{opacity:.3}}
-.av{width:30px;height:30px;border-radius:50%;background:var(--pr);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:.72rem;flex:none}:root[data-t=dark] .av{color:#1b1230}
+.av{width:30px;height:30px;border-radius:50%;background:var(--pr);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:.72rem;flex:none}:root[data-t=dark] .av{color:#15211f}
 .flow{display:flex;gap:.4rem;align-items:center;flex-wrap:wrap;color:var(--mu);margin:.6rem 0}.flow span{border:1px solid var(--bd);border-radius:99px;padding:.1rem .8rem;font-size:.82rem;background:var(--card);color:var(--tx)}
 .tl{position:relative;border-left:2px solid var(--bd);margin-left:.4rem;padding:.4rem 0 .4rem 1rem}.td{position:absolute;left:-6px;top:.85rem;width:10px;height:10px;border-radius:50%;background:var(--pr)}
 .cf{position:fixed;top:-14px;width:8px;height:12px;z-index:20;pointer-events:none;animation:fall 2.4s ease-in forwards}@keyframes fall{to{transform:translateY(108vh) rotate(540deg)}}
 @keyframes rise{from{opacity:0;transform:translateY(8px)}}#app.enter{animation:rise .28s ease-out}#app.enter .grid>*{animation:rise .35s both;animation-delay:calc(var(--i,0)*28ms)}
 .toast{position:fixed;left:50%;bottom:calc(1.2rem + env(safe-area-inset-bottom,0px));transform:translate(-50%,16px);background:var(--tx);color:var(--bg);padding:.55rem 1rem;border-radius:99px;opacity:0;transition:opacity .25s,transform .25s;z-index:30;font-size:.9rem;pointer-events:none}.toast.on{opacity:1;transform:translate(-50%,0)}
-body.open::after{content:'';position:fixed;inset:0;background:rgba(30,20,60,.45);z-index:6}
+body.open::after{content:'';position:fixed;inset:0;background:rgba(21,33,31,.45);z-index:6}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
 
 /* minimal lavender polish */
-:root{--bg:#faf8ff}
+:root{--bg:#f5f8f7}
 body{font-weight:400}h1{font-size:1.5rem;font-weight:600;letter-spacing:-.01em;margin-bottom:.8rem}h2{font-weight:600}
 .card{border-radius:14px}.day:hover,.st:hover{transform:none;box-shadow:none;border-color:var(--pr)}
 .st{border-left:1px solid var(--bd)}.st:hover svg,.front small,.dot{animation:none}
-.hero2{background:linear-gradient(135deg,#7c5cd6,#9a82e6);border-radius:18px}.hero2::before,.hero2::after{display:none}
+.hero2{background:linear-gradient(135deg,#0e5a5c,#5f6b69);border-radius:18px}.hero2::before,.hero2::after{display:none}
 .day{display:flex;flex-direction:column;gap:.35rem;padding:1.1rem}.day .big{font-size:1.5rem;font-weight:600;color:var(--pr)}
 .day.completed{background:var(--soft);border-color:transparent}.day.in-progress{border-color:var(--pr)}.day.locked{opacity:.4}
 .day .badge{align-self:flex-start;background:transparent;padding:0;color:var(--mu);font-size:.78rem}
@@ -74,19 +74,19 @@ body{font-weight:400}h1{font-size:1.5rem;font-weight:600;letter-spacing:-.01em;m
 button.bk{border-color:transparent;background:transparent;padding-left:.2rem}
 
 /* v3: pattern bg, richer top card, interactive steps */
-body{background-image:radial-gradient(60% 38% at 85% 0,rgba(168,145,240,.2),transparent),radial-gradient(rgba(124,92,214,.14) 1.2px,transparent 1.5px);background-size:auto,24px 24px;background-attachment:fixed}
-:root[data-t=dark] body{background-image:radial-gradient(60% 38% at 85% 0,rgba(124,92,214,.22),transparent),radial-gradient(rgba(180,160,245,.1) 1.2px,transparent 1.5px)}
+body{background-image:radial-gradient(60% 38% at 85% 0,rgba(228,241,240,.2),transparent),radial-gradient(rgba(14,90,92,.14) 1.2px,transparent 1.5px);background-size:auto,24px 24px;background-attachment:fixed}
+:root[data-t=dark] body{background-image:radial-gradient(60% 38% at 85% 0,rgba(14,90,92,.22),transparent),radial-gradient(rgba(228,241,240,.1) 1.2px,transparent 1.5px)}
 .bn,.ex{font-family:'Hind Siliguri',Manrope,system-ui,sans-serif}.bn{font-size:1.25rem;font-weight:600}
 #mb{background:color-mix(in srgb,var(--card) 82%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
-.hero2{background:linear-gradient(135deg,#ebe3ff,#d6c9fb);color:#3a2a78;border:1px solid #d9ccfa;border-radius:20px;padding:1.6rem}
-.hero2::before{display:block;width:240px;height:240px;right:-70px;top:-90px;background:none;border:30px solid rgba(124,92,214,.1);animation:none}
-.hero2::after{display:block;width:150px;height:150px;left:42%;bottom:-80px;background:none;border:22px solid rgba(124,92,214,.08);animation:none}
-.hero2 .bar{background:rgba(124,92,214,.18)}.hero2 .bar i{background:#6b4bd0}
-.hero2 svg circle:first-child{stroke:rgba(124,92,214,.2)}.hero2 svg circle:nth-child(2){stroke:#6b4bd0}.hero2 svg text{fill:#3a2a78}
-.hero2 .b{background:#6b4bd0;color:#fff}.hero2 .b:hover{background:#5b3fb8;border:0}
-:root[data-t=dark] .hero2{background:linear-gradient(135deg,#2f2750,#3d3270);color:#ece8f8;border-color:#463b7a}
-:root[data-t=dark] .hero2 .bar i,:root[data-t=dark] .hero2 svg circle:nth-child(2){background:#b4a0f5;stroke:#b4a0f5}:root[data-t=dark] .hero2 svg text{fill:#ece8f8}
-:root[data-t=dark] .hero2 .b{background:#b4a0f5;color:#1b1230}
+.hero2{background:linear-gradient(135deg,#f5f8f7,#dce5e3);color:#15211f;border:1px solid #dce5e3;border-radius:20px;padding:1.6rem}
+.hero2::before{display:block;width:240px;height:240px;right:-70px;top:-90px;background:none;border:30px solid rgba(14,90,92,.1);animation:none}
+.hero2::after{display:block;width:150px;height:150px;left:42%;bottom:-80px;background:none;border:22px solid rgba(14,90,92,.08);animation:none}
+.hero2 .bar{background:rgba(14,90,92,.18)}.hero2 .bar i{background:#15211f}
+.hero2 svg circle:first-child{stroke:rgba(14,90,92,.2)}.hero2 svg circle:nth-child(2){stroke:#15211f}.hero2 svg text{fill:#15211f}
+.hero2 .b{background:#15211f;color:#fff}.hero2 .b:hover{background:#15211f;border:0}
+:root[data-t=dark] .hero2{background:linear-gradient(135deg,#15211f,#15211f);color:#f5f8f7;border-color:#15211f}
+:root[data-t=dark] .hero2 .bar i,:root[data-t=dark] .hero2 svg circle:nth-child(2){background:#5f6b69;stroke:#5f6b69}:root[data-t=dark] .hero2 svg text{fill:#f5f8f7}
+:root[data-t=dark] .hero2 .b{background:#5f6b69;color:#15211f}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin:1rem 0}
 .steps a{display:flex;flex-direction:column;gap:.1rem;padding:.8rem .9rem;border:1px solid var(--bd);border-radius:14px;background:var(--card);color:var(--tx);text-decoration:none;transition:transform .18s,border-color .18s,background .18s}
 .steps a:hover{transform:translateY(-2px);border-color:var(--pr);background:var(--soft)}.steps a:active{transform:scale(.98)}
@@ -125,19 +125,19 @@ textarea{font:inherit;width:100%;padding:.55rem .75rem;border-radius:10px;border
 .ct .si{display:inline-flex;width:38px;height:38px;border-radius:10px;align-items:center;justify-content:center;background:var(--soft);color:var(--pr);margin-bottom:.4rem}
 .ct:hover .si{background:var(--pr);color:#fff}
 #mb{background:var(--card);backdrop-filter:none;border-bottom:1px solid var(--bd);font-weight:600}
-.seg{display:flex;gap:.3rem;background:var(--soft);padding:.25rem;border-radius:12px;margin:1.2rem 0 1rem}.seg button{flex:1;border:0;background:transparent;min-height:38px;color:var(--mu)}.seg button.on{background:var(--card);color:var(--pr);box-shadow:0 1px 3px rgba(124,92,214,.15)}
+.seg{display:flex;gap:.3rem;background:var(--soft);padding:.25rem;border-radius:12px;margin:1.2rem 0 1rem}.seg button{flex:1;border:0;background:transparent;min-height:38px;color:var(--mu)}.seg button.on{background:var(--card);color:var(--pr);box-shadow:0 1px 3px rgba(14,90,92,.15)}
 .nl{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mu);padding:.9rem .75rem .25rem;overflow-wrap:anywhere}
 .secc{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;text-align:left;gap:.35rem;padding:1.2rem;min-height:170px;height:auto;border-radius:14px}.secc h2{margin:.1rem 0}.secc:hover:not(:disabled){border-color:var(--pr)}
 .ft{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:var(--mu);font-size:.85rem;display:flex;flex-direction:column;gap:.5rem}.ft p{margin:0}.ft .fl{display:flex;flex-wrap:wrap;gap:.3rem 1.4rem}.ft a{color:var(--mu);text-decoration-color:var(--bd);overflow-wrap:anywhere}.ft a:hover{color:var(--pr)}
 main{display:flex;flex-direction:column;min-height:100vh}main>.pg{flex:1}body.nos main{max-width:960px;width:100%}
 .brand{display:flex;align-items:center;gap:.55rem;font-size:.94rem;letter-spacing:-.01em;padding-left:.35rem!important;white-space:nowrap}.met .row>*{flex:0 0 auto}
 #mb span{display:inline-flex;align-items:center;gap:.55rem}
-.lg{max-width:440px;margin:6vh auto 0;text-align:center}.lgm{display:flex;justify-content:center;margin-bottom:1.1rem;filter:drop-shadow(0 10px 22px rgba(91,63,184,.28))}
+.lg{max-width:440px;margin:6vh auto 0;text-align:center}.lgm{display:flex;justify-content:center;margin-bottom:1.1rem;filter:drop-shadow(0 10px 22px rgba(21,33,31,.28))}
 .lgt{font-size:2.2rem;letter-spacing:-.025em;margin:0 0 .5rem;font-weight:650}.lgs{color:var(--mu);font-size:1.08rem;line-height:1.5;margin:0 0 1.7rem}
-.lgc{text-align:left;padding:1.4rem;border-radius:18px;box-shadow:0 14px 40px rgba(91,63,184,.12)}.lgc label{display:block}
+.lgc{text-align:left;padding:1.4rem;border-radius:18px;box-shadow:0 14px 40px rgba(21,33,31,.12)}.lgc label{display:block}
 .lgchips{display:flex;flex-wrap:wrap;gap:.45rem;justify-content:center;margin-top:1.3rem}.lgchips span{font-size:.8rem;padding:.2rem .75rem;border-radius:99px;background:var(--soft);color:var(--mu)}
 .me{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:1.6rem;align-items:center;margin:1rem 0 1.8rem}
-.mep{width:100%;height:auto;border-radius:20px;display:block;background:#0d2a5c;box-shadow:0 12px 34px rgba(30,20,60,.18)}
+.mep{width:100%;height:auto;border-radius:20px;display:block;background:#15211f;box-shadow:0 12px 34px rgba(21,33,31,.18)}
 .met p{margin:.4rem 0}@media(max-width:640px){.me{grid-template-columns:1fr}.mep{max-width:360px}.lg{margin-top:3vh}.lgt{font-size:1.85rem}}
 /* wider desktop layout, hidden sidebar scrollbar */
 aside{scrollbar-width:none;-ms-overflow-style:none}aside::-webkit-scrollbar{display:none}
@@ -167,7 +167,7 @@ aside a.sl svg{margin:0 3px;opacity:.8}aside a.sl .badge{font-size:.68rem;paddin
 .lgtag{font-weight:650;color:var(--pr);font-size:1.15rem;margin:.15rem 0 .5rem;font-family:'Hind Siliguri',Manrope,system-ui,sans-serif}
 .subm{margin-top:3.2rem;padding-top:1.2rem;border-top:1px dashed var(--bd);text-align:center}.subm button{width:100%;max-width:340px}
 
-.tour{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));max-width:460px;margin-inline:auto;z-index:40;background:var(--card);color:var(--tx);border:1px solid var(--pr);border-radius:16px;padding:.9rem 1rem;box-shadow:0 10px 30px rgba(30,20,60,.25)}
+.tour{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));max-width:460px;margin-inline:auto;z-index:40;background:var(--card);color:var(--tx);border:1px solid var(--pr);border-radius:16px;padding:.9rem 1rem;box-shadow:0 10px 30px rgba(21,33,31,.25)}
 .tour h3{margin:.1rem 0 .3rem;font-size:1.1rem}.tour p{margin:.2rem 0 .6rem;font-size:.92rem}
 .tdots{display:flex;gap:3px;margin-bottom:.6rem}.tdots i{flex:1;height:4px;border-radius:2px;background:var(--bd)}.tdots i.on{background:var(--pr)}
 .tour .row{margin:0;flex-wrap:nowrap}.tour .row>button{flex:1 1 auto;min-width:0}
@@ -209,17 +209,17 @@ details[open]>summary{margin-bottom:.6rem}
 day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 1,Risk,ঝুঁকি/বিপদ,danger; hazard,"danger, hazard, jeopardy, peril","Safety, Protection",৩ বার জোরে বলুন ও কল্পনা করুন: 'ঝুঁকি/বিপদ' — এটাই 'Risk'।
 1,Husband,মিতব্যয়ী,to conserve; to save,"Conserve, Preserve, Save","Waste, Squander",৩ বার জোরে বলুন ও কল্পনা করুন: 'মিতব্যয়ী' — এটাই 'Husband'।
-1,Property,সম্পত্তি,possessions; wealth,"Success, Progress","Poverty, Misfortune",৩ বার জোরে বলুন ও কল্পনা করুন: 'সম্পত্তি' — এটাই 'Property'।
+1,Property,সম্পত্তি,possessions; wealth,"Possession, Estate, Asset","Poverty, Misfortune",৩ বার জোরে বলুন ও কল্পনা করুন: 'সম্পত্তি' — এটাই 'Property'।
 1,Concern,চিন্তা,anxiety; worry,"Anxiety, Apprehension",Indifference,৩ বার জোরে বলুন ও কল্পনা করুন: 'চিন্তা' — এটাই 'Concern'।
 1,Alert,সতর্ক/মনোযোগী,watchful and ready,"Aware, Observant, Cautious, Vigilant, Watchful, Wary","Careless, Unaware, Ignorant, Uninformed",৩ বার জোরে বলুন ও কল্পনা করুন: 'সতর্ক/মনোযোগী' — এটাই 'Alert'।
 1,Blame,দোষারোপ,to hold responsible,"Hold Responsible, Condemn, Censure, Criticize, Denounce","Praise, Admire, Thank",৩ বার জোরে বলুন ও কল্পনা করুন: 'দোষারোপ' — এটাই 'Blame'।
 1,Random,এলোমেলো,haphazard; unplanned,"Haphazard, Unplanned","Deliberate, Intentional",৩ বার জোরে বলুন ও কল্পনা করুন: 'এলোমেলো' — এটাই 'Random'।
-1,Improve,উন্নত করা,to make better,Perform without Preparation,"Unintentional, accidental",'Im-' মানে না (not) — তাই 'Improve' মানে 'উন্নত করা'।
+1,Improve,উন্নত করা,to make better,"Ameliorate, Enhance, Upgrade","Deteriorate, Worsen, Decline",'Im-' মানে না (not) — তাই 'Improve' মানে 'উন্নত করা'।
 1,Capable,সক্ষম,able; competent,"Able, Competent, Skilled","Unable, Incompetent",৩ বার জোরে বলুন ও কল্পনা করুন: 'সক্ষম' — এটাই 'Capable'।
 1,Pacific,শান্ত,peaceful; calm,"Calm, Serene, Placid",Agitated,৩ বার জোরে বলুন ও কল্পনা করুন: 'শান্ত' — এটাই 'Pacific'।
-1,Brief,সংক্ষিপ্ত,short; concise,"Concise, Succinct, Laconic",Be ashamed,৩ বার জোরে বলুন ও কল্পনা করুন: 'সংক্ষিপ্ত' — এটাই 'Brief'।
+1,Brief,সংক্ষিপ্ত,short; concise,"Concise, Succinct, Laconic","Long, Lengthy, Prolix",৩ বার জোরে বলুন ও কল্পনা করুন: 'সংক্ষিপ্ত' — এটাই 'Brief'।
 1,Massive,বিশাল/ভারী,huge; heavy,"enormous, gigantic, immense","Minute, miniature, tiny",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিশাল/ভারী' — এটাই 'Massive'।
-1,Crisis,সংকট,a critical moment,"Catastrophe, calamity, disaster",Find innocent,৩ বার জোরে বলুন ও কল্পনা করুন: 'সংকট' — এটাই 'Crisis'।
+1,Crisis,সংকট,a critical moment,"Catastrophe, calamity, disaster","Calm, stability, normalcy",৩ বার জোরে বলুন ও কল্পনা করুন: 'সংকট' — এটাই 'Crisis'।
 1,Familiar,পরিচিত/চিরচেনা,well-known,"Common, well-known","Unknown, unfamiliar",৩ বার জোরে বলুন ও কল্পনা করুন: 'পরিচিত/চিরচেনা' — এটাই 'Familiar'।
 1,Effective,কার্যকর,producing a result,"Efficient, Productive, Successful","Ineffective, Useless",৩ বার জোরে বলুন ও কল্পনা করুন: 'কার্যকর' — এটাই 'Effective'।
 1,Static,স্থির/নিশ্চল,stationary; unchanging,"Stagnant, Immobile","Mobile, Moving",৩ বার জোরে বলুন ও কল্পনা করুন: 'স্থির/নিশ্চল' — এটাই 'Static'।
@@ -255,43 +255,43 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 3,Numerous,বহুসংখ্যক,many,"Many, Copious, Abundant","Few, Scarce",৩ বার জোরে বলুন ও কল্পনা করুন: 'বহুসংখ্যক' — এটাই 'Numerous'।
 3,Bondage,দাসত্ব,slavery,Slavery,"Broad-mindedness, Liberty, freedom",'Bondage'-এ লুকানো 'bond' (বন্ধন) খুঁজে পেল — মনে করুন এর মানে 'দাসত্ব'।
 4,Expose,প্রকাশ করা,to reveal,"Reveal, Disclose, Divulge","Hide, Conceal, Cover",৩ বার জোরে বলুন ও কল্পনা করুন: 'প্রকাশ করা' — এটাই 'Expose'।
-4,Absurd,অমৌলিক/হাস্যকর,ridiculous; illogical,"Ridiculous, Incongruent, Ludicrous, Preposterous","Rational, Reasonable, Sensible, Logical",৩ বার জোরে বলুন ও কল্পনা করুন: 'অমৌলিক/হাস্যকর' — এটাই 'Absurd'।
-4,Dispute,বিতর্ক,to argue; a disagreement,"Challenge, disagree, argue","Unruly, Disobedient",'dis-' মানে না/বিপরীত (not) — তাই 'Dispute' মানে 'বিতর্ক'।
+4,Absurd,অযৌক্তিক/হাস্যকর,ridiculous; illogical,"Ridiculous, Incongruent, Ludicrous, Preposterous","Rational, Reasonable, Sensible, Logical",৩ বার জোরে বলুন ও কল্পনা করুন: 'অযৌক্তিক/হাস্যকর' — এটাই 'Absurd'।
+4,Dispute,বিতর্ক,to argue; a disagreement,"Challenge, disagree, argue","Agreement, Accord, Harmony",'dis-' মানে না/বিপরীত (not) — তাই 'Dispute' মানে 'বিতর্ক'।
 4,Misery,দুঃখ,extreme suffering,"Woe, Agony, Grief","Happiness, Glee, Mirth",৩ বার জোরে বলুন ও কল্পনা করুন: 'দুঃখ' — এটাই 'Misery'।
-4,Hostile,শক্রভাবাপন্ন,unfriendly; antagonistic,"Antagonistic, spiteful","Friendly, Amicable",৩ বার জোরে বলুন ও কল্পনা করুন: 'শক্রভাবাপন্ন' — এটাই 'Hostile'।
+4,Hostile,শত্রুভাবাপন্ন,unfriendly; antagonistic,"Antagonistic, spiteful","Friendly, Amicable",৩ বার জোরে বলুন ও কল্পনা করুন: 'শত্রুভাবাপন্ন' — এটাই 'Hostile'।
 4,Eligible,যোগ্য,qualified; suitable,"Fit to be chosen, Suitable","Ineligible, disqualified",৩ বার জোরে বলুন ও কল্পনা করুন: 'যোগ্য' — এটাই 'Eligible'।
 4,Swift,চটপটে/দ্রুত,quick; rapid,"Hasty, Rapid, Prompt",Sluggish,৩ বার জোরে বলুন ও কল্পনা করুন: 'চটপটে/দ্রুত' — এটাই 'Swift'।
 4,Messy,নোংরা,untidy; dirty,"Cluttered, Littered","Neat, Tidy",৩ বার জোরে বলুন ও কল্পনা করুন: 'নোংরা' — এটাই 'Messy'।
 4,Fragile,ভঙ্গুর,easily broken,"Brittle, frangible, frail, weak","Durable, robust, strong",৩ বার জোরে বলুন ও কল্পনা করুন: 'ভঙ্গুর' — এটাই 'Fragile'।
 4,Comply,মেনে চলা,to obey,"Conform, Obey, Observe","Disobey, Resist",৩ বার জোরে বলুন ও কল্পনা করুন: 'মেনে চলা' — এটাই 'Comply'।
 4,Hazard,বিপদ/ঝুঁকি,a danger; a risk,"Danger, Risk, Peril, Threat","Protection, Safety",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিপদ/ঝুঁকি' — এটাই 'Hazard'।
-4,Flexible,নমনীয়,pliable; adaptable,"Pliable, Adaptable, Elastic","Rigid, Inflexible",৩ বার জোরে বলুন ও কল্পনা করুন: 'নমনীয়' — এটাই 'Flexible'।
+4,Flexible,নমনীয়,pliable; adaptable,"Pliable, Adaptable, Elastic, Bendy","Rigid, Inflexible, Stiff",৩ বার জোরে বলুন ও কল্পনা করুন: 'নমনীয়' — এটাই 'Flexible'।
 4,Resolution,দৃঢ় সংকল্প,determination,Determination,Vacillation,'re-' মানে পুনরায় (again) — তাই 'Resolution' মানে 'দৃঢ় সংকল্প'।
 4,Rash,হঠকারী,reckless,Reckless,Prudent,৩ বার জোরে বলুন ও কল্পনা করুন: 'হঠকারী' — এটাই 'Rash'।
-4,Integrity,সততা,honesty,"Honesty, Probity, uprightness","Discourage, dishearten",'in-' মানে না (not) — তাই 'Integrity' মানে 'সততা'।
+4,Integrity,সততা,honesty,"Honesty, Probity, uprightness","Dishonesty, Corruption, Fraud",'in-' মানে না (not) — তাই 'Integrity' মানে 'সততা'।
 4,Greedy,লোভী,avaricious,"Avaricious, Covetous, Rapacious, Money-hungry","Generous, Benevolent",৩ বার জোরে বলুন ও কল্পনা করুন: 'লোভী' — এটাই 'Greedy'।
-5,Exploit,বীরত্বপূর্ণ কাজ,a heroic act,"Permanent, Perpetual","Failure, Defeat",৩ বার জোরে বলুন ও কল্পনা করুন: 'বীরত্বপূর্ণ কাজ' — এটাই 'Exploit'।
+5,Exploit,বীরত্বপূর্ণ কাজ,a heroic act,"Feat, Achievement, Deed","Failure, Defeat",৩ বার জোরে বলুন ও কল্পনা করুন: 'বীরত্বপূর্ণ কাজ' — এটাই 'Exploit'।
 5,Depressed,বিষণ্ণ,very sad,"Dispirited, Dejected, Gloomy","Elated, Cheerful, Joyful",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিষণ্ণ' — এটাই 'Depressed'।
 5,Clarify,পরিচ্ছন্ন করা,to make clear,"Elucidate, explicate, explain",Obscure,৩ বার জোরে বলুন ও কল্পনা করুন: 'পরিচ্ছন্ন করা' — এটাই 'Clarify'।
 5,Advocate,(v) সমর্থন করা/(n) সমর্থক,to support or argue for,"Support, Supporter, Proponent","Oppose, Attack, Opponent, Enemy",'Advocate'-এ লুকানো 'cat' (বিড়াল) খুঁজে পেল — মনে করুন এর মানে '(v) সমর্থন করা/(n) সমর্থক'।
 5,Authentic,খাঁটি/বিশ্বাসযোগ্য,genuine; real,"bonafide, genuine, real, legal, legitimate, reliable, valid","artificial, counterfeit, bogus, fake, imitation",৩ বার জোরে বলুন ও কল্পনা করুন: 'খাঁটি/বিশ্বাসযোগ্য' — এটাই 'Authentic'।
 5,Ignorant,অজ্ঞ,lacking knowledge,"Uneducated, Stupid","Literate, wise",৩ বার জোরে বলুন ও কল্পনা করুন: 'অজ্ঞ' — এটাই 'Ignorant'।
-5,Profound,গভীর,deep; insightful,"Deep, Intense, Thoughtful","Shallow, Superficial",৩ বার জোরে বলুন ও কল্পনা করুন: 'গভীর' — এটাই 'Profound'।
+5,Profound,"গভীর, গভীর জ্ঞানপূর্ণ",deep; insightful,"Deep, Intense, Thoughtful, Wise, Sagacious, Sage","Shallow, Superficial, Stupid, Inane, idiotic",৩ বার জোরে বলুন ও কল্পনা করুন: 'গভীর' — এটাই 'Profound'।
 5,Reservation,দ্বিধা/সংশয়,hesitancy; doubt,"Hesitancy, Uncertainty",Confidence,'re-' মানে পুনরায় (again) — তাই 'Reservation' মানে 'দ্বিধা/সংশয়'।
 5,Immense,বিশাল/বৃহৎ,huge; vast,"Vast, Enormous, Massive","Small, tiny, minuscule",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিশাল/বৃহৎ' — এটাই 'Immense'।
 5,Tolerate,সহ্য করা,to endure; to bear,"Bear, Endure, Put up with","Forbid, Prohibit",৩ বার জোরে বলুন ও কল্পনা করুন: 'সহ্য করা' — এটাই 'Tolerate'।
 5,Ecstasy,পরমানন্দ,extreme happiness,"Elation, Rapture, euphoria","agony, depression",৩ বার জোরে বলুন ও কল্পনা করুন: 'পরমানন্দ' — এটাই 'Ecstasy'।
-5,Dilemma,উভয় সংকট,a difficult choice,"predicament, catch 22, quandary","Accidental, Rash",৩ বার জোরে বলুন ও কল্পনা করুন: 'উভয় সংকট' — এটাই 'Dilemma'।
+5,Dilemma,উভয় সংকট,a difficult choice,"predicament, catch 22, quandary","Certainty, clarity",৩ বার জোরে বলুন ও কল্পনা করুন: 'উভয় সংকট' — এটাই 'Dilemma'।
 5,Hilarious,হাস্যকর,extremely funny,"Very Funny, Joyous","Sad, Gloomy",৩ বার জোরে বলুন ও কল্পনা করুন: 'হাস্যকর' — এটাই 'Hilarious'।
 5,Peculiar,অদ্ভুত,strange; odd,"1. Individual, Particular, 2. Odd, Strange, Unusual","1. General, Common, 2. Usual, Expected",৩ বার জোরে বলুন ও কল্পনা করুন: 'অদ্ভুত' — এটাই 'Peculiar'।
 5,Opposition,বিরোধিতা,resistance,"Resistance, Antagonism","Backing, Support",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিরোধিতা' — এটাই 'Opposition'।
 6,Prompt,তৎপর/উপস্থিত,quick; timely,"Alert, Agile, nimble","Sluggish, Slow",৩ বার জোরে বলুন ও কল্পনা করুন: 'তৎপর/উপস্থিত' — এটাই 'Prompt'।
 6,Diversity,বৈচিত্র্য,variety; difference,"Variety, Difference, Multiformity","Uniformity, Sameness",৩ বার জোরে বলুন ও কল্পনা করুন: 'বৈচিত্র্য' — এটাই 'Diversity'।
-6,Moderate,সংযত,temperate; average,"1. Temper, 2. average, mediocre","1. Intensity, 2. Excessive",'Moderate'-এ লুকানো 'rat' (ইঁদুর) খুঁজে পেল — মনে করুন এর মানে 'সংযত'।
+6,Moderate,সংযত,temperate; average,"1. Restrain, Temperate, 2. average, mediocre","1. Intensity, 2. Excessive",'Moderate'-এ লুকানো 'rat' (ইঁদুর) খুঁজে পেল — মনে করুন এর মানে 'সংযত'।
 6,Din,কোলাহল,a loud noise,"Clamor, Uproar, Hubbub","1.Harmony, agreement, 2.Consonance",৩ বার জোরে বলুন ও কল্পনা করুন: 'কোলাহল' — এটাই 'Din'।
 6,Adverse,প্রতিকূল/বিরোধী,unfavorable; harmful,"Unfavorable, Antagonistic","Beneficial, Auspicious",৩ বার জোরে বলুন ও কল্পনা করুন: 'প্রতিকূল/বিরোধী' — এটাই 'Adverse'।
 6,Ominous,অশুভ,threatening,"Threatening, Intimidating","Auspicious, favorable",৩ বার জোরে বলুন ও কল্পনা করুন: 'অশুভ' — এটাই 'Ominous'।
-6,Clumsy,এলোমেলো,awkward; inept,"Bungling, Inept, Awkward","Adroit, Deft, Dexterous",৩ বার জোরে বলুন ও কল্পনা করুন: 'এলোমেলো' — এটাই 'Clumsy'।
+6,Clumsy,আনাড়ি/অপটু,awkward; inept,"Bungling, Inept, Awkward","Adroit, Deft, Dexterous",৩ বার জোরে বলুন ও কল্পনা করুন: 'আনাড়ি/অপটু' — এটাই 'Clumsy'।
 6,Anarchy,নৈরাজ্য/অরাজকতা,absence of government; disorder,"Lawlessness, chaos, disorder","Order, discipline, peace",৩ বার জোরে বলুন ও কল্পনা করুন: 'নৈরাজ্য/অরাজকতা' — এটাই 'Anarchy'।
 6,Conviction,দৃঢ় বিশ্বাস,a strong belief,"Firm belief, confidence","Doubt, suspicion",৩ বার জোরে বলুন ও কল্পনা করুন: 'দৃঢ় বিশ্বাস' — এটাই 'Conviction'।
 6,Intensity,তীব্রতা,great strength,"Increase, Heighten","Abate, Diminish, Lessen",৩ বার জোরে বলুন ও কল্পনা করুন: 'তীব্রতা' — এটাই 'Intensity'।
@@ -304,23 +304,23 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 7,Despise,ঘৃণা করা,to hate; to scorn,"Scorn, Loathe, Abhor","Admire, Esteem",৩ বার জোরে বলুন ও কল্পনা করুন: 'ঘৃণা করা' — এটাই 'Despise'।
 7,Humane,দয়ালু,kind; compassionate,"Benevolent, Sympathetic","Cruel, Ruthless, Brutal",৩ বার জোরে বলুন ও কল্পনা করুন: 'দয়ালু' — এটাই 'Humane'।
 7,Vulgar,অমার্জিত/অশ্লীল,crude; indecent,"Crude, Impolite, Plebeian","Refined, Aristocrat",৩ বার জোরে বলুন ও কল্পনা করুন: 'অমার্জিত/অশ্লীল' — এটাই 'Vulgar'।
-7,Inevitable,অবিনার্য,unavoidable,"Inescapable, Unavoidable","Skillful, Appropriate",'in-' মানে না (not) — তাই 'Inevitable' মানে 'অবিনার্য'।
+7,Inevitable,অনিবার্য,unavoidable,"Inescapable, Unavoidable","Avoidable, Preventable",'in-' মানে না (not) — তাই 'Inevitable' মানে 'অনিবার্য'।
 7,Notorious,কুখ্যাত,famous for something bad,"Infamous, Disreputable","Famous, prominent",৩ বার জোরে বলুন ও কল্পনা করুন: 'কুখ্যাত' — এটাই 'Notorious'।
 7,Compose,১. রচনা করা/২. শান্ত করা,1. to create; 2. to calm,"1. Poise, Aplomb, 2. Calmness, Serenity","1. Discomposure, 2. Hot-headedness",৩ বার জোরে বলুন ও কল্পনা করুন: '১. রচনা করা/২. শান্ত করা' — এটাই 'Compose'।
 7,Competent,যোগ্য/সক্ষম,capable; skilled,"Skilled, Proficient","Incompetent, Unfit",'Competent'-এ লুকানো 'tent' (তাঁবু) খুঁজে পেল — মনে করুন এর মানে 'যোগ্য/সক্ষম'।
 7,Novice,নবিশ,beginner,"Beginner, Learner, Tyro",Master,৩ বার জোরে বলুন ও কল্পনা করুন: 'নবিশ' — এটাই 'Novice'।
-7,Infamous,কুখ্যাত/জঘন্য,notorious; wicked,"Notorious, Infamous, Disreputable","Preventable, Avoidable",'in-' মানে না (not) — তাই 'Infamous' মানে 'কুখ্যাত/জঘন্য'।
+7,Infamous,কুখ্যাত/জঘন্য,notorious; wicked,"Notorious, Infamous, Disreputable","Famous, Honorable, Respected",'in-' মানে না (not) — তাই 'Infamous' মানে 'কুখ্যাত/জঘন্য'।
 7,Truce,সন্ধি,a cease-fire,"Cease-fire, Armistice","War, Fighting",৩ বার জোরে বলুন ও কল্পনা করুন: 'সন্ধি' — এটাই 'Truce'।
 7,Candid,অকপট/স্পষ্ট,frank; honest,"Frank, Outspoken, Sincere","Artful, Crafty",৩ বার জোরে বলুন ও কল্পনা করুন: 'অকপট/স্পষ্ট' — এটাই 'Candid'।
 7,Reckless,বেপরোয়া,rash; careless,"Rash, Foolhardy","Wary, Careful",৩ বার জোরে বলুন ও কল্পনা করুন: 'বেপরোয়া' — এটাই 'Reckless'।
 7,Gracious,ভদ্র/নম্র,courteous; kind,"Courteous, polite, civil, genial","arrogant, supercilious",৩ বার জোরে বলুন ও কল্পনা করুন: 'ভদ্র/নম্র' — এটাই 'Gracious'।
 7,Enthusiasm,উৎসাহ,great interest or eagerness,"Eagerness, Keenness, Interest","Apathy, Indifference",৩ বার জোরে বলুন ও কল্পনা করুন: 'উৎসাহ' — এটাই 'Enthusiasm'।
 7,Durable,টেকসই/দীর্ঘস্থায়ী,long-lasting,"Enduring, Long lasting","Brittle, Fragile",৩ বার জোরে বলুন ও কল্পনা করুন: 'টেকসই/দীর্ঘস্থায়ী' — এটাই 'Durable'।
-7,Annoy,ফালানো/বিরক্ত করা,to irritate or bother,"Bother, Disturb, Irritate, Perturb","Calm, Pacify, Soothe",৩ বার জোরে বলুন ও কল্পনা করুন: 'ফালানো/বিরক্ত করা' — এটাই 'Annoy'।
+7,Annoy,বিরক্ত করা/জ্বালাতন করা,to irritate or bother,"Bother, Disturb, Irritate, Perturb","Calm, Pacify, Soothe",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিরক্ত করা/জ্বালাতন করা' — এটাই 'Annoy'।
 8,Repent,অনুশোচনা করা,to feel remorse,"be penitent, be contrite",Remorseless,৩ বার জোরে বলুন ও কল্পনা করুন: 'অনুশোচনা করা' — এটাই 'Repent'।
 8,Obsolete,সেকেলে/অপ্রচলিত,outdated,"Antiquated, Antique, archaic",Modern,৩ বার জোরে বলুন ও কল্পনা করুন: 'সেকেলে/অপ্রচলিত' — এটাই 'Obsolete'।
 8,Ruthless,নির্মম,merciless; cruel,"Callous, Merciless","merciful, compassionate",৩ বার জোরে বলুন ও কল্পনা করুন: 'নির্মম' — এটাই 'Ruthless'।
-8,Irrelevant,অপ্রাসঙ্গিক,not relevant,"unrelated, unconnected, Distant, Impertinent, Extraneous","Usual, Normal, Uniform",৩ বার জোরে বলুন ও কল্পনা করুন: 'অপ্রাসঙ্গিক' — এটাই 'Irrelevant'।
+8,Irrelevant,অপ্রাসঙ্গিক,not relevant,"unrelated, unconnected, Distant, Impertinent, Extraneous","Relevant, Pertinent, Germane",৩ বার জোরে বলুন ও কল্পনা করুন: 'অপ্রাসঙ্গিক' — এটাই 'Irrelevant'।
 8,Conceal,গোপন করা,to hide,"Hide, Cover, Mask, Veil","Reveal, Disclose",৩ বার জোরে বলুন ও কল্পনা করুন: 'গোপন করা' — এটাই 'Conceal'।
 8,Careless,অসতর্ক,negligent,"Negligent, Slapdash","Careful, Attentive",'Careless'-এ লুকানো 'car' (গাড়ি) খুঁজে পেল — মনে করুন এর মানে 'অসতর্ক'।
 8,Unconscious,অচেতন,not conscious,"Senseless, Insensate","Conscious, awake",৩ বার জোরে বলুন ও কল্পনা করুন: 'অচেতন' — এটাই 'Unconscious'।
@@ -335,7 +335,7 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 9,Abundance,প্রাচুর্য,plenty; profusion,"Plenty, Profusion, Copiousness","Scarcity, Dearth, Shortage",৩ বার জোরে বলুন ও কল্পনা করুন: 'প্রাচুর্য' — এটাই 'Abundance'।
 9,Honorary,অবৈতনিক,given as an honor,"Voluntary, Unpaid","Salaried, Remunerated",৩ বার জোরে বলুন ও কল্পনা করুন: 'অবৈতনিক' — এটাই 'Honorary'।
 9,Tangible,স্পর্শনীয়,touchable; palpable,"Palpable, Touchable, concrete","Intangible, abstract",৩ বার জোরে বলুন ও কল্পনা করুন: 'স্পর্শনীয়' — এটাই 'Tangible'।
-9,Irregular,অনিয়মিত,not regular,Unconventional,"Honorable, Glorious, Celebrated, Famous",৩ বার জোরে বলুন ও কল্পনা করুন: 'অনিয়মিত' — এটাই 'Irregular'।
+9,Irregular,অনিয়মিত,not regular,Unconventional,"Regular, Normal, Usual",৩ বার জোরে বলুন ও কল্পনা করুন: 'অনিয়মিত' — এটাই 'Irregular'।
 9,Waive,দাবি ত্যাগ করা,to give up a right,"Surrender, relinquish, Forgo","Hold, Retain",৩ বার জোরে বলুন ও কল্পনা করুন: 'দাবি ত্যাগ করা' — এটাই 'Waive'।
 9,Folly,মূর্খতা/নির্বুদ্ধিতা,foolishness,"Foolishness, Stupidity, Absurdity","Wisdom, Sense",৩ বার জোরে বলুন ও কল্পনা করুন: 'মূর্খতা/নির্বুদ্ধিতা' — এটাই 'Folly'।
 9,Stingy,কৃপণ,miserly; tightfisted,"Miserly, Parsimonious, Tightfisted","Generous, Extravagant",৩ বার জোরে বলুন ও কল্পনা করুন: 'কৃপণ' — এটাই 'Stingy'।
@@ -350,21 +350,21 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 9,Jeopardy,বিপদ,danger,"Danger, Hazard, Peril, Risk","Security, Safety",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিপদ' — এটাই 'Jeopardy'।
 10,Sordid,১. নোংরা/২. অসম্মানজনক,1. filthy; 2. ignoble,"1.Filthy, Squalid, 2.Ignoble, Base","1.Clean, 2.Honorable, noble",৩ বার জোরে বলুন ও কল্পনা করুন: '১. নোংরা/২. অসম্মানজনক' — এটাই 'Sordid'।
 10,Indigenous,দেশীয়,native,"Native, Local, Home-grown","Alien, Exotic, Foreign",'In-' মানে না (not) — তাই 'Indigenous' মানে 'দেশীয়'।
-10,Boast,বড়াই করা,to brag,"Show off, Brag, Pride","Spotless, Innocent",৩ বার জোরে বলুন ও কল্পনা করুন: 'বড়াই করা' — এটাই 'Boast'।
+10,Boast,বড়াই করা,to brag,"Show off, Brag, Pride","Modest, Humble",৩ বার জোরে বলুন ও কল্পনা করুন: 'বড়াই করা' — এটাই 'Boast'।
 10,Endurance,সহিষ্ণুতা/সহনশীলতা,the ability to endure,"Stamina, Durability, Patience",Frailty,'Endurance'-এ লুকানো 'end' (শেষ) খুঁজে পেল — মনে করুন এর মানে 'সহিষ্ণুতা/সহনশীলতা'।
 10,Erratic,১. অনিয়মিত/২. অস্থির,1. irregular; 2. unpredictable,"1. Abnormal, Irregular, 2. Capricious, odd","1. Peculiar, Natural, 2. Stable, Consistent",'Erratic'-এ লুকানো 'rat' (ইঁদুর) খুঁজে পেল — মনে করুন এর মানে '১. অনিয়মিত/২. অস্থির'।
 10,Malicious,বিদ্বেষপরায়ণ,spiteful,"Spiteful, Malevolent",Friendly,'mal-' মানে খারাপ (bad) — তাই 'Malicious' মানে 'বিদ্বেষপরায়ণ'।
-10,Linger,দেরিতে যাওয়া,to remain; to stay,"Tarry, Loiter",Leave hastily,৩ বার জোরে বলুন ও কল্পনা করুন: 'দেরিতে যাওয়া' — এটাই 'Linger'।
+10,Linger,"দেরি করা, থেকে যাওয়া",to remain; to stay,"Tarry, Loiter",Leave hastily,"৩ বার জোরে বলুন ও কল্পনা করুন: 'দেরি করা, থেকে যাওয়া' — এটাই 'Linger'।"
 10,Cramped,সংকীর্ণ,confined; narrow,"Crowded, Restricted","Spacious, Roomy",৩ বার জোরে বলুন ও কল্পনা করুন: 'সংকীর্ণ' — এটাই 'Cramped'।
 10,Stamina,দীর্ঘক্ষণ পরিশ্রম করার শক্তি,endurance; energy,"Endurance, Energy, Strength",Weakness,৩ বার জোরে বলুন ও কল্পনা করুন: 'দীর্ঘক্ষণ পরিশ্রম করার শক্তি' — এটাই 'Stamina'।
 10,Beneficial,উপকারী/হিতকর,helpful; advantageous,"advantageous, conducive, congenial, favourable, helpful, useful","Dangerous, Injurious, Destructive, Deleterious, Detrimental, Harmful",'bene-' মানে ভালো (good) — তাই 'Beneficial' মানে 'উপকারী/হিতকর'।
 10,Serene,শান্ত,calm; peaceful,"Tranquil, Calm, Placid","Agitated, Rough",৩ বার জোরে বলুন ও কল্পনা করুন: 'শান্ত' — এটাই 'Serene'।
-10,Sophisticated,১. আধুনিক স্বপ্নপাতি/২. সংসারাত্তি,1. complex; 2. worldly-wise,"1.Complicated, Complex 2.worldly-wise","1.simple, old-fashioned, 2.Naive",'Sophisticated'-এ লুকানো 'cat' (বিড়াল) খুঁজে পেল — মনে করুন এর মানে '১. আধুনিক স্বপ্নপাতি/২. সংসারাত্তি'।
+10,Sophisticated,"১. জটিল, পরিশীলিত/২. দুনিয়াদারি-জ্ঞানসম্পন্ন",1. complex; 2. worldly-wise,"1.Complicated, Complex 2.worldly-wise","1.simple, old-fashioned, 2.Naive","'Sophisticated'-এ লুকানো 'cat' (বিড়াল) খুঁজে পেল — মনে করুন এর মানে '১. জটিল, পরিশীলিত/২. দুনিয়াদারি-জ্ঞানসম্পন্ন'।"
 10,Humorous,কৌতুকপূর্ণ,funny,"Funny, Amusing","Grave, Serious",৩ বার জোরে বলুন ও কল্পনা করুন: 'কৌতুকপূর্ণ' — এটাই 'Humorous'।
 10,Deter,নিবৃত করা,to discourage or prevent,"Abstain, impede, discourage, hinder, debar, dissuade, prevent, prohibit, refrain, restrain, stop","Assist, support, Aid, Abet, give/lend a hand",৩ বার জোরে বলুন ও কল্পনা করুন: 'নিবৃত করা' — এটাই 'Deter'।
 10,Adamant,অমননীয়/গোয়ার,unyielding; stubborn,"Insistent, obstinate, obdurate","Flexible, compliant",'Adamant'-এ লুকানো 'ant' (পিপড়া) খুঁজে পেল — মনে করুন এর মানে 'অমননীয়/গোয়ার'।
 11,Commend,প্রশংসা করা,to praise,"Praise, Extol, Laud, Acclaim","Criticize, Censure",'Commend'-এ লুকানো 'end' (শেষ) খুঁজে পেল — মনে করুন এর মানে 'প্রশংসা করা'।
-11,Dormant,সুপ্ত,inactive; sleeping,"Inactive, Sleeping, Latent","Delightful, Pleasant",'Dormant'-এ লুকানো 'ant' (পিপড়া) খুঁজে পেল — মনে করুন এর মানে 'সুপ্ত'।
+11,Dormant,সুপ্ত,inactive; sleeping,"Inactive, Sleeping, Latent","Active, Awake, Alert",'Dormant'-এ লুকানো 'ant' (পিপড়া) খুঁজে পেল — মনে করুন এর মানে 'সুপ্ত'।
 11,Partisan,১. সমর্থক/২. পৃষ্ঠপোষক,1. supporter; 2. biased,"1. Supporter, Advocate, 2. Biased, Subjective, Partial","1. Adversary, 2. Impartial, neutral",৩ বার জোরে বলুন ও কল্পনা করুন: '১. সমর্থক/২. পৃষ্ঠপোষক' — এটাই 'Partisan'।
 11,Malice,বিদ্বেষ,spite; ill will,"Malevolence, Spite, Rancor","benevolence, generosity",'Malice'-এ লুকানো 'lice' (উকুন) খুঁজে পেল — মনে করুন এর মানে 'বিদ্বেষ'।
 11,Dissent,মতানৈক্য,disagreement,"Disagreement, Differ","Agree, concur, coincide",'dis-' মানে না/বিপরীত (not) — তাই 'Dissent' মানে 'মতানৈক্য'।
@@ -384,7 +384,7 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 12,Valor,সাহস,bravery; courage,"Bravery, Courage, Fortitude","Cowardice, Fear",৩ বার জোরে বলুন ও কল্পনা করুন: 'সাহস' — এটাই 'Valor'।
 12,Eulogy,প্রশংসা ভাষণ,a speech of praise,"Encomium, Panegyric","Criticism, Censure",৩ বার জোরে বলুন ও কল্পনা করুন: 'প্রশংসা ভাষণ' — এটাই 'Eulogy'।
 12,Versatile,বহুমুখী,multitalented; adaptable,"Multitalented, Multipurpose","Limited, restricted",৩ বার জোরে বলুন ও কল্পনা করুন: 'বহুমুখী' — এটাই 'Versatile'।
-12,Chaste,পবিত্র,virtuous; pure,"Virtuous, Decent, Pure","Reward, compensation",৩ বার জোরে বলুন ও কল্পনা করুন: 'পবিত্র' — এটাই 'Chaste'।
+12,Chaste,পবিত্র,virtuous; pure,"Virtuous, Decent, Pure","Immoral, Promiscuous, Lewd",৩ বার জোরে বলুন ও কল্পনা করুন: 'পবিত্র' — এটাই 'Chaste'।
 12,Virtuous,নৈতিক,moral; righteous,"Moral, Righteous, pious","Wicked, Evil",৩ বার জোরে বলুন ও কল্পনা করুন: 'নৈতিক' — এটাই 'Virtuous'।
 12,Arrogance,উদ্ধত/অহংকার,overbearing pride,"Haughtiness, Conceit, Pride",Humility,৩ বার জোরে বলুন ও কল্পনা করুন: 'উদ্ধত/অহংকার' — এটাই 'Arrogance'।
 12,Disperse,ছত্রভঙ্গ করা,to scatter,Disperse,Amass,'dis-' মানে না/বিপরীত (not) — তাই 'Disperse' মানে 'ছত্রভঙ্গ করা'।
@@ -398,12 +398,12 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 13,Discord,১. কলহ/২. বেসুরো,1. conflict; 2. harsh sound,"1.Dispute, Conflict, 2.Cacophony, Dissonance","Harmony, Accord",'dis-' মানে না/বিপরীত (not) — তাই 'Discord' মানে '১. কলহ/২. বেসুরো'।
 13,Monstrous,কুদর্শন/বিশাল,huge and ugly,"colossal, huge, titanic, vast","minuscule, diminutive",৩ বার জোরে বলুন ও কল্পনা করুন: 'কুদর্শন/বিশাল' — এটাই 'Monstrous'।
 13,Eccentric,খামখেয়ালী,unconventional; odd,"Peculiar, Odd, Strange","Common, Ordinary",৩ বার জোরে বলুন ও কল্পনা করুন: 'খামখেয়ালী' — এটাই 'Eccentric'।
-13,Ingenious,উদ্ভাবনী দিমাগ,clever; inventive,"Inventive, Resourceful","Maladroit, Inept",'In-' মানে না (not) — তাই 'Ingenious' মানে 'উদ্ভাবনী দিমাগ'।
+13,Ingenious,"উদ্ভাবনী, মেধাবী",clever; inventive,"Inventive, Resourceful","Maladroit, Inept","'In-' মানে না (not) — তাই 'Ingenious' মানে 'উদ্ভাবনী, মেধাবী'।"
 13,Slump,কমে যাওয়া,to decline; to fall,"Drop, Fall, Dip, Decline","Increase, Rise",৩ বার জোরে বলুন ও কল্পনা করুন: 'কমে যাওয়া' — এটাই 'Slump'।
 13,Motley,বিচিত্র,varied; heterogeneous,"Different, Heterogeneous","Uniform, Homogeneous",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিচিত্র' — এটাই 'Motley'।
 13,Distinguished,বিখ্যাত,famous; celebrated,"Famous, celebrated, renowned","Unknown, unfamiliar",'dis-' মানে না/বিপরীত (not) — তাই 'Distinguished' মানে 'বিখ্যাত'।
 13,Concur,সম্মত হওয়া,to agree,"Agree, coincide, correspond","Disagree, Diverge",৩ বার জোরে বলুন ও কল্পনা করুন: 'সম্মত হওয়া' — এটাই 'Concur'।
-13,Hinder,বাধা দেয়া,to obstruct,"Hamper, Obstruct, Impede","Assist, Facilitate",৩ বার জোরে বলুন ও কল্পনা করুন: 'বাধা দেয়া' — এটাই 'Hinder'।
+13,Hinder,বাধা দেওয়া,to obstruct,"Hamper, Obstruct, Impede","Assist, Facilitate",৩ বার জোরে বলুন ও কল্পনা করুন: 'বাধা দেওয়া' — এটাই 'Hinder'।
 13,Gullible,সহজে প্রতারিত,easily deceived,"Credulous, Susceptible, Trusting, Dupe","Suspicious, Untrusting, Hard to convince",৩ বার জোরে বলুন ও কল্পনা করুন: 'সহজে প্রতারিত' — এটাই 'Gullible'।
 13,Appease,১. শান্ত করা/২. প্রশমিত করা,to pacify; to soothe,"1. Pacify, placate, soothe, 2. Allay, alleviate, mitigate","1. annoy, irritate, enrage, 2. Aggravate, worsen",'Appease'-এ লুকানো 'ease' (স্বস্তি) খুঁজে পেল — মনে করুন এর মানে '১. শান্ত করা/২. প্রশমিত করা'।
 13,Opaque,অস্বচ্ছ,not transparent,"1. Non-transparent, 2. Abstruse, Unintelligible","1. Transparent, 2. Lucid",৩ বার জোরে বলুন ও কল্পনা করুন: 'অস্বচ্ছ' — এটাই 'Opaque'।
@@ -416,7 +416,7 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 14,Ambiguous,দ্ব্যর্থপূর্ণ,unclear; having multiple meanings,"Equivocal, vague, oblique","Definite, clear",'Ambiguous'-এ লুকানো 'big' (বড়) খুঁজে পেল — মনে করুন এর মানে 'দ্ব্যর্থপূর্ণ'।
 14,Treachery,বিশ্বাসঘাতকতা,betrayal; perfidy,"Perfidy, Betrayal, Treason","Loyalty, Faithfulness",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিশ্বাসঘাতকতা' — এটাই 'Treachery'।
 14,Abolish,১. বিলুপ্ত করা/২. বাতিল করা,to put an end to; to annul,"1. Eradicate, obliterate, exterminate, annihilate, 2. Repeal, revoke, annul","1. Establish, set up, found, institute, 2. Validate, legalize",৩ বার জোরে বলুন ও কল্পনা করুন: '১. বিলুপ্ত করা/২. বাতিল করা' — এটাই 'Abolish'।
-14,Crass,অমার্জিত/স্থূল,coarse; crude,"Coarse, Crude, Uncoat","Refined, polished",৩ বার জোরে বলুন ও কল্পনা করুন: 'অমার্জিত/স্থূল' — এটাই 'Crass'।
+14,Crass,অমার্জিত/স্থূল,coarse; crude,"Coarse, Crude, Uncouth","Refined, polished",৩ বার জোরে বলুন ও কল্পনা করুন: 'অমার্জিত/স্থূল' — এটাই 'Crass'।
 14,Compulsory,বাধ্যতামূলক,mandatory,"Mandatory, Obligatory","Voluntary, Optional",৩ বার জোরে বলুন ও কল্পনা করুন: 'বাধ্যতামূলক' — এটাই 'Compulsory'।
 14,Prodigal,অপব্যয়ী,wasteful; extravagant,"Spendthrift, Wasteful","Frugal, Economical",৩ বার জোরে বলুন ও কল্পনা করুন: 'অপব্যয়ী' — এটাই 'Prodigal'।
 14,Revoke,বাতিল/রদ করা,to repeal; to cancel,"Repeal, Annul, abrogate",Validate,৩ বার জোরে বলুন ও কল্পনা করুন: 'বাতিল/রদ করা' — এটাই 'Revoke'।
@@ -427,9 +427,9 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 14,Compliant,বাধ্য,obedient,"Obedient, Docile, Amenable","Recalcitrant, unruly",'Compliant'-এ লুকানো 'ant' (পিপড়া) খুঁজে পেল — মনে করুন এর মানে 'বাধ্য'।
 14,Diligent,পরিশ্রমী,hardworking,"Industrious, Hardworking, Assiduous, Persevering","Apathetic, Lethargic",৩ বার জোরে বলুন ও কল্পনা করুন: 'পরিশ্রমী' — এটাই 'Diligent'।
 15,Everlasting,চিরস্থায়ী/অনন্ত,eternal,"Eternal, Perpetual, permanent","Ephemeral, Fleeting",৩ বার জোরে বলুন ও কল্পনা করুন: 'চিরস্থায়ী/অনন্ত' — এটাই 'Everlasting'।
-15,Feverish,জ্বরজ্বর ভাব,excited; restless,"Agitated, Restless, Excited","Calm, Composed",৩ বার জোরে বলুন ও কল্পনা করুন: 'জ্বরজ্বর ভাব' — এটাই 'Feverish'।
+15,Feverish,"উত্তেজিত, জ্বরাক্রান্ত",excited; restless,"Agitated, Restless, Excited","Calm, Composed","৩ বার জোরে বলুন ও কল্পনা করুন: 'উত্তেজিত, জ্বরাক্রান্ত' — এটাই 'Feverish'।"
 15,Hypocrisy,ভণ্ডামি/কপটতা,insincerity,"insincerity, pretence, duplicity","Candor, Sincerity",৩ বার জোরে বলুন ও কল্পনা করুন: 'ভণ্ডামি/কপটতা' — এটাই 'Hypocrisy'।
-15,Lessen,হ্রাস করা,to reduce,"Alleviate, Mitigate, Assuage",Intensity,৩ বার জোরে বলুন ও কল্পনা করুন: 'হ্রাস করা' — এটাই 'Lessen'।
+15,Lessen,হ্রাস করা,to reduce,"Alleviate, Mitigate, Assuage","Increase, Intensify",৩ বার জোরে বলুন ও কল্পনা করুন: 'হ্রাস করা' — এটাই 'Lessen'।
 15,Banal,গতানুগতিক/একঘেয়ে,commonplace; trite,"Trite, hackneyed, prosaic, pedestrian","Stimulating, new, novel, original",৩ বার জোরে বলুন ও কল্পনা করুন: 'গতানুগতিক/একঘেয়ে' — এটাই 'Banal'।
 15,Superficial,ভাসাভাসা,shallow; not thorough,"Cursory, perfunctory","thorough, profound, deep",'super-' মানে উপরে/অতিরিক্ত (above) — তাই 'Superficial' মানে 'ভাসাভাসা'।
 15,Formidable,ভীতিকর/দুর্ধর্ষ,inspiring fear,"Alarming, awful, dreadful",Enjoyable,৩ বার জোরে বলুন ও কল্পনা করুন: 'ভীতিকর/দুর্ধর্ষ' — এটাই 'Formidable'।
@@ -447,8 +447,8 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 16,Debacle,পতন/ধ্বংস,a sudden collapse,"Disaster, Collapse, Fiasco","Planned, Organized",৩ বার জোরে বলুন ও কল্পনা করুন: 'পতন/ধ্বংস' — এটাই 'Debacle'।
 16,Tranquil,শান্ত,calm; peaceful,"Calm, serene, unperturbed, unruffled, undisturbed, quiet","Agitated, Ruffled",৩ বার জোরে বলুন ও কল্পনা করুন: 'শান্ত' — এটাই 'Tranquil'।
 16,Adept,অভিজ্ঞ/দক্ষ,very skilled,"Skilled, Skillful, Expert, Proficient, Adroit, Dexterous","Awkward, unskilled, Clumsy, Inept, Inexpert",৩ বার জোরে বলুন ও কল্পনা করুন: 'অভিজ্ঞ/দক্ষ' — এটাই 'Adept'।
-16,Dismantle,ভেঙে ফেলা,to take apart,"Demolish, Dismantle","Biased, prejudiced",'Dismantle'-এ লুকানো 'ant' (পিপড়া) খুঁজে পেল — মনে করুন এর মানে 'ভেঙে ফেলা'।
-16,Intimidate,ভয় দেখানো,to frighten,"Frighten, daunt, terrify","Dishonesty, Fraud",'in-' মানে না (not) — তাই 'Intimidate' মানে 'ভয় দেখানো'।
+16,Dismantle,ভেঙে ফেলা,to take apart,"Demolish, Dismantle","Assemble, build, construct",'Dismantle'-এ লুকানো 'ant' (পিপড়া) খুঁজে পেল — মনে করুন এর মানে 'ভেঙে ফেলা'।
+16,Intimidate,ভয় দেখানো,to frighten,"Frighten, daunt, terrify","Encourage, Reassure, Embolden",'in-' মানে না (not) — তাই 'Intimidate' মানে 'ভয় দেখানো'।
 16,Tardy,১. মন্থর/২. বিলম্বিত,1. slow; 2. late,"1. Lethargic, Sluggish, 2. Late","1. Speedy, Prompt, 2. Punctual",৩ বার জোরে বলুন ও কল্পনা করুন: '১. মন্থর/২. বিলম্বিত' — এটাই 'Tardy'।
 16,Vigor,কর্মশক্তি,energy; strength,"Verve, Vim, Energy",Lethargy,৩ বার জোরে বলুন ও কল্পনা করুন: 'কর্মশক্তি' — এটাই 'Vigor'।
 16,Haughty,অহঙ্কারী,arrogant,"Arrogant, Supercilious, proud","Humble, modest, meek",৩ বার জোরে বলুন ও কল্পনা করুন: 'অহঙ্কারী' — এটাই 'Haughty'।
@@ -468,7 +468,7 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 17,Accumulate,জমা করা/সঞ্চয় করা,to gather or collect,"Heap up, Amass, Collect, Gather, Hoard, Mount up","Diffuse, Disperse, Spread, Scatter",৩ বার জোরে বলুন ও কল্পনা করুন: 'জমা করা/সঞ্চয় করা' — এটাই 'Accumulate'।
 17,Anemic,রক্তশূন্য,lacking blood; weak,"1. Hemoglobin deficiency, 2. Pale, Pallid, Colorless",Florid,৩ বার জোরে বলুন ও কল্পনা করুন: 'রক্তশূন্য' — এটাই 'Anemic'।
 17,Benefactor,উপকারক/দাতা,one who gives help or money,"Donor, Patron, Sponsor, Supporter",mischief-maker,'bene-' মানে ভালো (good) — তাই 'Benefactor' মানে 'উপকারক/দাতা'।
-17,Rebellious,১. বিদ্রোহী সুলভ/২. অবাধ্য,1. defiant; 2. disobedient,"1.Mutinous, Seditious, 2.Disobedient, Unruly","1.Patriotic, Loyal, 2.Obedient",'re-' মানে পুনরায় (again) — তাই 'Rebellious' মানে '১. বিদ্রোহী সুলভ/২. অবাধ্য'।
+17,Rebellious,১. বিদ্রোহী/২. অবাধ্য,1. defiant; 2. disobedient,"1.Mutinous, Seditious, 2.Disobedient, Unruly","1.Patriotic, Loyal, 2.Obedient",'re-' মানে পুনরায় (again) — তাই 'Rebellious' মানে '১. বিদ্রোহী/২. অবাধ্য'।
 17,Squander,অপচয় করা,to waste,"Dissipate, lavish, waste","Save, Hoard",৩ বার জোরে বলুন ও কল্পনা করুন: 'অপচয় করা' — এটাই 'Squander'।
 17,Constructive,গঠনমূলক,helpful; beneficial,"Beneficial, Productive","Destructive, Useless",৩ বার জোরে বলুন ও কল্পনা করুন: 'গঠনমূলক' — এটাই 'Constructive'।
 17,Negligent,অবহেলাকারী,careless,"Careless, inattentive",Thoughtful,৩ বার জোরে বলুন ও কল্পনা করুন: 'অবহেলাকারী' — এটাই 'Negligent'।
@@ -484,8 +484,8 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 18,Belittle,ছোট করা,to make seem less important,"Deride, Jeer, Scorn, Despise","Praise, Magnify, Glorify",৩ বার জোরে বলুন ও কল্পনা করুন: 'ছোট করা' — এটাই 'Belittle'।
 18,Facsimile,হুবহু প্রতিনিধি,an exact copy,"Copy, duplicate, Replica","Original, real",৩ বার জোরে বলুন ও কল্পনা করুন: 'হুবহু প্রতিনিধি' — এটাই 'Facsimile'।
 18,Placid,শান্ত,calm; peaceful,"calm, composed, serene, docile","Turbulent, tumultuous",৩ বার জোরে বলুন ও কল্পনা করুন: 'শান্ত' — এটাই 'Placid'।
-18,Indifferent,উদাসীন,apathetic; uncaring,"Apathetic, Neutral, callous","Enthusiastic, Biased",৩ বার জোরে বলুন ও কল্পনা করুন: 'উদাসীন' — এটাই 'Indifferent'।
-18,Immaculate,নিখুঁত,perfectly clean,"Impeccable, spotless, perfect","Real, True, actual",'im-' মানে না (not) — তাই 'Immaculate' মানে 'নিখুঁত'।
+18,Indifferent,উদাসীন,apathetic; uncaring,"Apathetic, Neutral, callous","Enthusiastic, Concerned, Interested",৩ বার জোরে বলুন ও কল্পনা করুন: 'উদাসীন' — এটাই 'Indifferent'।
+18,Immaculate,নিখুঁত,perfectly clean,"Impeccable, spotless, perfect","Dirty, Stained, Impure",'im-' মানে না (not) — তাই 'Immaculate' মানে 'নিখুঁত'।
 18,Frugal,মিতব্যয়ী,economical,"Economical, sparing, thrifty","Spendthrift, squanderer",৩ বার জোরে বলুন ও কল্পনা করুন: 'মিতব্যয়ী' — এটাই 'Frugal'।
 18,Proficient,দক্ষ,skilled,"Adroit, Deft, Dexterous","Inept, Clumsy",৩ বার জোরে বলুন ও কল্পনা করুন: 'দক্ষ' — এটাই 'Proficient'।
 19,Compulsion,বাধ্যবাধকতা,a strong urge; force,"Coercion, Pressure","Voluntary, By choice",৩ বার জোরে বলুন ও কল্পনা করুন: 'বাধ্যবাধকতা' — এটাই 'Compulsion'।
@@ -493,7 +493,7 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 19,Bigotry,ধর্মান্ধতা,intolerance; prejudice,"Intolerance, prejudice","Friendly, amicable",'Bigotry'-এ লুকানো 'big' (বড়) খুঁজে পেল — মনে করুন এর মানে 'ধর্মান্ধতা'।
 19,Surmise,অনুমান করা,to guess; to conjecture,"Conjecture, Suppose, Guess","Certainty, Knowledge",৩ বার জোরে বলুন ও কল্পনা করুন: 'অনুমান করা' — এটাই 'Surmise'।
 19,Animosity,শত্রুতা,hostility; ill will,"Antagonism, hostility, rivalry","Amity, Harmony",৩ বার জোরে বলুন ও কল্পনা করুন: 'শত্রুতা' — এটাই 'Animosity'।
-19,Insidious,সূক্ষ্ম,treacherous; sly,"Deceitful, Tricky",Ingenuous,'In-' মানে না (not) — তাই 'Insidious' মানে 'সূক্ষ্ম'।
+19,Insidious,গোপনে ক্ষতিকর; কপট,treacherous; sly,"Deceitful, Tricky",Ingenuous,'In-' মানে না (not) — তাই 'Insidious' মানে 'গোপনে ক্ষতিকর; কপট'।
 19,Renovate,মেরামত করে নতুন করা,to renovate; to restore,Revamp,"Damage, Destroy",৩ বার জোরে বলুন ও কল্পনা করুন: 'মেরামত করে নতুন করা' — এটাই 'Renovate'।
 19,Resourceful,সৃজনশীলতাসম্পন্ন,able to find solutions,"Inventive, Creative, Ingenious",Uninventive,৩ বার জোরে বলুন ও কল্পনা করুন: 'সৃজনশীলতাসম্পন্ন' — এটাই 'Resourceful'।
 19,Squalid,১. নোংরা/২. অসম্মানজনক,1. filthy; 2. degraded,"1. Filthy, Squalid, 2. Ignoble, Base","1. Clean, 2. Honorable, noble",৩ বার জোরে বলুন ও কল্পনা করুন: '১. নোংরা/২. অসম্মানজনক' — এটাই 'Squalid'।
@@ -511,14 +511,14 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 20,Alienate,বিরোধ সৃষ্টি করা,to make unfriendly or hostile,"Estrange, isolate","reconcile, settle, reunite",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিরোধ সৃষ্টি করা' — এটাই 'Alienate'।
 20,Gluttony,পেটুকামি,excessive eating,"Voracity, overeating","dieting, starving, fasting",৩ বার জোরে বলুন ও কল্পনা করুন: 'পেটুকামি' — এটাই 'Gluttony'।
 20,Relinquish,(দায়িত্ব/পদ) ত্যাগ করা,to give up; to surrender,"Give up, Abdicate, Renounce, Relinquish, Step down from","Hold, Retain",৩ বার জোরে বলুন ও কল্পনা করুন: '(দায়িত্ব/পদ) ত্যাগ করা' — এটাই 'Relinquish'।
-20,Impertinent,১. দুর্ভাষী/২. অপ্রাসঙ্গিক,1. rude; 2. irrelevant,"1. imprudent, insolent, brazen, 2. Irrelevant, extraneous",Evanescent,'im-' মানে না (not) — তাই 'Impertinent' মানে '১. দুর্ভাষী/২. অপ্রাসঙ্গিক'।
+20,Impertinent,"১. ধৃষ্ট, অশিষ্ট/২. অপ্রাসঙ্গিক",1. rude; 2. irrelevant,"1. imprudent, insolent, brazen, 2. Irrelevant, extraneous","Respectful, Polite, Courteous",'im-' মানে না (not) — তাই 'Impertinent' মানে '১. ধৃষ্ট, অশিষ্ট/২. অপ্রাসঙ্গিক'।
 20,Unavoidable,অনিবার্য,inevitable,"Inevitable, Ineluctable",Doubtful,'un-' মানে না (not) — তাই 'Unavoidable' মানে 'অনিবার্য'।
 20,Averse,বিতৃষ্ণা/অনিচ্ছুক,strongly disinclined,"Disinclined, loath, reluctant","avid, eager, keen, ardent",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিতৃষ্ণা/অনিচ্ছুক' — এটাই 'Averse'।
 20,Insipid,স্বাদহীন,dull; tasteless,"1. Tasteless, Savourless, 2. Banal, Boring, Dull","1. Tasty, Palatable, 2. Interesting, Exciting",'In-' মানে না (not) — তাই 'Insipid' মানে 'স্বাদহীন'।
 20,Agitate,বিশৃঙ্খলা করা,to disturb or stir up,"Excite, incite, stimulate","pacify, appease, soothe",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিশৃঙ্খলা করা' — এটাই 'Agitate'।
 20,Clandestine,গোপন,secret; covert,"Secret, Covert, Furtive","Open, Revealed, Frank",৩ বার জোরে বলুন ও কল্পনা করুন: 'গোপন' — এটাই 'Clandestine'।
 20,Dearth,অভাব,a scarcity,"Scarcity, Paucity, shortage","Abundance, Plethora",'Dearth'-এ লুকানো 'ear' (কান) খুঁজে পেল — মনে করুন এর মানে 'অভাব'।
-20,Ascetic,সন্ন্যাসী,practicing self-denial,"austere, abstemious, abstinent",Hedonistic,৩ বার জোরে বলুন ও কল্পনা করুন: 'সন্ন্যাসী' — এটাই 'Ascetic'।
+20,Ascetic,কৃচ্ছ্রসাধক/সংযমী,practicing self-denial,"austere, abstemious, abstinent",Hedonistic,৩ বার জোরে বলুন ও কল্পনা করুন: 'কৃচ্ছ্রসাধক/সংযমী' — এটাই 'Ascetic'।
 21,Inane,বোকামিপূর্ণ/অর্থহীন,foolish; senseless,"Foolish, Senseless, Silly",Judicious,'in-' মানে না (not) — তাই 'Inane' মানে 'বোকামিপূর্ণ/অর্থহীন'।
 21,Steadfast,দৃঢ়/অটল,loyal; unwavering,Unwavering,Wavering,'Steadfast'-এ লুকানো 'fast' (দ্রুত) খুঁজে পেল — মনে করুন এর মানে 'দৃঢ়/অটল'।
 21,Acumen,তীক্ষ্ণ বুদ্ধি,keenness of judgment,"Sagacity, judiciousness","Ignorance, stupidity",৩ বার জোরে বলুন ও কল্পনা করুন: 'তীক্ষ্ণ বুদ্ধি' — এটাই 'Acumen'।
@@ -527,7 +527,7 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 21,Dejected,বিষণ্ণ,sad; depressed,"Depressed, Despondent","Happy, Elated, Content",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিষণ্ণ' — এটাই 'Dejected'।
 21,Meagre,অপ্রচুর,scanty; inadequate,"Scanty, Paltry, Sparse","copious, plentiful, enough",৩ বার জোরে বলুন ও কল্পনা করুন: 'অপ্রচুর' — এটাই 'Meagre'।
 21,Harmonious,সুসংগত,melodious; agreeable,"Melodious, Mellifluous",Harsh,'Harmonious'-এ লুকানো 'arm' (হাত) খুঁজে পেল — মনে করুন এর মানে 'সুসংগত'।
-21,Incessant,অবিরাম,unceasing,"Ceaseless, Interminable","Meaningful, Sensible",'Incessant'-এ লুকানো 'ant' (পিপড়া) খুঁজে পেল — মনে করুন এর মানে 'অবিরাম'।
+21,Incessant,অবিরাম,unceasing,"Ceaseless, Interminable","Intermittent, Occasional, Periodic",'Incessant'-এ লুকানো 'ant' (পিপড়া) খুঁজে পেল — মনে করুন এর মানে 'অবিরাম'।
 21,Scarcity,ঘাটতি/অভাব,shortage; lack,"Rarity, Insufficiency, Paucity, Dearth, Shortage, Deficiency","Abundance, Copiousness, Profusion, Plenty, Plethora",'Scarcity'-এ লুকানো 'car' (গাড়ি) খুঁজে পেল — মনে করুন এর মানে 'ঘাটতি/অভাব'।
 21,Abate,কমানো/প্রশমিত,to reduce in intensity; to subside,"Decrease, Diminish, Dwindle","Enhance, Increase",নিচের প্লাস্টিকের 'bat' (ব্যাট) ভেঙে গেল — মনে করুন এর মানে 'কমানো/প্রশমিত'।
 21,Monotonous,একঘেয়ে,boring; dull,"Boring, Humdrum, Dull",Interesting,'mono-' মানে এক (one) — তাই 'Monotonous' মানে 'একঘেয়ে'।
@@ -547,15 +547,15 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 22,Fascinate,মুগ্ধ করা,to charm; to captivate,"Charm, Captivate",Bore,৩ বার জোরে বলুন ও কল্পনা করুন: 'মুগ্ধ করা' — এটাই 'Fascinate'।
 22,Aggravate,অবনতি ঘটানো,to make worse or more severe,"deteriorate, intensify, worsen","Improve, mitigate",৩ বার জোরে বলুন ও কল্পনা করুন: 'অবনতি ঘটানো' — এটাই 'Aggravate'।
 22,Salient,প্রধান/সুস্পষ্ট,prominent; noticeable,"main, prominent","minor, trifling",৩ বার জোরে বলুন ও কল্পনা করুন: 'প্রধান/সুস্পষ্ট' — এটাই 'Salient'।
-22,Cursory,দ্রুত পৃষ্ঠপোষকতা,hasty; superficial,"Hasty, perfunctory, Superficial","Careful, Thorough",৩ বার জোরে বলুন ও কল্পনা করুন: 'দ্রুত পৃষ্ঠপোষকতা' — এটাই 'Cursory'।
-22,Impervious,অভেদ্য,impenetrable,"Impenetrable, Impermeable","1.polite, civil, courteous, 2.Pertinent, Germane",'im-' মানে না (not) — তাই 'Impervious' মানে 'অভেদ্য'।
+22,Cursory,"দ্রুত, ভাসাভাসা",hasty; superficial,"Hasty, perfunctory, Superficial","Careful, Thorough","৩ বার জোরে বলুন ও কল্পনা করুন: 'দ্রুত, ভাসাভাসা' — এটাই 'Cursory'।"
+22,Impervious,অভেদ্য,impenetrable,"Impenetrable, Impermeable","Vulnerable, Permeable, Penetrable",'im-' মানে না (not) — তাই 'Impervious' মানে 'অভেদ্য'।
 22,Assent,সম্মত হওয়া,to agree,"Agree, acquiesce, concur","dissent, disagree, oppose",৩ বার জোরে বলুন ও কল্পনা করুন: 'সম্মত হওয়া' — এটাই 'Assent'।
 22,Aver,নিশ্চয়তা সহকারে বলা,to affirm confidently,"Affirm, Assert, Avow","Repudiate, Disavow",৩ বার জোরে বলুন ও কল্পনা করুন: 'নিশ্চয়তা সহকারে বলা' — এটাই 'Aver'।
 23,Assuage,১. শান্ত করা/২. উপশম করা,to soothe; to relieve,"1. Pacify, appease, calm, 2. Alleviate, mitigate, ease","1. excite, agitate, provoke, 2. Aggravate, worsen",৩ বার জোরে বলুন ও কল্পনা করুন: '১. শান্ত করা/২. উপশম করা' — এটাই 'Assuage'।
 23,Philanthropy,পরোপকার,love of mankind,"Charity, Beneficence","nastiness, malevolence",'Philanthropy'-এ লুকানো 'ant' (পিপড়া) খুঁজে পেল — মনে করুন এর মানে 'পরোপকার'।
 23,Prosaic,গতানুগতিক/একঘেয়ে,dull; unimaginative,"Dull, Humdrum, Trite, Vapid","Fascinating, Exciting",৩ বার জোরে বলুন ও কল্পনা করুন: 'গতানুগতিক/একঘেয়ে' — এটাই 'Prosaic'।
 23,Instigate,উস্কানি দেওয়া,to provoke,"Provoke, Incite, stimulate",Respectful,'Instigate'-এ লুকানো 'gate' (গেট) খুঁজে পেল — মনে করুন এর মানে 'উস্কানি দেওয়া'।
-23,Ignoble,নীচ,dishonorable,"Despicable, disgraceful","Pertinent, Germane, Relevant",৩ বার জোরে বলুন ও কল্পনা করুন: 'নীচ' — এটাই 'Ignoble'।
+23,Ignoble,নীচ,dishonorable,"Despicable, disgraceful","Noble, Honorable",৩ বার জোরে বলুন ও কল্পনা করুন: 'নীচ' — এটাই 'Ignoble'।
 23,Flourishing,সমৃদ্ধশালী,thriving; prospering,"Prospering, Thriving, Booming","Declining, Failing",৩ বার জোরে বলুন ও কল্পনা করুন: 'সমৃদ্ধশালী' — এটাই 'Flourishing'।
 23,Superfluous,প্রয়োজনাতিরিক্ত,unnecessary; excessive,"Unnecessary, Excessive, Extra","Essential, Necessary",৩ বার জোরে বলুন ও কল্পনা করুন: 'প্রয়োজনাতিরিক্ত' — এটাই 'Superfluous'।
 23,Indignation,ক্ষোভ,anger; resentment,"Anger, Fury, Ire, Vexation","Pleasure, Gratification",'In-' মানে না (not) — তাই 'Indignation' মানে 'ক্ষোভ'।
@@ -564,12 +564,12 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 23,Brevity,সংক্ষিপ্ততা,shortness; briefness,"1. Shortness, Pithiness, 2. Temporality, Evanescence","1. Prolixity, Verbosity, 2. Permanence",৩ বার জোরে বলুন ও কল্পনা করুন: 'সংক্ষিপ্ততা' — এটাই 'Brevity'।
 23,Ephemeral,ক্ষণস্থায়ী,short-lived,"Passing, temporary, transient","eternal, lasting, perpetual",৩ বার জোরে বলুন ও কল্পনা করুন: 'ক্ষণস্থায়ী' — এটাই 'Ephemeral'।
 23,Languid,নিস্তেজ/দুর্বল,weak; sluggish,"Feeble, Weak, Weary",Energetic,৩ বার জোরে বলুন ও কল্পনা করুন: 'নিস্তেজ/দুর্বল' — এটাই 'Languid'।
-23,Intolerance,অসহিষ্ণুতা,bigotry; prejudice,"Bigotry, prejudice","Encourage, hearten",'in-' মানে না (not) — তাই 'Intolerance' মানে 'অসহিষ্ণুতা'।
+23,Intolerance,অসহিষ্ণুতা,bigotry; prejudice,"Bigotry, prejudice","Tolerance, Acceptance, Open-mindedness",'in-' মানে না (not) — তাই 'Intolerance' মানে 'অসহিষ্ণুতা'।
 23,Plethora,আধিক্য,excess,"Excess, Surplus","Dearth, Scarcity",৩ বার জোরে বলুন ও কল্পনা করুন: 'আধিক্য' — এটাই 'Plethora'।
 24,Amity,বন্ধুত্ব,friendship,"Friendship, Harmony","Enmity, hostility",৩ বার জোরে বলুন ও কল্পনা করুন: 'বন্ধুত্ব' — এটাই 'Amity'।
 24,Inebriated,মাতাল,drunk,"Drunk, Intoxicated","Sober, Abstemious",'In-' মানে না (not) — তাই 'Inebriated' মানে 'মাতাল'।
 24,Spurious,ভুয়া/অপ্রকৃত,false; counterfeit,"Counterfeit, Fake, Bogus","Genuine, Authentic",৩ বার জোরে বলুন ও কল্পনা করুন: 'ভুয়া/অপ্রকৃত' — এটাই 'Spurious'।
-24,Imprudent,হঠকারী/বেপরোয়া,rash; reckless,"Rash, Reckless, Hasty",Vulnerable,'im-' মানে না (not) — তাই 'Imprudent' মানে 'হঠকারী/বেপরোয়া'।
+24,Imprudent,হঠকারী/বেপরোয়া,rash; reckless,"Rash, Reckless, Hasty","Prudent, Cautious, Wise",'im-' মানে না (not) — তাই 'Imprudent' মানে 'হঠকারী/বেপরোয়া'।
 24,Pessimism,হতাশা,hopelessness,"Gloom, Hopelessness","Optimism, Sanguinity",৩ বার জোরে বলুন ও কল্পনা করুন: 'হতাশা' — এটাই 'Pessimism'।
 24,Boisterous,হৈচৈপূর্ণ,loud and energetic,"Clamorous, Uproarious","Peaceful, Tranquil",৩ বার জোরে বলুন ও কল্পনা করুন: 'হৈচৈপূর্ণ' — এটাই 'Boisterous'।
 24,Puerile,শিশুসুলভ,childish,"Childish, Foolish, Silly","Mature, Intelligent",৩ বার জোরে বলুন ও কল্পনা করুন: 'শিশুসুলভ' — এটাই 'Puerile'।
@@ -585,16 +585,16 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 25,Disparity,অসমতা,inequality,"Inequality, Disparity","Agree, concur",'dis-' মানে না/বিপরীত (not) — তাই 'Disparity' মানে 'অসমতা'।
 25,Peevish,খিটখিটে,irritable,"Petulant, Irritable",Agreeable,৩ বার জোরে বলুন ও কল্পনা করুন: 'খিটখিটে' — এটাই 'Peevish'।
 25,Parochial,সংকীর্ণ,narrow-minded,"Local, Provincial","Worldwide, global",৩ বার জোরে বলুন ও কল্পনা করুন: 'সংকীর্ণ' — এটাই 'Parochial'।
-25,Illusory,মায়াময়/অলীক,deceptive; unreal,"Deceptive, illusive",Laudable,৩ বার জোরে বলুন ও কল্পনা করুন: 'মায়াময়/অলীক' — এটাই 'Illusory'।
+25,Illusory,মায়াময়/অলীক,deceptive; unreal,"Deceptive, illusive","Real, Genuine, Actual",৩ বার জোরে বলুন ও কল্পনা করুন: 'মায়াময়/অলীক' — এটাই 'Illusory'।
 25,Sanguine,আশাবাদী,optimistic; hopeful,"Optimistic, Hopeful","Pessimistic, Cynical",৩ বার জোরে বলুন ও কল্পনা করুন: 'আশাবাদী' — এটাই 'Sanguine'।
-25,Favoritism,পক্ষপাত,favoring one over others,"Partially, Bias, Preference","Fairness, Impartiality",৩ বার জোরে বলুন ও কল্পনা করুন: 'পক্ষপাত' — এটাই 'Favoritism'।
+25,Favoritism,পক্ষপাত,favoring one over others,"Partiality, Bias, Preference","Fairness, Impartiality",৩ বার জোরে বলুন ও কল্পনা করুন: 'পক্ষপাত' — এটাই 'Favoritism'।
 25,Glut,আধিক্য,an excess,"Excess, surplus","Serve, diet, fast",৩ বার জোরে বলুন ও কল্পনা করুন: 'আধিক্য' — এটাই 'Glut'।
 25,Unwary,অসতর্ক,not cautious,"Heedless, Rash","Circumspect, Discreet",'Unwary'-এ লুকানো 'war' (যুদ্ধ) খুঁজে পেল — মনে করুন এর মানে 'অসতর্ক'।
 25,Painstaking,পরিশ্রমী,very careful,"Thorough, Meticulous","Negligent, Careless",৩ বার জোরে বলুন ও কল্পনা করুন: 'পরিশ্রমী' — এটাই 'Painstaking'।
 25,Immutable,অপরিবর্তনীয়,unchangeable,"Unchangeable, Unalterable","Alterable, Flexible",'Im-' মানে না (not) — তাই 'Immutable' মানে 'অপরিবর্তনীয়'।
-25,Innumerable,অগণিত,too many to count,"Excessive, Innumerate",Moderate,'In-' মানে না (not) — তাই 'Innumerable' মানে 'অগণিত'।
+25,Innumerable,অগণিত,too many to count,"Countless, Numberless, Untold","Few, Limited, Scarce",'In-' মানে না (not) — তাই 'Innumerable' মানে 'অগণিত'।
 25,Homogeneous,সমজাতীয়,of the same kind,"Same kind, Similar, Identical","Heterogeneous, Mixed",'homo-' মানে একই (same) — তাই 'Homogeneous' মানে 'সমজাতীয়'।
-25,Gargantuan,বিশাল,huge; enormous,"colossal, gigantic, massive, Overeat, overdose, gorge","minuscule, tiny, minute",'Gargantuan'-এ লুকানো 'ant' (পিপড়া) খুঁজে পেল — মনে করুন এর মানে 'বিশাল'।
+25,Gargantuan,বিশাল,huge; enormous,"colossal, gigantic, massive, enormous, huge","minuscule, tiny, minute",'Gargantuan'-এ লুকানো 'ant' (পিপড়া) খুঁজে পেল — মনে করুন এর মানে 'বিশাল'।
 25,Disparage,অবমূল্যায়ন করা,to belittle,"Criticize, Belittle, deride","Applause, extol, praise",'dis-' মানে না/বিপরীত (not) — তাই 'Disparage' মানে 'অবমূল্যায়ন করা'।
 25,Disparate,অসম,different; unequal,Disparate,"Similar, Like, Akin",'Disparate'-এ লুকানো 'rat' (ইঁদুর) খুঁজে পেল — মনে করুন এর মানে 'অসম'।
 26,Taciturn,স্বল্পভাষী,reserved; quiet,"Reticent, Uncommunicative, Reserved, Introverted, Silent","Loquacious, Talkative, Garrulous",৩ বার জোরে বলুন ও কল্পনা করুন: 'স্বল্পভাষী' — এটাই 'Taciturn'।
@@ -603,13 +603,13 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 26,Dulcet,মধুর,sweet-sounding,"Mellifluous, Melodious",Harsh,৩ বার জোরে বলুন ও কল্পনা করুন: 'মধুর' — এটাই 'Dulcet'।
 26,Penury,দারিদ্র্য,extreme poverty,"Poverty, Indigence, destitution","Opulence, wealth, riches",'Penury'-এ লুকানো 'pen' (কলম) খুঁজে পেল — মনে করুন এর মানে 'দারিদ্র্য'।
 26,Judicious,বিচক্ষণ/বিবেচক,wise; prudent,"Sagacious, Sage, Prudent","Rash, Foolhardy",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিচক্ষণ/বিবেচক' — এটাই 'Judicious'।
-26,Extraneous,অপ্রাসঙ্গিক,irrelevant; extra,"1. Not German, 2. Foreign, Alien, Exotic","1. Germane, Relevant, 2. Indigenous",৩ বার জোরে বলুন ও কল্পনা করুন: 'অপ্রাসঙ্গিক' — এটাই 'Extraneous'।
+26,Extraneous,অপ্রাসঙ্গিক,irrelevant; extra,"1. Irrelevant, Unrelated, 2. Foreign, Alien, Exotic","1. Germane, Relevant, 2. Indigenous",৩ বার জোরে বলুন ও কল্পনা করুন: 'অপ্রাসঙ্গিক' — এটাই 'Extraneous'।
 26,Reprehensible,নিন্দনীয়,deserving blame,"Culpable, Blameworthy",Praiseworthy,৩ বার জোরে বলুন ও কল্পনা করুন: 'নিন্দনীয়' — এটাই 'Reprehensible'।
 26,Engender,উৎপন্ন করা,to create; to cause,"Generate, Produce","Destroy, Obliterate",৩ বার জোরে বলুন ও কল্পনা করুন: 'উৎপন্ন করা' — এটাই 'Engender'।
-26,Tortuous,জটিল,winding; complex,"Winding, Sinus, Meandering","Straight, Direct",৩ বার জোরে বলুন ও কল্পনা করুন: 'জটিল' — এটাই 'Tortuous'।
+26,Tortuous,"আঁকাবাঁকা, পেঁচানো",winding; complex,"Winding, Serpentine, Meandering","Straight, Direct","৩ বার জোরে বলুন ও কল্পনা করুন: 'আঁকাবাঁকা, পেঁচানো' — এটাই 'Tortuous'।"
 26,Sycophant,চাটুকার/তোষামোদকারী,a flatterer,"Flatterer, Fawner","critic, censor, opponent",'Sycophant'-এ লুকানো 'ant' (পিপড়া) খুঁজে পেল — মনে করুন এর মানে 'চাটুকার/তোষামোদকারী'।
 26,Perishable,ধ্বংসনীয়,subject to decay,"Subject to decay, Short-lived","Durable, Lasting",৩ বার জোরে বলুন ও কল্পনা করুন: 'ধ্বংসনীয়' — এটাই 'Perishable'।
-26,Didactic,নীতিশিক্ষামূলক,intended to teach,"Educational, Instructive","Quiet, Silence",৩ বার জোরে বলুন ও কল্পনা করুন: 'নীতিশিক্ষামূলক' — এটাই 'Didactic'।
+26,Didactic,নীতিশিক্ষামূলক,intended to teach,"Educational, Instructive","Entertaining, Amusing",৩ বার জোরে বলুন ও কল্পনা করুন: 'নীতিশিক্ষামূলক' — এটাই 'Didactic'।
 26,Coalesce,একত্রিত হওয়া,to come together,"Unify, Unite, Combine","Separate, Divide",৩ বার জোরে বলুন ও কল্পনা করুন: 'একত্রিত হওয়া' — এটাই 'Coalesce'।
 26,Probity,সততা,honesty; integrity,"Honesty, Integrity, Uprightness","Dishonesty, Corruption",৩ বার জোরে বলুন ও কল্পনা করুন: 'সততা' — এটাই 'Probity'।
 26,Scanty,স্বল্প/অপর্যাপ্ত,meager; inadequate,"Sparse, Scant, Meagre/meager","copious, plentiful, enough",৩ বার জোরে বলুন ও কল্পনা করুন: 'স্বল্প/অপর্যাপ্ত' — এটাই 'Scanty'।
@@ -643,7 +643,7 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 28,Inadvertent,অসতর্ক,unintentional,"Unintentional, accidental","Deliberate, on purpose",'Inadvertent'-এ লুকানো 'tent' (তাঁবু) খুঁজে পেল — মনে করুন এর মানে 'অসতর্ক'।
 28,Decry,নিন্দা করা,to criticize strongly,"Censure, Disparage","Extol, Laud, Praise",'Decry'-এ লুকানো 'cry' (কান্না) খুঁজে পেল — মনে করুন এর মানে 'নিন্দা করা'।
 28,Loquacious,বাচাল,talkative,"Talkative, Garrulous","Taciturn, Reticent",৩ বার জোরে বলুন ও কল্পনা করুন: 'বাচাল' — এটাই 'Loquacious'।
-28,Dishevelled,এলোমেলো,untidy; disordered,"Unkempt, Ruffled, Disorderly","Unruffled, pruned",'dis-' মানে না/বিপরীত (not) — তাই 'Dishevelled' মানে 'এলোমেলো'।
+28,Dishevelled,এলোমেলো,untidy; disordered,"Unkempt, Ruffled, Disorderly","Unruffled, neat",'dis-' মানে না/বিপরীত (not) — তাই 'Dishevelled' মানে 'এলোমেলো'।
 29,Torpid,নিষ্ক্রিয়/অলস,sluggish; inactive,"Sluggish, Idle, Inactive","Energetic, Active",৩ বার জোরে বলুন ও কল্পনা করুন: 'নিষ্ক্রিয়/অলস' — এটাই 'Torpid'।
 29,Perfunctory,অমনোযোগী,done without care,"Cursory, Superficial","Thorough, Thoughtful",৩ বার জোরে বলুন ও কল্পনা করুন: 'অমনোযোগী' — এটাই 'Perfunctory'।
 29,Bellicose,মারমুখী/ঝগড়াটে,warlike; aggressive,"Belligerent, Hostile","Peaceful, Pacific",৩ বার জোরে বলুন ও কল্পনা করুন: 'মারমুখী/ঝগড়াটে' — এটাই 'Bellicose'।
@@ -651,7 +651,7 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 29,Perturb,বিচলিত করা,to disturb,"Disturb, Bother, Upset","Calm, Pacify, Soothe",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিচলিত করা' — এটাই 'Perturb'।
 29,Crestfallen,নিরাশ,dejected; discouraged,"daunted, Dejected, Depressed","Elated, Delighted, Glad",'Crestfallen'-এ লুকানো 'rest' (বিশ্রাম) খুঁজে পেল — মনে করুন এর মানে 'নিরাশ'।
 29,Pugnacious,ঝগড়াটে,quarrelsome,"Quarrelsome, Contentious","Peaceful, friendly",৩ বার জোরে বলুন ও কল্পনা করুন: 'ঝগড়াটে' — এটাই 'Pugnacious'।
-29,Mellifluous,মধুর,sweet-sounding,"Sweet, Melodious, Dulcet","Harsh, Discordant",৩ বার জোরে বলুন ও কল্পনা করুন: 'মধুর' — এটাই 'Mellifluous'।
+29,Mellifluous,মধুর,sweet-sounding,"Sweet, Melodious, Dulcet, Euphonious","Harsh, Discordant, Raucous",৩ বার জোরে বলুন ও কল্পনা করুন: 'মধুর' — এটাই 'Mellifluous'।
 29,Ameliorate,উন্নত করা,to improve,"Improve, Get better, Upgrade","Deteriorate, Worsen",'Ameliorate'-এ লুকানো 'rat' (ইঁদুর) খুঁজে পেল — মনে করুন এর মানে 'উন্নত করা'।
 29,Abridge,সংক্ষেপ করা,to shorten,"Shorten, Condense, Reduce","Expand, Enlarge",৩ বার জোরে বলুন ও কল্পনা করুন: 'সংক্ষেপ করা' — এটাই 'Abridge'।
 29,Tractable,নমনীয়,obedient; manageable,"Docile, Amenable, Compliant","Refractory, Unruly",৩ বার জোরে বলুন ও কল্পনা করুন: 'নমনীয়' — এটাই 'Tractable'।
@@ -662,38 +662,24 @@ day,word,bengali_meaning,definition,synonyms,antonyms,memory_trick
 29,Adulterate,ভেজাল মেশানো,to make impure by adding inferior substances,"Contaminate, Pollute, Infect, Soil, dirty, foul, taint, defile","Purity, Clean, disinfect, decontaminate",'Adulterate'-এ লুকানো 'rat' (ইঁদুর) খুঁজে পেল — মনে করুন এর মানে 'ভেজাল মেশানো'।
 30,Vacillate,দ্বিধা করা,to waver; to hesitate,"Dither, hesitate, waver","Determine, Be steadfast",৩ বার জোরে বলুন ও কল্পনা করুন: 'দ্বিধা করা' — এটাই 'Vacillate'।
 30,Evanescent,ক্ষণস্থায়ী,vanishing; fleeting,"Fleeting, temporary, transient","enduring, permanent",৩ বার জোরে বলুন ও কল্পনা করুন: 'ক্ষণস্থায়ী' — এটাই 'Evanescent'।
-30,Abrogate,রহিত করা,to abolish or annul,"Annul, Abolish, Eliminate","Enact, Pass, Ratify",'Abrogate'-এ লুকানো 'gate' (গেট) ভেঙে গেল — মনে করুন এর মানে 'রহিত করা'।
-30,Commodious,প্রশস্ত,spacious; roomy,"Roomy, Spacious, Capacious",Discomposure,৩ বার জোরে বলুন ও কল্পনা করুন: 'প্রশস্ত' — এটাই 'Commodious'।
+30,Abrogate,রহিত করা,to abolish or annul,"Annul, Abolish, Eliminate, countermand","Enact, Pass, Ratify",'Abrogate'-এ লুকানো 'gate' (গেট) ভেঙে গেল — মনে করুন এর মানে 'রহিত করা'।
+30,Commodious,প্রশস্ত,spacious; roomy,"Roomy, Spacious, Capacious","Cramped, Narrow, Confined",৩ বার জোরে বলুন ও কল্পনা করুন: 'প্রশস্ত' — এটাই 'Commodious'।
 30,Deprecate,অসম্মতি জানানো,to express disapproval of,"Disapprove, Condemn","Endorse, Approve",'Deprecate'-এ লুকানো 'cat' (বিড়াল) খুঁজে পেল — মনে করুন এর মানে 'অসম্মতি জানানো'।
 30,Laudatory,প্রশংসামূলক,expressing praise,"Praising, Complimentary",Blameworthy,৩ বার জোরে বলুন ও কল্পনা করুন: 'প্রশংসামূলক' — এটাই 'Laudatory'।
 30,Parsimonious,কৃপণ,stingy,"Frugal, Thrifty, Sparing","Extravagant, Spendthrift",৩ বার জোরে বলুন ও কল্পনা করুন: 'কৃপণ' — এটাই 'Parsimonious'।
 30,Pusillanimous,কাপুরুষ,cowardly,"Cowardly, Timid, Timorous","Brave, valiant, valorous",৩ বার জোরে বলুন ও কল্পনা করুন: 'কাপুরুষ' — এটাই 'Pusillanimous'।
 30,Desultory,এলোমেলো,random; unplanned,"indiscriminate, random","Lazy, Indolent, Slothful",৩ বার জোরে বলুন ও কল্পনা করুন: 'এলোমেলো' — এটাই 'Desultory'।
 30,Ineluctable,অনিবার্য,inescapable,"Inevitable, Inexorable","Avoidable, Preventable",'In-' মানে না (not) — তাই 'Ineluctable' মানে 'অনিবার্য'।
-30,Penurious,দরিদ্র,extremely poor,"Hazardous, Perilous, Risky","Safe, secure",৩ বার জোরে বলুন ও কল্পনা করুন: 'দরিদ্র' — এটাই 'Penurious'।
+30,Penurious,দরিদ্র,extremely poor,"Poor, Needy, Impoverished","Affluent, Wealthy, Rich",৩ বার জোরে বলুন ও কল্পনা করুন: 'দরিদ্র' — এটাই 'Penurious'।
 30,Blameworthy,নিন্দনীয়,deserving blame,"Blameable, Guilty, Culpable",Praiseworthy,৩ বার জোরে বলুন ও কল্পনা করুন: 'নিন্দনীয়' — এটাই 'Blameworthy'।
 30,Imperturbable,অবিচলিত,calm; unexcitable,"Unexcitable, Calm, Unruffled",Perturbable,'Im-' মানে না (not) — তাই 'Imperturbable' মানে 'অবিচলিত'।
 30,Grandiloquent,আড়ম্বরপূর্ণ,pompous; bombastic,"Pompous, Showy, Bombastic","Simple, Humble",৩ বার জোরে বলুন ও কল্পনা করুন: 'আড়ম্বরপূর্ণ' — এটাই 'Grandiloquent'।
-30,Impensable,অনন্ত,everlasting,"Everlasting, durable, enduring","Impure, unclean, dirty",৩ বার জোরে বলুন ও কল্পনা করুন: 'অনন্ত' — এটাই 'Impensable'।
-3,Abrogate,(আইন) লোপ করা,to abolish or repeal a law,"Abolish, countermand",Enact,'Abrogate'-এ লুকানো 'gate' (গেট) খুঁজে পেল — মনে করুন এর মানে '(আইন) লোপ করা'।
-13,Benevolent,দয়ালু/বান্ধব,kind; generous,"Kind, Generous, Compassionate","Cruel, Ruthless",৩ বার জোরে বলুন ও কল্পনা করুন: 'দয়ালু/বান্ধব' — এটাই 'Benevolent'।
-20,Mellifluous,মধুর,sweet-sounding,"Euphonious, Dulcet","Harsh, Raucous",৩ বার জোরে বলুন ও কল্পনা করুন: 'মধুর' — এটাই 'Mellifluous'।
-24,Profound,গভীর জ্ঞানপূর্ণ,deep; insightful,"Wise, Sagacious, Sage","Stupid, Inane, idiotic",৩ বার জোরে বলুন ও কল্পনা করুন: 'গভীর জ্ঞানপূর্ণ' — এটাই 'Profound'।
-28,Calamity,বিপর্যয়,disaster,"catastrophe, disaster, tragedy","Blessing, miracle",৩ বার জোরে বলুন ও কল্পনা করুন: 'বিপর্যয়' — এটাই 'Calamity'।
-28,Glamorous,মোহনীয়,attractive; fascinating,"Fascinating, Thrilling, Attractive, Eye-catching","Unattractive, dull",৩ বার জোরে বলুন ও কল্পনা করুন: 'মোহনীয়' — এটাই 'Glamorous'।
-28,Lessen,হ্রাস করা,to reduce,"Alleviate, Mitigate, Assuage",Intensity,৩ বার জোরে বলুন ও কল্পনা করুন: 'হ্রাস করা' — এটাই 'Lessen'।
-28,Barren,অনুর্বর/বন্ধ্যা,infertile,"arid, infertile, sterile, unproductive, unfruitful","Fertile, fruitful, lush, productive, prolific",৩ বার জোরে বলুন ও কল্পনা করুন: 'অনুর্বর/বন্ধ্যা' — এটাই 'Barren'।
-28,Torpid,নিষ্ক্রিয়/অলস,sluggish; inactive,"Sluggish, Idle, Inactive","Energetic, Active",৩ বার জোরে বলুন ও কল্পনা করুন: 'নিষ্ক্রিয়/অলস' — এটাই 'Torpid'।
-28,Bondage,দাসত্ব,slavery,Slavery,"Broad-mindedness, Liberty, freedom",৩ বার জোরে বলুন ও কল্পনা করুন: 'দাসত্ব' — এটাই 'Bondage'।
-28,Ruthless,নির্মম,merciless,"Callous, Merciless","merciful, compassionate",৩ বার জোরে বলুন ও কল্পনা করুন: 'নির্মম' — এটাই 'Ruthless'।
-28,Luster,উজ্জ্বল্য,brightness; shine,"Brightness, Shine, Brilliance",Dullness,৩ বার জোরে বলুন ও কল্পনা করুন: 'উজ্জ্বল্য' — এটাই 'Luster'।
-28,Deleterious,ক্ষতিকর,harmful,"Detrimental, Harmful","Beneficial, Helpful",৩ বার জোরে বলুন ও কল্পনা করুন: 'ক্ষতিকর' — এটাই 'Deleterious'।
-28,Flexible,নমনীয়,pliable; adaptable,"Bendy, Pliable, Elastic","Rigid, Stiff",৩ বার জোরে বলুন ও কল্পনা করুন: 'নমনীয়' — এটাই 'Flexible'।
+30,Imperishable,অনন্ত,everlasting,"Everlasting, durable, enduring","Transient, fleeting, short-lived",৩ বার জোরে বলুন ও কল্পনা করুন: 'অনন্ত' — এটাই 'Imperishable'।
 </script>
 <script type="text/plain" id="idata">
 day,phrase_id,phrase,english_meaning,bengali_meaning
 1,113,Go all out,Try hard,সর্বশক্তি দিয়ে চেষ্টা করা
-1,105,Get out of,To avoid doing something,এড়িয়ে চলা; রহাই পাওয়া
+1,105,Get out of,To avoid doing something,এড়িয়ে চলা; রেহাই পাওয়া
 1,218,Once for all,Finally; for the last time,চিরতরে; শেষবারের মতো
 1,19,Back up,To support,সমর্থন করা
 1,220,Out and out,Complete; thoroughly,পুরোপুরি; সম্পূর্ণ
@@ -788,7 +774,7 @@ day,phrase_id,phrase,english_meaning,bengali_meaning
 8,6,Apple of one's eye,A person who is very dear to someone,নয়নের মণি; অত্যন্ত প্রিয় ব্যক্তি
 8,334,Under the weather,Slightly ill,অসুস্থ বোধ করা
 8,132,Hit the roof,To become suddenly very angry,হঠাৎ খুব রাগান্বিত হওয়া
-9,253,Pull a long face,To look sad or disappointed,দুঃখ ভার করা; বিষণ্ণ দেখাানো
+9,253,Pull a long face,To look sad or disappointed,দুঃখ ভার করা; বিষণ্ণ দেখানো
 9,306,Steal the show,To attract the most attention and praise,সবার মনোযোগ কেড়ে নেওয়া
 9,124,Hard and fast,Fixed; strict,বাঁধা-ধরা; অনড়
 9,122,Hand in glove,In very close association,ঘনিষ্ঠ যোগসাজশে
@@ -871,7 +857,7 @@ day,phrase_id,phrase,english_meaning,bengali_meaning
 15,231,Over head and ears,Deeply involved (in debt work etc.),আপাদমস্তক; গভীরভাবে জড়িত
 15,311,Stuff and nonsense,Foolish or meaningless talk,আজেবাজে বা অর্থহীন কথা
 15,339,Vicious circle,A cycle in which problems keep making each other worse,দুষ্টচক্র; সমস্যা যা আরও সমস্যা সৃষ্টি করে
-15,22,Bag and baggage,With all one's belongings,সব লিলানসপ্রসহ
+15,22,Bag and baggage,With all one's belongings,সব জিনিসপত্রসহ
 16,357,Worth its weight in gold,Very valuable,অত্যন্ত মূল্যবান
 16,304,Stand in good stead,To be useful in the future,পরে কাজে আসা; উপকারে লাগা
 16,346,A wet blanket,A person who spoils others' fun,অন্যদের আনন্দ নষ্টকারী ব্যক্তি
@@ -891,11 +877,11 @@ day,phrase_id,phrase,english_meaning,bengali_meaning
 17,212,Off the record,Unofficial; not for publication,অনানুষ্ঠানিক; প্রকাশের জন্য নয়
 17,152,Ins and outs,All the details,সব খুঁটিনাটি
 17,303,Square meal,A full satisfying meal,পেট ভরা আহার; পরিপূর্ণ খাবার
-17,58,By virtue of,On account of; because of,কারণে; বলবীতে
+17,58,By virtue of,On account of; because of,এর কারণে; বলে
 17,168,Learn by heart,To memorize,মুখস্থ করা
 17,198,A man of straw,A worthless or weak person,অপদার্থ ব্যক্তি; অকেজো লোক
 17,278,Rule of thumb,A rough method based on practical experience,অভিজ্ঞতালব্ধ মোটামুটি নিয়ম
-17,180,Look blank,To look puzzled or expressionless,হতবুদ্ধি দেখাানো
+17,180,Look blank,To look puzzled or expressionless,হতবুদ্ধি দেখানো
 18,289,Silver lining,A hopeful sign in a bad situation,দুঃসময়ের মাঝে আশার আলো
 18,67,Cry wolf,To raise a false alarm,মিথ্যা বিপদের সংকেত দেওয়া
 18,261,Rain cats and dogs,To rain very heavily,মুষলধারে বৃষ্টি হওয়া
@@ -935,12 +921,12 @@ day,phrase_id,phrase,english_meaning,bengali_meaning
 21,213,Olive branch,A symbol of peace,শান্তির প্রতীক
 21,165,Kill two birds with one stone,To achieve two aims with one action,এক ঢিলে দুই পাখি মারা
 21,23,Bark up the wrong tree,To follow a mistaken course of action,ভুল পথে বা ভুল লোকের পেছনে ছোটা
-21,69,Cut and dried,Fixed; settled beforehand,পূর্বনির্ধারিত; ধারাবাহিক
+21,69,Cut and dried,Fixed; settled beforehand,পূর্বনির্ধারিত; সুনির্দিষ্ট
 21,76,Dog in the manger,A person who spoils others' enjoyment of what he cannot use himself,নিজে ভোগ না করে অন্যের ভোগে বাধা দেওয়া ব্যক্তি
 21,308,Stick one's neck out,To take a risk by speaking or acting boldly,ঝুঁকি নিয়ে সাহসের সাথে বলা বা করা
 21,164,Kick the bucket,To die (informal),মারা যাওয়া (অনানুষ্ঠানিক)
 21,37,A blessing in disguise,Something that seems bad but turns out to be good,আপাত মন্দ থেকে আসা কল্যাণ
-21,42,Bread and butter,One's means of livelihood,জীবিকা; রুটি-কমাই
+21,42,Bread and butter,One's means of livelihood,জীবিকা; রুটি-রুজি
 21,238,Patch something up,To settle a quarrel often temporarily,সাময়িকভাবে মিটমাট করা
 21,352,With a heavy heart,With sadness,বিষণ্ণ হৃদয়ে; ভারাক্রান্ত মনে
 21,187,Maiden voyage,First voyage,প্রথম সমুদ্রযাত্রা
@@ -989,7 +975,7 @@ day,phrase_id,phrase,english_meaning,bengali_meaning
 25,340,Vote rigging,Cheating in an election,ভোট জালিয়াতি; নির্বাচনে কারচুপি
 25,314,Take for granted,To assume as certain; to undervalue,ধরে নেওয়া; গুরুত্ব না দেওয়া
 25,50,Bury the hatchet,To end a quarrel and make peace,বিবাদ মিটিয়ে ফেলা
-25,39,A bolt from the blue,A sudden and unexpected event,অগ্ন্যাশয় ঘটনা; বিনা মেঘে বজ্রপাত
+25,39,A bolt from the blue,A sudden and unexpected event,অপ্রত্যাশিত ঘটনা; বিনা মেঘে বজ্রপাত
 25,30,Between the devil and the deep sea,Faced with two equally bad choices,উভয়সংকট; দুই বিপদের মাঝখানে
 25,28,To beat a retreat,To withdraw,পিছু হটা; পশ্চাদপসরণ করা
 26,335,An uphill task,A difficult tiring task,কষ্টসাধ্য কাজ
@@ -1021,7 +1007,7 @@ day,phrase_id,phrase,english_meaning,bengali_meaning
 28,5,An apple of discord,A cause of quarrel,বিবাদের মূল কারণ
 28,107,Gift of the gab,Skill in speaking; eloquence,বাকপটুতা
 28,33,A bird's-eye view,A general view of something from above; an overview,ওপর থেকে দেখা সামগ্রিক দৃশ্য; সামগ্রিক ধারণা
-28,18,At the zenith,At the highest point; at the peak,উল্লম্ব শিখরে
+28,18,At the zenith,At the highest point; at the peak,চরম শিখরে; সর্বোচ্চ পর্যায়ে
 28,293,Six of one and half a dozen of the other,Little or no difference between two options,দুটির মধ্যে প্রায় কোনো পার্থক্য নেই
 28,251,Pour oil on troubled waters,To calm a quarrel,ঝগড়া থামিয়ে পরিস্থিতি শান্ত করা
 28,354,With impunity,Without being punished,শাস্তি ছাড়াই; দণ্ডমুক্তভাবে
@@ -1055,7 +1041,7 @@ day,phrase_id,phrase,english_meaning,bengali_meaning
 </script>
 <script type="text/plain" id="wsdata">
 Word,Bengali Meaning,Example Sentence,Source
-more,"জলাভূমি, ভেজা জমি",The traveler struggled through the sodden more.,Word Smart II
+moor,"জলাভূমি, ভেজা জমি",The traveler struggled through the sodden moor.,Word Smart II
 address,সম্বোধন করা; মনোযোগ দেওয়া,The president addressed the nation on television.,Word Smart I
 access,"প্রবেশাধিকার, সুযোগ",Only staff have access to the restricted area.,Word Smart I + Word Smart II
 channel,নির্দিষ্ট পথে পরিচালিত করা,She channeled her energy into writing a novel.,Word Smart II
@@ -1083,7 +1069,7 @@ gravity,"গুরুত্ব, গাম্ভীর্য; মাধ্যা�
 legacy,"উত্তরাধিকার, পূর্বপুরুষদের রেখে যাওয়া সম্পদ",His legacy lives on through his students.,Word Smart I
 trauma,"মানসিক আঘাত, গভীর ক্ষত",Survivors of the disaster suffered severe emotional trauma.,Word Smart II
 elite,"অভিজাত শ্রেণী, সেরা অংশ",Only the elite were invited to the private reception.,Word Smart II
-appropriate,উপযুক্ত; অনুমতি ছাড়া নেওয়া,The funds were appropriated for road construction.,Word Smart I
+appropriate,বরাদ্দ করা; নির্দিষ্ট উদ্দেশ্যে রাখা,The funds were appropriated for road construction.,Word Smart I
 lobby,তদবির করা; প্রভাবশালী দল,Pharmaceutical companies lobby heavily against price controls.,Word Smart II
 ethics,"নীতিশাস্ত্র, নৈতিক আচরণের মানদণ্ড",The company had a strong code of business ethics.,Word Smart II
 toxic,বিষাক্ত,The factory leaked toxic waste into the river.,Word Smart II
@@ -1193,7 +1179,7 @@ exquisite,"অত্যন্ত সুন্দর, সূক্ষ্ম; ত�
 notorious,কুখ্যাত,He was notorious for his violent temper.,Word Smart I
 cerebral,"বুদ্ধিবৃত্তিক, মস্তিষ্কসংক্রান্ত",Chess is a very cerebral game.,Word Smart I
 competent,"দক্ষ, যোগ্য",She is a highly competent surgeon with twenty years of experience.,Word Smart II
-induce,"প্ররোচিত করা, ঘটানো",Exercise can induce a feeling of well- being.,Word Smart II
+induce,"প্ররোচিত করা, ঘটানো",Exercise can induce a feeling of well-being.,Word Smart II
 avail,"উপকারে আসা, সুবিধা",All efforts to save the crop were of no avail.,Word Smart II
 infamous,"কুখ্যাত, বদনামপ্রাপ্ত",Al Capone was infamous for his criminal empire.,Word Smart I
 imminent,"আসন্ন, শীঘ্রই ঘটবে এমন",An imminent storm prompted evacuation warnings.,Word Smart I
@@ -1277,7 +1263,7 @@ critique,সমালোচনামূলক পর্যালোচনা,Her
 slander,"মিথ্যা অপবাদ দেওয়া, কুৎসা রটানো",He sued her for slander.,Word Smart I
 inherent,"সহজাত, অন্তর্নিহিত",Risk is inherent in any investment.,Word Smart I
 underlying,"অন্তর্নিহিত, মূল",The underlying cause of the conflict was economic inequality.,Word Smart II
-presumably,"সম্ভবত, অনুমানত",He was presumably unaware of the risks involved.,Word Smart II
+presumably,"সম্ভবত, অনুমানে",He was presumably unaware of the risks involved.,Word Smart II
 forte,"বিশেষ দক্ষতা, সবল দিক",Public speaking has always been her forte.,Word Smart II
 latent,"সুপ্ত, অপ্রকাশিত",She had a latent talent for painting.,Word Smart I
 affiliate,যুক্ত করা; যুক্ত হওয়া,The small hospital affiliated itself with a larger medical center.,Word Smart I + Word Smart II
@@ -1456,7 +1442,7 @@ opaque,"অস্বচ্ছ, দুর্বোধ্য",The manager's opaque
 impartial,"নিরপেক্ষ, পক্ষপাতহীন",A judge must be impartial when hearing a case.,Word Smart I
 artisan,"দক্ষ কারিগর, শিল্পী",The artisan carved intricate designs into the wood.,Word Smart II
 acclaim,"প্রশংসা করা, জয়ধ্বনি দেওয়া",The film received widespread acclaim from critics.,Word Smart I + Word Smart II
-vocation,"পেশা, ব্রত",Teaching is not just a job it's a vocation.,Word Smart I
+vocation,"পেশা, ব্রত",Teaching is not just a job; it's a vocation.,Word Smart I
 appalling,"ভয়াবহ, বিভীষণ",The conditions in the prison were absolutely appalling.,Word Smart II
 libel,মানহানিকর লিখিত অভিযোগ,The newspaper was sued for libel.,Word Smart I
 complement,"পরিপূরক হওয়া, পরিপূরক বস্তু",Red wine complements red meat perfectly.,Word Smart I
@@ -1514,7 +1500,7 @@ hypocrisy,"ভণ্ডামি, কপটতা",His hypocrisy was exposed whe
 amorous,"প্রেমাসক্ত, কামুক",He cast an amorous glance at her across the room.,Word Smart I
 labyrinth,"গোলকধাঁধা, জটিল পথ",The old city was a labyrinth of narrow streets.,Word Smart I
 banal,"নীরস, সাধারণ, গতানুগতিক",His speech was full of banal remarks.,Word Smart I
-cynic,"নিন্দুক, সন্দেহপ্রবণ ব্যক্তি",The cynic doubted the politician's true motives.,Word Smart I
+cynic,"সংশয়বাদী; নৈরাশ্যবাদী",The cynic doubted the politician's true motives.,Word Smart I
 entrepreneur,"উদ্যোক্তা, ব্যবসায়ী",He became a successful entrepreneur by age thirty.,Word Smart II
 infrastructure,"অবকাঠামো, মূল কাঠামো",The country invested heavily in its digital infrastructure.,Word Smart II
 lout,"অভদ্র লোক, গোঁয়ার",He behaved like a complete lout at the party.,Word Smart II
@@ -1565,7 +1551,7 @@ attest,"সাক্ষ্য দেওয়া, প্রমাণ করা",
 autonomous,স্বায়ত্তশাসিত,The region became autonomous after the peace agreement.,Word Smart I
 pilgrimage,তীর্থযাত্রা,Millions make a pilgrimage to Mecca each year.,Word Smart II
 intricate,"জটিল, সূক্ষ্ম",The intricate design required weeks of careful work.,Word Smart II
-quasi,"প্রায়, অনেকটা",The organization had a quasi- governmental role.,Word Smart II
+quasi,"প্রায়, অনেকটা",The organization had a quasi-governmental role.,Word Smart II
 correlation,পারস্পরিক সম্পর্ক,There is a strong correlation between education and income.,Word Smart II
 criterion,"মাপকাঠি, মানদণ্ড",What is the main criterion for selecting candidates?,Word Smart I
 affront,"অপমান, ইচ্ছাকৃত অবমাননা",His rude comment was an affront to everyone present.,Word Smart I + Word Smart II
@@ -1581,7 +1567,7 @@ comprise,"অন্তর্ভুক্ত থাকা, গঠিত হওয
 clique,"গোষ্ঠী, ঘনিষ্ঠ দল",The popular kids formed a clique that excluded others.,Word Smart I
 paternal,পিতৃসুলভ,He offered paternal advice to the young employee.,Word Smart I
 embargo,"নিষেধাজ্ঞা, বাণিজ্য বন্ধের আদেশ",The UN imposed an arms embargo on the warring nation.,Word Smart II
-patronize,পৃষ্ঠপোষকতা করা; অবজ্ঞাভরে আচরণ করা,Please don't patronize me I know what I'm doing.,Word Smart I
+patronize,পৃষ্ঠপোষকতা করা; অবজ্ঞাভরে আচরণ করা,Please don't patronize me; I know what I'm doing.,Word Smart I
 provisional,"অস্থায়ী, সাময়িক",A provisional agreement was signed pending review.,Word Smart I
 revel,"উল্লাস করা, মেতে থাকা",She reveled in the praise she received.,Word Smart II
 predecessor,"পূর্বসূরি, আগের ব্যক্তি",She honored the work of her predecessors.,Word Smart II
@@ -1614,9 +1600,9 @@ chimera,"অলীক কল্পনা, মায়া",His plans for overnig
 defile,"অপবিত্র করা, কলুষিত করা",Littering defiles the beauty of the natural landscape.,Word Smart II
 remission,"মওকুফ, সাময়িক উপশম",The cancer went into remission after treatment.,Word Smart II
 dismay,"আতঙ্কিত করা, হতাশ করা",The bad news filled her with dismay.,Word Smart II
-proprietary,"মালিকানাধীন, স্বত্বাধিকারের",This is proprietary software it cannot be copied.,Word Smart I
+proprietary,"মালিকানাধীন, স্বত্বাধিকারের",This is proprietary software; it cannot be copied.,Word Smart I
 thwart,"ব্যর্থ করা, বাধা দেওয়া",Their escape plan was thwarted by security guards.,Word Smart II
-deluge,"প্লাবন, বন্যা",The heavy rain caused a deluge in the low- lying areas.,Word Smart I
+deluge,"প্লাবন, বন্যা",The heavy rain caused a deluge in the low-lying areas.,Word Smart I
 benefactor,"উপকারী, দাতা",An anonymous benefactor donated a new library to the school.,Word Smart I
 posterity,"উত্তরসূরি, ভবিষ্যৎ প্রজন্ম",We must protect the environment for posterity.,Word Smart II
 bravado,মিথ্যা সাহসিকতা প্রদর্শন,His bravado in front of his friends was merely an act.,Word Smart II
@@ -1692,7 +1678,7 @@ insatiable,"অতৃপ্ত, যার পেট ভরে না এমন",
 punitive,শাস্তিমূলক,The punitive measures were intended to deter future violations.,Word Smart II
 subside,"কমে যাওয়া, থিতিয়ে পড়া",The floodwaters slowly subsided after three days.,Word Smart II
 surmise,অনুমান করা,He surmised that she was unhappy from her expression.,Word Smart II
-implication,"ইঙ্গিত, পরিণতি",The implications of the new law are far- reaching.,Word Smart II
+implication,"ইঙ্গিত, পরিণতি",The implications of the new law are far-reaching.,Word Smart II
 armistice,"যুদ্ধবিরতি, অস্থায়ী সন্ধি","The armistice ended the fighting on November 11, 1918.",Word Smart II
 affliction,"কষ্ট, রোগ",Poverty is an affliction that affects millions worldwide.,Word Smart I + Word Smart II
 envision,"কল্পনা করা, মনের চোখে দেখা",He envisioned a future where no child went hungry.,Word Smart II
@@ -1730,7 +1716,7 @@ disarray,বিশৃঙ্খলা,The office was in complete disarray after t
 conservatory,"সংগীত বিদ্যালয়, সবুজ ঘর",She trained at a renowned music conservatory.,Word Smart II
 exhume,"কবর থেকে তোলা, খুঁড়ে বের করা",The body was exhumed for further forensic examination.,Word Smart II
 dissuade,নিরুৎসাহিত করা,Her parents tried to dissuade her from dropping out of school.,Word Smart II
-impetuous,"উতলা, আবেগপ্রবণ",His impetuous decision led to serious regrets.,Word Smart I + Word Smart II
+impetuous,"আবেগপ্রবণ, হঠকারী",His impetuous decision led to serious regrets.,Word Smart I + Word Smart II
 droll,"মজাদার, অদ্ভুতভাবে হাস্যকর",He told a droll story that made everyone chuckle quietly.,Word Smart II
 tenuous,"ক্ষীণ, দুর্বল",His argument rested on a tenuous assumption.,Word Smart I
 embryonic,"ভ্রূণাবস্থার, প্রাথমিক অবস্থার",The project was still in its embryonic stage.,Word Smart II
@@ -1884,7 +1870,7 @@ cull,বাছাই করা,She culled the best poems for the anthology.,Word
 prattle,"বকবক করা, অর্থহীন কথা বলা",The child prattled on about her day at school.,Word Smart II
 tepid,হালকা গরম; নিরুৎসাহী,The audience gave a tepid response to the new product.,Word Smart II
 inclination,"ঝোঁক, প্রবণতা",She had a natural inclination toward music from childhood.,Word Smart II
-catholic,"বিশ্বজনীন, উদার",Her taste in music was catholic she liked everything.,Word Smart I
+catholic,"বিশ্বজনীন, উদার",Her taste in music was catholic; she liked everything.,Word Smart I
 spurn,"প্রত্যাখ্যান করা, অবজ্ঞা করা",She spurned his offer of financial help.,Word Smart II
 incendiary,আগুন লাগানোর; উসকানিমূলক,His incendiary speech inflamed the angry crowd.,Word Smart II
 maudlin,"আবেগপ্রবণ, ভাবালু",She became maudlin after a few drinks.,Word Smart I
@@ -1955,7 +1941,7 @@ conducive,"সহায়ক, অনুকূল",A quiet room is conducive to 
 harbinger,"অগ্রদূত, পূর্বাভাস",Dark clouds are a harbinger of rain.,Word Smart I + Word Smart II
 substantive,"মূল, সারবান",We need substantive progress in negotiations.,Word Smart I
 incarnation,"অবতার, মূর্ত রূপ",He was seen as the incarnation of compassion by his followers.,Word Smart II
-cursory,"তাড়াহুড়ো করা, ভাসাভাসা",A cursory glance at the report revealed several errors.,Word Smart I + Word Smart II
+cursory,"ভাসাভাসা, তাড়াহুড়োর",A cursory glance at the report revealed several errors.,Word Smart I + Word Smart II
 dour,"কঠোর, গম্ভীর",The dour librarian rarely smiled at patrons.,Word Smart II
 contiguous,"সংলগ্ন, পাশাপাশি",The two countries share a contiguous border.,Word Smart I
 deference,"শ্রদ্ধা, বিনম্র সম্মান",He spoke with deference to the senior professor.,Word Smart I
@@ -2037,7 +2023,7 @@ plethora,"প্রাচুর্য, অতিরিক্ততা",There is 
 suffrage,ভোটাধিকার,Women fought for decades to win universal suffrage.,Word Smart II
 vacuous,"শূন্য, ভাবনাহীন",His vacuous stare suggested he hadn't understood a word.,Word Smart II
 appendage,"সংযোজন, অতিরিক্ত অংশ",The report had a lengthy appendage of footnotes.,Word Smart II
-stipulate,শর্ত হিসেবে উল্লেখ করা,as The contract stipulates a three-month notice period.,Word Smart I
+stipulate,শর্ত হিসেবে উল্লেখ করা,The contract stipulates a three-month notice period.,Word Smart I
 forthright,"স্পষ্টবাদী, খোলামেলা",Her forthright manner made negotiations much easier.,Word Smart II
 spurious,"ভেজাল, নকল",He was exposed for spreading spurious claims.,Word Smart I
 brusque,"রুক্ষ, খাপছাড়া",His brusque manner offended some clients.,Word Smart II
@@ -2066,7 +2052,7 @@ propagate,"বংশবিস্তার করা, প্রচার কর�
 aghast,"হতবাক, আতঙ্কিত",She was aghast at the news of the accident.,Word Smart I + Word Smart II
 curtail,"সংক্ষেপ করা, হ্রাস করা",The government curtailed spending due to the recession.,Word Smart I
 effusion,"উচ্ছ্বাস, প্রবাহ",Her effusion of gratitude moved everyone to tears.,Word Smart I
-fortuitous,"আকস্মিক, ভাগ্যক্রমে ঘটা",Their meeting was fortuitous both were stranded at the airport.,Word Smart I
+fortuitous,"আকস্মিক, ভাগ্যক্রমে ঘটা",Their meeting was fortuitous; both were stranded at the airport.,Word Smart I
 tirade,"দীর্ঘ তিরস্কার, তীব্র বক্তৃতা",He launched into a tirade against the government.,Word Smart I
 facetious,"রসিকতাপূর্ণ, ঠাট্টাচ্ছলে",Stop being facetious and give me a serious answer.,Word Smart I
 appraise,"মূল্যায়ন করা, যাচাই করা",The jeweler appraised the diamond ring at a high price.,Word Smart II
@@ -2223,7 +2209,7 @@ venerate,"শ্রদ্ধা করা, পূজা করা",The ancient t
 sanctimonious,"ভণ্ড ধার্মিক, আত্মগরিমাপূর্ণ",His sanctimonious speeches annoyed his coworkers.,Word Smart I
 rarefied,"সূক্ষ্ম, অভিজাত",She moved in rarefied social circles in Paris.,Word Smart II
 vindicate,"নির্দোষ প্রমাণ করা, সমর্থন করা",Her performance vindicated the coach's decision.,Word Smart I
-apogee,"চাঁদের কক্ষপথে দূরতম বিন্দু, চরম উৎকর্ষ",The satellite reached its apogee far above the atmosphere.,Word Smart II
+apogee,"কক্ষপথের দূরতম বিন্দু, চরম উৎকর্ষ",The satellite reached its apogee far above the atmosphere.,Word Smart II
 figurative,"রূপক, আলংকারিক",He spoke in figurative language full of metaphors.,Word Smart I
 extrapolate,জানা তথ্য থেকে অনুমান করা,"From the data, he extrapolated future trends.",Word Smart I
 specious,"আপাত সঠিক কিন্তু মিথ্যা, প্রতারণামূলক",His specious argument fooled many listeners.,Word Smart I + Word Smart II
@@ -2360,7 +2346,7 @@ gratis,বিনামূল্যে,The museum admission was gratis on the fir
 construe,"ব্যাখ্যা করা, অর্থ করা",His silence was construed as agreement.,Word Smart I
 indolent,"অলস, কর্মবিমুখ",The indolent student rarely completed assignments.,Word Smart I
 nihilism,"শূন্যবাদ, মূল্যবোধ অস্বীকার",His nihilism made him indifferent to everything.,Word Smart I
-churl,অসভ্য মানুষ,Don't be a churl thank them for their hospitality.,Word Smart II
+churl,অসভ্য মানুষ,Don't be a churl; thank them for their hospitality.,Word Smart II
 tenable,"সমর্থনযোগ্য, টিকিয়ে রাখার উপযুক্ত",His position is no longer tenable given the evidence.,Word Smart I
 corrugated,"ভাঁজ করা, ঢেউখেলানো",The roof was made of corrugated iron sheets.,Word Smart II
 pejorative,"নিন্দাসূচক, অবমাননামূলক",His pejorative remarks angered the crowd.,Word Smart I
@@ -2648,7 +2634,7 @@ doctrinaire,"গোঁড়া, আদর্শবাদী",His doctrinaire ap
 enfranchise,নাগরিক অধিকার ও ভোটাধিকার দেওয়া,Women were enfranchised in the early 20th century.,Word Smart I
 transfix,"স্তব্ধ করে দেওয়া, মুগ্ধ করা",She was transfixed by the beauty of the northern lights.,Word Smart II
 cant,"ভণ্ডামি, মুখের কথা",His religious cant impressed no one who knew him well.,Word Smart II
-ramification,"শাখা-প্রশাখা, পরিণতি",The ramifications of the decision were far- reaching.,Word Smart I
+ramification,"শাখা-প্রশাখা, পরিণতি",The ramifications of the decision were far-reaching.,Word Smart I
 accouterments,"সাজসরঞ্জাম, পোশাক-আশাক","A soldier's accouterments include a helmet, vest, and weapon.",Word Smart I + Word Smart II
 vicissitude,ভাগ্যের উত্থান-পতন,He endured the vicissitudes of life with courage.,Word Smart I
 dispirit,মনোবল ভেঙে দেওয়া,Repeated failure dispirited the young athlete.,Word Smart II
@@ -2660,7 +2646,7 @@ abnegate,"পরিত্যাগ করা, নিজের অধিকার
 emaciate,"শীর্ণ করা, দুর্বল করে ফেলা",Years of neglect left the child emaciated and weak.,Word Smart II
 circumscribe,সীমাবদ্ধ করা,The new law circumscribes the powers of the president.,Word Smart I
 opprobrious,"নিন্দাসূচক, অপমানজনক",He delivered an opprobrious attack on his rival.,Word Smart II
-convolution,"জটিলতা, পাঁচ",The convolutions of the legal process baffled him.,Word Smart II
+convolution,"জটিলতা, প্যাঁচ",The convolutions of the legal process baffled him.,Word Smart II
 antipodal,"সম্পূর্ণ বিপরীত, পৃথিবীর বিপরীত প্রান্তে",Their views on politics were antipodal.,Word Smart II
 beleaguer,"ঘেরাও করা, উত্ত্যক্ত করা",The beleaguered teacher struggled to manage the noisy class.,Word Smart I
 enervate,"দুর্বল করা, শক্তি হরণ করা",The long illness enervated him completely.,Word Smart I
@@ -2682,7 +2668,7 @@ disgruntle,অসন্তুষ্ট করা,The staff felt disgruntled afte
 perquisite,পদের সঙ্গে প্রাপ্ত বিশেষ সুবিধা,A company car is a perquisite of the senior position.,Word Smart I
 prepossess,অনুকূল ধারণা জাগানো,Her cheerful personality prepossessed everyone.,Word Smart I
 malapropism,"শব্দ-বিভ্রাট, ভুল শব্দ প্রয়োগে হাস্যকর অর্থ",Saying 'pacific' instead of 'specific' is a malapropism.,Word Smart II
-tangenital,"সামান্যভাবে সম্পর্কিত, অপ্রাসঙ্গিক",His comment was tangential to the main argument.,Word Smart I
+tangential,"সামান্যভাবে সম্পর্কিত, অপ্রাসঙ্গিক",His comment was tangential to the main argument.,Word Smart I
 </script>
 <script>
 const $=s=>document.querySelector(s),A=$('#app');
@@ -2736,7 +2722,7 @@ const SAT_RAW=[
 ["tedious", "একঘেয়ে", "boring", "The meeting was long and tedious.", 143],
 ["jeopardy", "বিপদ", "danger", "His career was in jeopardy after the scandal.", 156],
 ["rigorous", "কঠোর", "strict; harsh; severe", "The rigorous training program prepared the athletes for the competition.", 68],
-["pious", "ধার্মিক", "reverent or devout; outwardly reverent or devout", "The pious woman attended church every morning without fail.", 22],
+["pious", "ধার্মিক", "devoutly religious; reverent", "The pious woman attended church every morning without fail.", 22],
 ["deter", "নিরুৎসাহিত করা", "to prevent; to stop; to keep from doing something", "The heavy fines are meant to deter people from littering.", 46],
 ["resignation", "আত্মসমর্পণ", "reluctant acceptance of a bad situation", "She accepted her fate with quiet resignation.", 24],
 ["fanatic", "উগ্র", "one who is extremely devoted to a cause or idea", "The fanatic would not listen to any opposing views.", 199],
@@ -2753,7 +2739,7 @@ const SAT_RAW=[
 ["nostalgia", "স্মৃতিকাতরতা", "a sentimental longing for the past; homesickness", "The old photographs filled her with nostalgia.", 240],
 ["heresy", "ধর্মদ্রোহ", "an opinion violently opposed to established beliefs", "In the Middle Ages, heresy was punishable by death.", 59],
 ["retract", "প্রত্যাহার করা", "to take back; to withdraw; to pull back", "He retracted his statement after realizing his mistake.", 201],
-["condone", "উপেক্ষা করা", "to overlook; to permit to happen", "The school does not condone cheating.", 78],
+["condone", "ক্ষমা করা; মেনে নেওয়া", "to overlook; to permit to happen", "The school does not condone cheating.", 78],
 ["revere", "শ্রদ্ধা করা", "to worship; to honor", "Many cultures revere their ancestors and hold ceremonies in their memory.", 5],
 ["negligence", "অবহেলা", "carelessness", "The accident was caused by the driver's negligence.", 71],
 ["cryptic", "রহস্যপূর্ণ", "mysterious; mystifying", "She gave a cryptic answer that puzzled everyone.", 135],
@@ -2778,7 +2764,7 @@ const SAT_RAW=[
 ["diligent", "পরিশ্রমী", "hardworking", "The diligent student spent hours in the library every evening.", 34],
 ["banal", "সাধারণ", "unoriginal; ordinary", "The conversation was banal and quickly became boring.", 52],
 ["willful", "ইচ্ছাকৃত", "deliberate; obstinate; insistent on having one's way", "Her willful refusal to cooperate frustrated everyone.", 184],
-["superficial", "পৃষ্ঠতল", "on the surface only; shallow; not thorough", "His knowledge of the subject was superficial at best.", 35],
+["superficial", "উপরিতলীয়; অগভীর", "on the surface only; shallow; not thorough", "His knowledge of the subject was superficial at best.", 35],
 ["peripheral", "প্রান্তিক", "unimportant", "The issue was peripheral to the main discussion.", 166],
 ["alleviate", "উপশম করা", "to lessen; to relieve", "The medicine helped alleviate her pain.", 70],
 ["blasphemy", "ঈশ্বরনিন্দা", "irreverence; an insult to something held sacred", "The play was condemned for blasphemy.", 132],
@@ -2824,7 +2810,7 @@ const SAT_RAW=[
 ["zealous", "উদ্যমী", "fervent; enthusiastically devoted to something", "The zealous fans camped outside the stadium for days.", 206],
 ["exhaustive", "পূর্ণাঙ্গ", "thorough; complete", "The police conducted an exhaustive search of the area.", 146],
 ["conspicuous", "স্পষ্ট", "standing out; obvious", "His bright red coat made him conspicuous in the crowd.", 72],
-["depravity", "দুর্নীতি", "moral corruption", "The novel depicts the depravity of the ruling class.", 50],
+["depravity", "নৈতিক অধঃপতন", "moral corruption", "The novel depicts the depravity of the ruling class.", 50],
 ["insipid", "নীরস", "dull; banal", "The soup was insipid and needed more seasoning.", 56],
 ["levity", "হালকা মেজাজ", "lightness; frivolity; unseriousness", "The levity of the occasion was inappropriate given the sad news.", 136],
 ["volition", "ইচ্ছা", "will; conscious choice", "She left the company of her own volition.", 80],
@@ -2839,7 +2825,7 @@ const SAT_RAW=[
 ["marred", "ক্ষতিগ্রস্ত", "damaged; bruised", "The event was marred by bad weather.", 222],
 ["hindrance", "বাধা", "an obstruction; an annoying interference or delay", "The bad weather was a hindrance to our travel plans.", 237],
 ["flagrant", "জঘন্য", "shocking; outstandingly bad", "The flagrant violation of the rules was punished severely.", 127],
-["caustic", "দাহ্য", "like acid; corrosive", "His caustic remarks hurt her feelings.", 144],
+["caustic", "ক্ষয়কারী; তীক্ষ্ণ, বিদ্রূপাত্মক", "like acid; corrosive", "His caustic remarks hurt her feelings.", 144],
 ["idiom", "বাগধারা", "a peculiar expression", "\"Break a leg\" is an idiom meaning good luck.", 168],
 ["furtive", "গোপন", "secretive", "He gave a furtive glance around the room before speaking.", 193],
 ["servile", "দাসত্বপূর্ণ", "submissive and subservient; like a servant", "His servile manner made him popular with his superiors but not his colleagues.", 26],
@@ -2876,7 +2862,7 @@ const SAT_RAW=[
 ["innovate", "নতুন কিছু করা", "to be creative; to introduce something new", "Companies that fail to innovate often lose their competitive edge.", 8],
 ["apprehensive", "শঙ্কিত", "worried; anxious", "She was apprehensive about the results of the exam.", 117],
 ["ambivalent", "দ্বিধাগ্রস্ত", "undecided; blowing hot and cold", "He felt ambivalent about moving to a new city.", 137],
-["congenial", "সুহৃদ", "agreeably suitable; pleasant", "The atmosphere at the party was congenial and relaxed.", 115],
+["congenial", "মনোরম, মনের মতো", "agreeably suitable; pleasant", "The atmosphere at the party was congenial and relaxed.", 115],
 ["deplete", "ক্ষয় করা", "to use up; to reduce; to lessen", "The long war depleted the country's resources.", 175],
 ["immutable", "অপরিবর্তনীয়", "unchangeable; permanent", "The laws of physics are immutable.", 129],
 ["innumerable", "অসংখ্য", "too many to number or count; many", "There are innumerable stars in the sky.", 209],
@@ -2907,7 +2893,7 @@ const SAT_RAW=[
 ["scanty", "অপর্যাপ্ত", "inadequate; minimal", "The evidence against him was scanty and the case was dismissed.", 103],
 ["profuse", "প্রচুর", "flowing; extravagant", "She gave profuse thanks to everyone who had helped.", 88],
 ["verbose", "বাগাড়ম্বরপূর্ণ", "wordy; overly talkative", "His verbose style made his writing difficult to read.", 196],
-["hackneyed", "বাহুল্য", "banal; overused; trite", "The movie was full of hackneyed plots and characters.", 182],
+["hackneyed", "গতানুগতিক, বাঁধাধরা", "banal; overused; trite", "The movie was full of hackneyed plots and characters.", 182],
 ["indolence", "অলসতা", "laziness", "His indolence cost him his job.", 114],
 ["extol", "প্রশংসা করা", "to praise", "The critics extolled the young pianist's performance.", 53],
 ["authoritarian", "স্বৈরাচারী", "like a dictator", "The authoritarian government suppressed all dissent.", 211],
@@ -2941,7 +2927,7 @@ const GRE_RAW=[
 ["flag", "দুর্বল হয়ে পড়া", "to weaken; to slow down", "His energy flagged after hours of work.", 139],
 ["parallel", "সমান্তরাল", "a comparison made between two things", "There is a parallel between the two historical events.", 84],
 ["genre", "ধরন", "an artistic class or category", "The novel is a classic example of the mystery genre.", 46],
-["qualify", "যোগ্য করা", "to modify or restrict", "He qualified his statement to avoid misunderstanding.", 58],
+["qualify", "শর্তসাপেক্ষ করা; সীমাবদ্ধ করা", "to modify or restrict", "He qualified his statement to avoid misunderstanding.", 58],
 ["foster", "লালন করা", "to promote the growth or development of", "The program fosters creativity in children.", 92],
 ["implement", "বাস্তবায়ন করা", "to carry out", "The new policy will be implemented next month.", 96],
 ["mandatory", "বাধ্যতামূলক", "authoritatively ordered or commanded; necessary", "Attendance at the meeting is mandatory.", 51],
@@ -2951,7 +2937,7 @@ const GRE_RAW=[
 ["paradox", "আপাতবিরোধ", "a true statement or phenomenon that nonetheless seems to contradict itself", "It is a paradox that the more we communicate, the less we understand.", 8],
 ["garner", "সঞ্চয় করা", "to gather and store", "She garnered support for her campaign.", 164],
 ["pathology", "রোগবিদ্যা", "the science of diseases; any deviation from a healthy, normal condition", "The pathology of the disease is not fully understood.", 62],
-["consensus", "সর্বসম্মত", "unanimity or near unanimity", "The committee reached a consensus on the issue.", 11],
+["consensus", "ঐকমত্য", "unanimity or near unanimity", "The committee reached a consensus on the issue.", 11],
 ["inherent", "সহজাত", "part of the essential nature of something; intrinsic", "Risk is inherent in any investment.", 7],
 ["erratic", "অনিয়মিত", "unpredictable or wandering", "His erratic behavior worried his friends.", 23],
 ["renaissance", "পুনর্জাগরণ", "a rebirth or revival", "The city experienced a cultural renaissance in the 1990s.", 33],
@@ -2976,7 +2962,7 @@ const GRE_RAW=[
 ["flaunt", "প্রদর্শন করা", "to show off; to display ostentatiously", "She flaunted her new diamond ring.", 147],
 ["pundit", "পণ্ডিত", "a learned person; an expert in a particular field", "The political pundits predicted the outcome of the election.", 155],
 ["implicit", "অন্তর্নিহিত", "implied rather than expressly stated", "There was an implicit threat in his words.", 32],
-["cynic", "নিন্দুক", "one who deeply distrusts human nature", "The cynic believed that no one ever did anything selflessly.", 9],
+["cynic", "সংশয়বাদী; নৈরাশ্যবাদী", "one who deeply distrusts human nature", "The cynic believed that no one ever did anything selflessly.", 9],
 ["impudent", "উদ্ধত", "bold; impertinent", "The impudent student talked back to the teacher.", 140],
 ["allocate", "বরাদ্দ করা", "to distribute; assign; allot", "The funds were allocated to various departments.", 112],
 ["luminous", "উজ্জ্বল", "giving off light; glowing; bright", "The luminous dial of the watch glowed in the dark.", 24],
@@ -3024,7 +3010,7 @@ const GRE_RAW=[
 ["indulgent", "ক্ষমাশীল", "lenient; yielding to desire", "The indulgent grandmother spoiled her grandchildren.", 20],
 ["antiseptic", "জীবাণুনাশক", "free from germs; exceptionally clean", "The hospital room was antiseptic.", 132],
 ["aberration", "বিচ্যুতি", "something not typical; a deviation from the standard", "The cold summer was an aberration.", 109],
-["flippant", "উদাসীন", "frivolously shallow and disrespectful", "His flippant remark was inappropriate for the solemn occasion.", 74],
+["flippant", "অসম্মানজনকভাবে হালকা; চপল", "frivolously shallow and disrespectful", "His flippant remark was inappropriate for the solemn occasion.", 74],
 ["substantive", "মূলগত", "having substance; real; essential; solid; substantial", "There were no substantive differences between the two proposals.", 71],
 ["indignant", "ক্ষুব্ধ", "angry, especially as a result of something unjust or unworthy", "She was indignant at being accused of lying.", 31],
 ["impervious", "অভেদ্য", "not allowing anything to pass through; impenetrable", "The material is impervious to water.", 75],
@@ -3040,7 +3026,7 @@ const GRE_RAW=[
 ["cajole", "প্রলুব্ধ করা", "to deceptively persuade someone to do something he or she doesn't want to do", "She cajoled him into attending the party.", 185],
 ["malleable", "নমনীয়", "easy to shape or bend", "Gold is a malleable metal.", 98],
 ["exigent", "জরুরি", "demanding prompt action; urgent", "The exigent circumstances required immediate action.", 145],
-["facetious", "রসিক", "humorous; not serious; clumsily humorous", "His facetious remark was not appreciated.", 102],
+["facetious", "অনুচিত রসিকতাপূর্ণ", "humorous; not serious; clumsily humorous", "His facetious remark was not appreciated.", 102],
 ["forbear", "বিরত থাকা", "to refrain from; to abstain", "He forbore from commenting on the situation.", 45],
 ["timbre", "স্বরের গুণমান", "the quality of a sound independent of pitch and loudness", "The timbre of the violin was warm and rich.", 180],
 ["cacophony", "কর্কশ ধ্বনি", "a harsh-sounding mixture of words, voices, or sounds", "The cacophony of the city streets was overwhelming.", 94],
@@ -3083,7 +3069,7 @@ const GRE_RAW=[
 ["baleful", "অশুভ", "menacing; harmful", "He gave her a baleful look.", 141],
 ["laconic", "সংক্ষিপ্ত", "using few words, especially to the point of being rude", "His laconic reply was simply \"No.\"", 77],
 ["disinterested", "নিরপেক্ষ", "unbiased", "A disinterested observer would see the fairness of the decision.", 88],
-["turpitude", "দুশ্চরিত্র", "shameful wickedness or depravity", "The act was one of moral turpitude.", 122],
+["turpitude", "নৈতিক অধঃপতন; ঘৃণ্য আচরণ", "shameful wickedness or depravity", "The act was one of moral turpitude.", 122],
 ["disseminate", "ছড়িয়ে দেওয়া", "to scatter or spread widely", "The organization disseminates information about health issues.", 52],
 ["abstinent", "সংযমী", "abstaining; voluntarily not doing something", "He was abstinent from alcohol for health reasons.", 25],
 ["ingenuous", "সরল", "unwarily simple; candid; naive", "Her ingenuous question revealed her lack of experience.", 97],
@@ -3094,7 +3080,7 @@ const GRE_RAW=[
 ["obdurate", "একগুঁয়ে", "stubborn; inflexible", "The obdurate official refused to change the policy.", 165],
 ["pedagogue", "শিক্ষক", "a strict, overly academic teacher", "The pedagogue insisted on rigid adherence to the rules.", 174],
 ["garrulous", "বাচাল", "extremely chatty or talkative; wordy or diffuse", "The garrulous old man talked for hours.", 119],
-["oscillate", "দোলানো", "to swing back and forth; to fluctuate", "The pendulum oscillated steadily.", 151],
+["oscillate", "দুলতে থাকা", "to swing back and forth; to fluctuate", "The pendulum oscillated steadily.", 151],
 ["decorous", "শোভন", "in good taste; orderly", "Her decorous behavior was praised by the hosts.", 59],
 ["conjoin", "সংযুক্ত করা", "to join or act together", "The two groups conjoined to form a larger organization.", 172],
 ["salubrious", "স্বাস্থ্যকর", "promoting health", "The salubrious climate was ideal for recovery.", 91],
@@ -3129,8 +3115,8 @@ const GRE_RAW=[
 ["proselytize", "ধর্মান্তরিত করা", "to convert someone from one religion or doctrine to another", "The missionaries proselytized in the remote village.", 154],
 ["propinquity", "নৈকট্য", "nearness", "The propinquity of the two buildings made them easy to visit.", 166],
 ["panegyric", "প্রশংসা", "lofty praise", "The speech was a panegyric to the retiring CEO.", 173],
-["circumlocution", "বাক্যবাগিশ", "an indirect expression; use of wordy or evasive language", "His circumlocution made it hard to understand his point.", 126],
-["palliate", "উপশম করা", "to hide the seriousness of something with excuses or apologies", "He tried to palliate his mistake by blaming others.", 70],
+["circumlocution", "ঘুরিয়ে বলা; বাগাড়ম্বর", "an indirect expression; use of wordy or evasive language", "His circumlocution made it hard to understand his point.", 126],
+["palliate", "অজুহাতে দোষ ঢাকা", "to hide the seriousness of something with excuses or apologies", "He tried to palliate his mistake by blaming others.", 70],
 ["gerrymander", "নির্বাচনী এলাকা পুনর্বিন্যাস করা", "to divide a state or county into election districts to gain political advantage", "The party gerrymandered the districts to ensure victory.", 182],
 ["improvident", "অদূরদর্শী", "lacking prudent foresight; careless", "His improvident spending led to bankruptcy.", 148],
 ["brook", "সহ্য করা", "to bear or tolerate; to put up with something", "He would not brook any opposition.", 136],
@@ -3289,7 +3275,7 @@ return`<h1>${e(SECDEF[CUR].name)} Progress</h1>
 <div class="card" style="margin-top:1rem"><h3>Skills</h3>${ar.length?ar.map(([t,p])=>`<div style="margin:.5rem 0"><div class="row" style="margin:0"><span>${TL[t]}</span><span class="mu" style="flex:0 0 auto;margin-left:auto">${p}%</span></div>${bar(p)}</div>`).join('')+(A.length>2&&ar.length>1?`<div class="row" style="margin:.8rem 0 .2rem"><span class="mu" style="flex:0 0 auto">Strongest</span><b>${TL[ar[0][0]]}</b><span class="mu" style="flex:0 0 auto">${ar[0][1]}%</span></div><div class="row" style="margin:.2rem 0 .8rem"><span class="mu" style="flex:0 0 auto">Weakest</span><b>${TL[ar.at(-1)[0]]}</b><span class="mu" style="flex:0 0 auto">${ar.at(-1)[1]}%</span></div><button data-a="weak">Practice Weak Areas</button>`:''):'<p class="mu">Take a few quizzes and we\'ll show where to focus.</p>'}</div>`};
 P.settings=()=>`<h1>Settings</h1><div class="card"><h3>Appearance</h3><select id="st" aria-label="Theme">${['system','light','dark'].map(t=>`<option ${S.set.theme===t?'selected':''}>${t}</option>`).join('')}</select></div><div class="card" style="margin-top:1rem"><h3>Learning</h3><p>Words per level: set by each section</p><p class="mu">Reminders: coming later.</p></div><div class="card" style="margin-top:1rem"><h3>App tour</h3><p class="mu">A one-minute walk through every part of the app.</p><div class="row"><button data-a="tour">Take the app tour</button></div></div><div class="card" style="margin-top:1rem"><h3>Course management</h3><div class="row"><button data-a="reset">Reset Progress</button></div><p class="mu">Your progress is saved in this browser.</p></div>`;
 P.contact=()=>`<h1>Meet me</h1><div class="me"><img class="mep" src="${PHOTO}" alt="Md Kutub Uddin Bahar" width="560" height="432"><div class="met"><h2 style="font-size:1.6rem;margin:0">Md Kutub Uddin Bahar</h2><p class="mu" style="margin:.2rem 0 .8rem">Aspiring Business Analyst &middot; BBA, University of Dhaka</p><p>Hi, I'm Kutub. I teach English and study Banking &amp; Insurance at the University of Dhaka. After years of helping students build their vocabulary in the classroom, I made Project শব্দ to give any learner the same simple routine: new words every day, a quiz to check them, and progress you can see.</p><div class="row"><a class="b pri" href="${SITE}" target="_blank" rel="noopener noreferrer">Visit my website</a></div></div></div><h2>About me</h2><div class="grid g2"><div class="card"><small class="mu">Teaching</small><p style="margin:.2rem 0 0">English Instructor at 10 Minute School English Centre. English Instructor and Head of Department (English) at ExcelBiz. 3+ years of teaching and mentoring.</p></div><div class="card"><small class="mu">Writing</small><p style="margin:.2rem 0 0">Academic content contributor for HSC practice books.</p></div><div class="card"><small class="mu">Studying</small><p style="margin:.2rem 0 0">BBA in Banking &amp; Insurance, University of Dhaka (third year).</p></div><div class="card"><small class="mu">Skills</small><p style="margin:.2rem 0 0">Business analysis, SQL and data, financial record-keeping, communication.</p></div></div><h2 style="margin-top:1.6rem">Get in touch</h2><div class="grid g2">${[['mail','Email','kutubbahar2018@gmail.com','mailto:kutubbahar2018@gmail.com'],['phone','Phone','+880 1522-133848','tel:+8801522133848'],['insta','Instagram','@the_pixel_booth',''],['link','Facebook','Md Kutub Uddin Bahar','https://www.facebook.com/share/14x6mxEVLKC/'],['globe','Website','kutubbahar2018-cpu.github.io',SITE]].map(([k,a,b,h])=>h?`<a class="card ct" href="${h}" ${h.startsWith('http')?'target="_blank" rel="noopener noreferrer"':''}><span class="si">${ic(k,20)}</span><small class="mu">${a}</small><b>${b}</b></a>`:`<div class="card ct" style="cursor:default"><span class="si">${ic(k,20)}</span><small class="mu">${a}</small><b>${b}</b></div>`).join('')}</div>`;
-let LG=0;const logo=(s=36)=>{const id='lg'+(++LG);return`<svg width="${s}" height="${s}" viewBox="0 0 48 48" role="img" aria-label="Project শব্দ logo" style="flex:none;display:block"><defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9b7df0"/><stop offset="1" stop-color="#5433b5"/></linearGradient></defs><rect width="48" height="48" rx="14" fill="url(#${id})"/><path d="M7 14q8-3.5 17 1.5v22.5q-9-4.5-17-1.5z" fill="#fff"/><path d="M41 14q-8-3.5-17 1.5v22.5q9-4.5 17-1.5z" fill="#e6dcfb"/></svg>`};
+let LG=0;const logo=(s=36)=>`<svg width="${s}" height="${s}" viewBox="0 0 120 120" role="img" aria-label="Posh logo" style="flex:none;display:block"><rect x="26" y="20" width="62" height="80" rx="11" fill="#d7e8e6"/><rect x="36" y="13" width="62" height="80" rx="11" fill="#8fc0bb"/><rect x="46" y="6" width="62" height="80" rx="11" fill="#0e5a5c"/><path d="M62 68V28h12a11 11 0 0 1 0 22H62" fill="none" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><text x="90" y="28" font-family="Hind Siliguri,sans-serif" font-size="16" font-weight="700" fill="#e9efee">শ</text></svg>`;
 const PHOTO="data:image/jpeg;base64,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";
 const SITE="https://kutubbahar2018-cpu.github.io/kutubuddinbahar.github.io/";
 const footer=()=>`<footer class="ft"><p>&copy; ${new Date().getFullYear()} Project শব্দ &middot; Created by Md Kutub Uddin Bahar</p></footer>`;
@@ -3361,7 +3347,7 @@ catch(err){console.error(err);A.innerHTML='<div class="err">Something went wrong
 let SOFT=false,tt;const soft=()=>{SOFT=true;try{route()}finally{SOFT=false}};
 function toast(m){let t=$('#toast');if(!t){t=document.createElement('div');t.id='toast';t.className='toast';t.setAttribute('role','status');document.body.append(t)}t.textContent=m;requestAnimationFrame(()=>t.classList.add('on'));clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('on'),1800)}
 function countUp(){return;if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;A.querySelectorAll('.big').forEach(el=>{const m=/^(\d+)(%?)$/.exec(el.textContent.trim());if(!m||el.closest('.day')||(m[1].length>1&&m[1][0]==='0')||+m[1]<2)return;const to=+m[1],suf=m[2],t0=performance.now(),f=t=>{const p=Math.min(1,(t-t0)/600);el.textContent=Math.round(to*(1-Math.pow(1-p,3)))+suf;if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)})}
-function confetti(){if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;const c=['#7c5cd6','#a58df0','#c9bcf7','#e0b3f5','#8aa4f0'];for(let i=0;i<45;i++){const s=document.createElement('span');s.className='cf';s.style.cssText=`left:${rnd(100)}vw;background:${c[rnd(5)]};animation-delay:${rnd(600)}ms`;document.body.append(s);setTimeout(()=>s.remove(),3200)}}
+function confetti(){if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;const c=['#0e5a5c','#5f6b69','#dce5e3','#dce5e3','#e4f1f0'];for(let i=0;i<45;i++){const s=document.createElement('span');s.className='cf';s.style.cssText=`left:${rnd(100)}vw;background:${c[rnd(5)]};animation-delay:${rnd(600)}ms`;document.body.append(s);setTimeout(()=>s.remove(),3200)}}
 function mark(id,v){const d=CRS().days.find(a=>a.includes(id)),was=d.every(x=>S.p.k[x]);S.p.k[id]=v;S.p.t[id]=Date.now();touch();save();soft();toast(v==='known'?'Marked as learned':'Added to review');if(!was&&d.every(x=>S.p.k[x]))confetti();else{const n=[...document.querySelectorAll('.vc')].find(c=>!c.classList.contains('k')&&!c.classList.contains('h'));if(n){n.querySelector('.inner').focus({preventScroll:true});n.scrollIntoView({behavior:'smooth',block:'center'})}}}
 const ACT={qresume:()=>{if(!QP)return;Q=QP;QP=null;if(Q.mode==='exam')startTick();if(location.hash==='#/quiz')route();else location.hash='#/quiz'},qdrop:()=>{QP=null;soft()},skipw:()=>{clearInterval(tick);Q=null;if(WPREV&&SECDEF[WPREV])CUR=WPREV;WPREV=null;location.hash='#/dashboard'},wdone:()=>{if(WPREV&&SECDEF[WPREV])CUR=WPREV;WPREV=null;location.hash='#/dashboard'},sec:(t,id)=>{window.__ag=(t&&t.dataset&&t.dataset.g)||window.__ag;if(!SECDEF[id]||!SECDEF[id].data.length)return;WPREV=null;RC=null;if(Q&&Q.sec!==id){clearInterval(tick);Q=null}CUR=id;S.sec=id;wo=null;VF.q='';VF.f='all';save();if(location.hash==='#/section')route();else location.hash='#/section'},nw:()=>{wo=CRS().words[rnd(CRS().words.length)];soft()},
 open:(t,id)=>{const x=W()[id],o=document.createElement('div');o.className='ov';o.innerHTML=`<div class="card" role="dialog" aria-modal="true" aria-label="${e(x.w)}" style="max-width:480px;width:100%"><h2 style="text-transform:capitalize;font-size:1.6rem">${e(x.w)}</h2><p class="bn">${e(x.b)}</p>${x.d?`<p>${e(x.d)}</p>`:''}<p class="mu"><i>${e(x.e)}</i></p><div class="row"><button data-a="say" data-id="${x.id}">${ic('vol',16)} Listen</button><button id="cl" class="pri">Close</button></div></div>`;o.onclick=ev=>{if(ev.target===o)o.remove()};document.body.append(o);o.querySelector('#cl').onclick=()=>o.remove();o.querySelector('#cl').focus()},back:()=>{const p=HS.pop();if(p&&p!==location.hash){gb=true;location.hash=p}else location.hash='#/dashboard'},menu:()=>{const o=document.body.classList.toggle('open');$('#mb button').innerHTML=ic(o?'x':'menu',20)},out:()=>{localStorage.removeItem('pv_cur');clearInterval(tick);Q=null;S=fresh();KEY=null;theme();location.hash='#/';route()},flip:t=>t.closest('.vc').classList.toggle('flip'),
@@ -3447,12 +3433,12 @@ let AN=null;
 const track=(path,title,isEvent)=>{try{AN&&AN(path,title,isEvent)}catch(_){}};
 function initAnalytics(){}
 /* ===== Pika, the little white cat. Plays, runs, sleeps; tap him to pet, tap Play to throw a yarn ball. Hidden during quizzes. ===== */
-const ST='fill="#fff" stroke="#a99bd6" stroke-width="1.6" stroke-linejoin="round"';
+const ST='fill="#fff" stroke="#5f6b69" stroke-width="1.6" stroke-linejoin="round"';
 const LN='fill="none" stroke-linecap="round"';
-const head=(x,y,sleep)=>`<g class="pk-hd"><g transform="translate(${x} ${y})"><polygon ${ST} points="-11,-8 -10,-25 3,-13"/><polygon fill="#ffd0de" points="-8.5,-11 -8,-20 -1,-14"/><polygon ${ST} points="3,-13 14,-24 15,-7"/><polygon fill="#ffd0de" points="6,-13 12,-20 12.5,-10"/><circle ${ST} r="14.5"/>`+
-(sleep?`<path d="M-3 -1q3 3.5 6 0M7 -1q3 3.5 6 0" ${LN} stroke="#3b2f63" stroke-width="1.6"/>`:`<ellipse class="pk-eye" cx="1" cy="-1" rx="2.2" ry="3" fill="#3b2f63"/><ellipse class="pk-eye" cx="10.5" cy="-1" rx="2.2" ry="3" fill="#3b2f63"/><circle cx="1.8" cy="-2.1" r=".8" fill="#fff"/><circle cx="11.3" cy="-2.1" r=".8" fill="#fff"/>`)+
-`<ellipse cx="5" cy="6" rx="3" ry="2" fill="#ffc4d6" opacity=".75"/><polygon fill="#ff9db5" points="11.5,2.5 15.3,2.5 13.4,5"/><path d="M13.4 5v1.4M13.4 6.4q-1.8 2-3.8 1M13.4 6.4q1.4 1.6 3 .8" ${LN} stroke="#a97d8e" stroke-width="1"/><path d="M14 4h10M14 6.5l9 3" ${LN} stroke="#a99bd6" stroke-width="1" opacity=".85"/></g></g>`;
-const tail=(d)=>`<g class="pk-tail"><path d="${d}" ${LN} stroke="#a99bd6" stroke-width="7.4"/><path d="${d}" ${LN} stroke="#fff" stroke-width="4.4"/></g>`;
+const head=(x,y,sleep)=>`<g class="pk-hd"><g transform="translate(${x} ${y})"><polygon ${ST} points="-11,-8 -10,-25 3,-13"/><polygon fill="#f9eaea" points="-8.5,-11 -8,-20 -1,-14"/><polygon ${ST} points="3,-13 14,-24 15,-7"/><polygon fill="#f9eaea" points="6,-13 12,-20 12.5,-10"/><circle ${ST} r="14.5"/>`+
+(sleep?`<path d="M-3 -1q3 3.5 6 0M7 -1q3 3.5 6 0" ${LN} stroke="#15211f" stroke-width="1.6"/>`:`<ellipse class="pk-eye" cx="1" cy="-1" rx="2.2" ry="3" fill="#15211f"/><ellipse class="pk-eye" cx="10.5" cy="-1" rx="2.2" ry="3" fill="#15211f"/><circle cx="1.8" cy="-2.1" r=".8" fill="#fff"/><circle cx="11.3" cy="-2.1" r=".8" fill="#fff"/>`)+
+`<ellipse cx="5" cy="6" rx="3" ry="2" fill="#f9eaea" opacity=".75"/><polygon fill="#b84a4a" points="11.5,2.5 15.3,2.5 13.4,5"/><path d="M13.4 5v1.4M13.4 6.4q-1.8 2-3.8 1M13.4 6.4q1.4 1.6 3 .8" ${LN} stroke="#5f6b69" stroke-width="1"/><path d="M14 4h10M14 6.5l9 3" ${LN} stroke="#5f6b69" stroke-width="1" opacity=".85"/></g></g>`;
+const tail=(d)=>`<g class="pk-tail"><path d="${d}" ${LN} stroke="#5f6b69" stroke-width="7.4"/><path d="${d}" ${LN} stroke="#fff" stroke-width="4.4"/></g>`;
 const leg=(c,x,y,h)=>`<rect class="pk-leg ${c}" x="${x}" y="${y}" width="8" height="${h}" rx="4" ${ST}/>`;
 const PIKA_SVG=()=>`<svg viewBox="0 -4 110 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="54" cy="66.5" rx="36" ry="3" fill="#000" opacity=".1"/>`+
 `<g class="pose pA">${tail('M18 37C4 37 2 19 12 14')}${leg('l2',31,40,26)}${leg('l4',70,40,26)}<ellipse ${ST} cx="48" cy="38" rx="30" ry="15"/>${leg('l1',22,40,26)}${leg('l3',61,40,26)}${head(85,27)}</g>`+
@@ -3466,7 +3452,7 @@ const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,CW=44,rnd=(a
 const css=document.createElement('style');css.textContent=`
 #pika{position:fixed;left:0;right:0;bottom:0;height:0;z-index:9;pointer-events:none}
 .pk-cat{position:absolute;left:0;bottom:calc(2px + env(safe-area-inset-bottom,0px));width:${CW}px;height:30px;pointer-events:auto;cursor:pointer;outline:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
-.pk-cat:focus-visible .pk-fl{outline:2px solid var(--pr,#7c5cd6);border-radius:12px}
+.pk-cat:focus-visible .pk-fl{outline:2px solid var(--pr,#0e5a5c);border-radius:12px}
 .pk-fl{width:100%;height:100%}.pk-fl svg{width:100%;height:100%;overflow:visible;display:block}
 .pose{display:none}.pk-cat[data-p=A] .pA,.pk-cat[data-p=B] .pB,.pk-cat[data-p=C] .pC{display:block}
 .pk-eye{transform-box:fill-box;transform-origin:center;animation:pkBlink 4.6s infinite}
@@ -3478,15 +3464,15 @@ const css=document.createElement('style');css.textContent=`
 .pounce .pk-fl svg{animation:pkPounce .45s ease-out}
 .groom .pk-hd{transform-box:fill-box;transform-origin:50% 100%;animation:pkGroom .9s ease-in-out infinite}
 .sleep .pk-fl svg{animation:pkBreath 3s ease-in-out infinite;transform-origin:50% 100%}.sleep .pk-tail{animation:none}
-.pk-bub{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:2px;white-space:nowrap;background:var(--card,#fff);color:var(--tx,#2b2540);border:1px solid var(--pr,#7c5cd6);border-radius:12px;padding:.12rem .45rem;font:600 .68rem/1.2 'Hind Siliguri',Manrope,system-ui,sans-serif;box-shadow:0 4px 14px rgba(84,51,181,.2);pointer-events:none}
+.pk-bub{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:2px;white-space:nowrap;background:var(--card,#fff);color:var(--tx,#15211f);border:1px solid var(--pr,#0e5a5c);border-radius:12px;padding:.12rem .45rem;font:600 .68rem/1.2 'Hind Siliguri',Manrope,system-ui,sans-serif;box-shadow:0 4px 14px rgba(21,33,31,.2);pointer-events:none}
 .pk-bub.L{left:0;transform:none}.pk-bub.R{left:auto;right:0;transform:none}
-.pk-h{position:absolute;bottom:62%;left:46%;width:5px;height:5px;border-radius:50%;background:#ff7aa2;pointer-events:none;animation:pkH 1.1s ease-out forwards}
-.pk-z{position:absolute;left:64%;bottom:70%;pointer-events:none}.pk-z i{position:absolute;font:700 14px/1 system-ui,sans-serif;color:var(--pr,#7c5cd6);font-style:normal;opacity:0;animation:pkZ 2.6s linear infinite}
+.pk-h{position:absolute;bottom:62%;left:46%;width:5px;height:5px;border-radius:50%;background:#b84a4a;pointer-events:none;animation:pkH 1.1s ease-out forwards}
+.pk-z{position:absolute;left:64%;bottom:70%;pointer-events:none}.pk-z i{position:absolute;font:700 14px/1 system-ui,sans-serif;color:var(--pr,#0e5a5c);font-style:normal;opacity:0;animation:pkZ 2.6s linear infinite}
 .pk-z i:nth-child(2){animation-delay:.85s;font-size:11px}.pk-z i:nth-child(3){animation-delay:1.7s;font-size:16px}
 .pk-ball{position:absolute;left:0;bottom:calc(4px + env(safe-area-inset-bottom,0px));width:10px;height:10px;pointer-events:none}
-.pk-bd{animation:pkDrop .7s cubic-bezier(.3,.1,.6,1)}.pk-ball i{display:block;width:10px;height:10px;border-radius:50%;background:#b79cf2;box-shadow:inset -2px -2px 0 #7c5cd6}
+.pk-bd{animation:pkDrop .7s cubic-bezier(.3,.1,.6,1)}.pk-ball i{display:block;width:10px;height:10px;border-radius:50%;background:#5f6b69;box-shadow:inset -2px -2px 0 #0e5a5c}
 #pk-ui{position:fixed;right:8px;bottom:calc(6px + env(safe-area-inset-bottom,0px));z-index:9;display:flex;gap:.25rem;align-items:center}
-#pk-ui button{padding:.1rem .45rem;margin:0;min-width:0;min-height:0;border-radius:999px;border:1px solid var(--pr,#7c5cd6);background:var(--card,#fff);color:var(--tx,#2b2540);font:600 .66rem/1.3 'Hind Siliguri',Manrope,system-ui,sans-serif;cursor:pointer;box-shadow:0 2px 6px rgba(84,51,181,.15)}
+#pk-ui button{padding:.1rem .45rem;margin:0;min-width:0;min-height:0;border-radius:999px;border:1px solid var(--pr,#0e5a5c);background:var(--card,#fff);color:var(--tx,#15211f);font:600 .66rem/1.3 'Hind Siliguri',Manrope,system-ui,sans-serif;cursor:pointer;box-shadow:0 2px 6px rgba(21,33,31,.15)}
 #pk-ui button.pulse{animation:pkPulse 1.2s ease-out infinite}
 @keyframes pkBlink{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
 @keyframes pkTail{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(9deg)}}
@@ -3498,7 +3484,7 @@ const css=document.createElement('style');css.textContent=`
 @keyframes pkH{0%{opacity:0;transform:translate(0,0) scale(.5)}20%{opacity:1}100%{opacity:0;transform:translate(var(--dx,0),-48px) scale(1.15)}}
 @keyframes pkZ{0%{opacity:0;transform:translate(0,0)}20%{opacity:1}100%{opacity:0;transform:translate(14px,-30px)}}
 @keyframes pkDrop{0%{transform:translateY(-90px)}55%{transform:translateY(0)}72%{transform:translateY(-8px)}100%{transform:translateY(0)}}
-@keyframes pkPulse{0%{box-shadow:0 0 0 0 rgba(124,92,214,.55)}100%{box-shadow:0 0 0 14px rgba(124,92,214,0)}}
+@keyframes pkPulse{0%{box-shadow:0 0 0 0 rgba(14,90,92,.55)}100%{box-shadow:0 0 0 14px rgba(14,90,92,0)}}
 @media (prefers-reduced-motion:reduce){#pika *{animation:none!important}}`;
 document.head.appendChild(css);
 const root=document.createElement('div');root.id='pika';
@@ -3551,7 +3537,7 @@ setTimeout(()=>{if(!hidden&&!ball)say('Hi, I\'m Pika!',2600)},1200);
 $('#mb button').innerHTML=ic('menu',20);$('#mb span').innerHTML=logo(26)+'<b>Project শব্দ</b>';theme();initPika();initAnalytics();loadCMS().then(()=>{const n=localStorage.getItem('pv_cur');if(n)loadU(n);if(!SECDEF[CUR])CUR=(SECS.find(x=>x.data.length)||SECS[0]).id;route()});
 </script>
 <style>
-#langbtn{position:fixed;top:calc(env(safe-area-inset-top,0px) + .55rem);right:.7rem;z-index:80;padding:.3rem .8rem;border-radius:999px;border:1px solid var(--bd);background:var(--card);color:var(--pr);font:600 .85rem/1.4 'Hind Siliguri',Manrope,system-ui,sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(60,40,120,.12)}
+#langbtn{position:fixed;top:calc(env(safe-area-inset-top,0px) + .55rem);right:.7rem;z-index:80;padding:.3rem .8rem;border-radius:999px;border:1px solid var(--bd);background:var(--card);color:var(--pr);font:600 .85rem/1.4 'Hind Siliguri',Manrope,system-ui,sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(21,33,31,.12)}
 html[lang=bn] body{font-family:'Hind Siliguri',Manrope,system-ui,sans-serif}
 </style>
 <script type="text/plain" id="bndata">
@@ -3891,7 +3877,7 @@ const lb=document.getElementById('langbtn');if(lb)lb.addEventListener('click',()
 <script>
 (()=>{
 const orig=authSubmit,RX=/^[a-z0-9._-]{2,30}$/;
-function choose(done){const o=document.createElement('div');o.style.cssText='position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:1rem;background:rgba(20,14,40,.6)';
+function choose(done){const o=document.createElement('div');o.style.cssText='position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:1rem;background:rgba(21,33,31,.6)';
  o.innerHTML=`<div role="dialog" aria-label="Choose language" style="background:var(--card);color:var(--tx);border:1px solid var(--bd);border-radius:18px;padding:1.4rem;max-width:360px;width:100%;text-align:center"><h2 style="margin:0 0 .2rem">Choose your language</h2><h2 style="margin:0 0 .6rem">ভাষা বেছে নিন</h2><p class="mu" style="font-size:.88rem">You can change it any time with the button at the top right.<br>উপরের ডান কোণের বোতাম দিয়ে যেকোনো সময় বদলাতে পারবেন।</p><div style="display:flex;gap:.7rem;margin-top:1rem"><button class="pri" data-l="bn" style="flex:1;padding:.8rem;font-size:1.1rem">বাংলা</button><button class="pri" data-l="en" style="flex:1;padding:.8rem;font-size:1.1rem">English</button></div></div>`;
  o.addEventListener('click',ev=>{const l=ev.target.closest('[data-l]');if(!l)return;ev.stopPropagation();o.remove();done(l.dataset.l)},true);document.body.append(o);o.querySelector('button').focus()}
 authSubmit=function(ev){const inp=document.getElementById('nm'),v=inp?inp.value.trim().toLowerCase().replace(/\s+/g,'_'):'';
@@ -3921,7 +3907,7 @@ authSubmit=function(ev){const inp=document.getElementById('nm'),v=inp?inp.value.
 </style>
 <style>
 /* skinny + lighter */
-:root{--bd:#ece6f8;--soft:#f6f2fd;--bg:#faf8fe}
+:root{--bd:#f5f8f7;--soft:#f5f8f7;--bg:#f5f8f7}
 .wr{padding:.25rem .6rem;border-radius:8px}
 .wl{gap:.3rem;margin:.4rem 0}
 .wr .wh{min-height:26px;gap:.15rem}
@@ -3946,19 +3932,19 @@ authSubmit=function(ev){const inp=document.getElementById('nm'),v=inp?inp.value.
 </script>
 <style>
 /* lighter light-mode palette */
-:root{--bg:#fcfbff;--card:#fff;--tx:#3b3557;--mu:#8f89a9;--bd:#f0ebfa;--soft:#f8f5fe;--pr:#8f74e2;--ok:#8a70d8;--okb:#f4f0fd;--wa:#9a84d6;--wab:#faf7fe;--er:#b277b2;--erb:#fcf3fc}
+:root{--bg:#f5f8f7;--card:#fff;--tx:#22332f;--mu:#5f6b69;--bd:#f5f8f7;--soft:#f5f8f7;--pr:#5f6b69;--ok:#0e5a5c;--okb:#f5f8f7;--wa:#5f6b69;--wab:#f5f8f7;--er:#5f6b69;--erb:#f9eaea}
 aside{background:#fff}
 </style>
 <style>
 /* textured background */
-body{background-color:var(--bg);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .45 0 0 0 0 .85 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(1000px 420px at 50% -80px,rgba(143,116,226,.10),transparent 70%)}
+body{background-color:var(--bg);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .45 0 0 0 0 .85 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(1000px 420px at 50% -80px,rgba(228,241,240,.10),transparent 70%)}
 :root[data-t=dark] body{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .45 0 0 0 0 .85 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 </style>
 <style>
 /* visible texture: dot grid + grain; sidebar follows theme */
 aside{background:var(--card)}
-body{background-color:var(--bg);background-image:radial-gradient(rgba(143,116,226,.30) 1.2px,transparent 1.6px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .4 0 0 0 0 .8 0 0 0 .28 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(1000px 420px at 50% -80px,rgba(143,116,226,.12),transparent 70%);background-size:20px 20px,160px 160px,auto}
-:root[data-t=dark] body{background-image:radial-gradient(rgba(180,160,245,.16) 1.2px,transparent 1.6px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .4 0 0 0 0 .8 0 0 0 .28 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:20px 20px,160px 160px}
+body{background-color:var(--bg);background-image:radial-gradient(rgba(228,241,240,.30) 1.2px,transparent 1.6px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .4 0 0 0 0 .8 0 0 0 .28 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(1000px 420px at 50% -80px,rgba(228,241,240,.12),transparent 70%);background-size:20px 20px,160px 160px,auto}
+:root[data-t=dark] body{background-image:radial-gradient(rgba(228,241,240,.16) 1.2px,transparent 1.6px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .4 0 0 0 0 .8 0 0 0 .28 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:20px 20px,160px 160px}
 </style>
 <style>
 /* flip cards size to their content so nothing is cut off */
@@ -4001,7 +3987,7 @@ new MutationObserver(build).observe(nav,{childList:true,subtree:false});build();
 #mb .bt{display:flex;flex-direction:column;align-items:flex-start;gap:0;line-height:1.15}
 #mb .bt b{font-size:1.02rem;font-weight:700;letter-spacing:.01em}
 #mb .bt small{font-size:.62rem;font-weight:500;color:var(--mu);white-space:nowrap}
-#langbtn{background:linear-gradient(135deg,#9b82ec,#6f4fd0);color:#fff;border:0;padding:.28rem .85rem;box-shadow:0 3px 10px -3px rgba(111,79,208,.6)}
+#langbtn{background:linear-gradient(135deg,#5f6b69,#0e5a5c);color:#fff;border:0;padding:.28rem .85rem;box-shadow:0 3px 10px -3px rgba(14,90,92,.6)}
 @media(max-width:800px){#langbtn{top:calc(env(safe-area-inset-top,0px) + 11px)}}
 </style>
 <script>
@@ -4100,7 +4086,186 @@ new MutationObserver(fix).observe(app,{childList:true,subtree:true});fix();
 <script>
 document.addEventListener('submit',ev=>{if(ev.target&&ev.target.id==='lf'){ev.stopImmediatePropagation();authSubmit(ev)}},true);
 </script>
-<style>#langbtn{border-color:color-mix(in srgb,var(--pr) 45%,var(--bd))}.cbar{margin-bottom:3.6rem}</style>
+<style>#langbtn{border-color:color-mix(in srgb,var(--pr) 45%,var(--bd))}.cbar{margin-bottom:3.6rem}
+/* ===== Premium layer (slate palette) ===== */
+body{background:radial-gradient(1200px 600px at 85% -10%,rgba(228,241,240,.28),transparent 60%),radial-gradient(900px 500px at -10% 110%,rgba(14,90,92,.18),transparent 60%),linear-gradient(180deg,#f5f8f7 0%,#f5f8f7 100%);background-attachment:fixed;letter-spacing:.005em;-webkit-font-smoothing:antialiased}
+:root[data-t=dark] body,:root[data-t=dark] body{background:radial-gradient(1100px 560px at 85% -10%,rgba(14,90,92,.30),transparent 60%),linear-gradient(180deg,#15211f 0%,#15211f 100%);background-attachment:fixed}
+h1,h2{letter-spacing:-.015em;font-weight:700}
+aside{background:rgba(255,255,255,.72);-webkit-backdrop-filter:saturate(160%) blur(16px);backdrop-filter:saturate(160%) blur(16px);border-right:1px solid rgba(21,33,31,.08);box-shadow:8px 0 32px -24px rgba(21,33,31,.35)}
+:root[data-t=dark] aside{background:rgba(21,33,31,.72);border-right-color:rgba(228,241,240,.12)}
+aside a.on{background:linear-gradient(90deg,rgba(14,90,92,.16),rgba(14,90,92,.04));box-shadow:inset 3px 0 0 #0e5a5c;color:#15211f;font-weight:600}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(255,255,255,.86));border:1px solid rgba(21,33,31,.07);border-radius:18px;box-shadow:0 1px 2px rgba(21,33,31,.05),0 12px 28px -18px rgba(21,33,31,.28);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 1px 2px rgba(21,33,31,.06),0 18px 36px -20px rgba(21,33,31,.38);border-color:rgba(14,90,92,.22)}
+:root[data-t=dark] .card{background:linear-gradient(180deg,rgba(21,33,31,.92),rgba(21,33,31,.78));border-color:rgba(228,241,240,.10);box-shadow:0 1px 2px rgba(0,0,0,.25),0 14px 32px -18px rgba(0,0,0,.6)}
+.pri,button.pri{background:linear-gradient(180deg,#e4f1f0 0%,#0e5a5c 100%);color:#15211f;border:0;border-radius:999px;box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 8px 20px -10px rgba(21,33,31,.7);letter-spacing:.01em;transition:transform .15s ease,box-shadow .2s ease,filter .2s ease}
+.pri:hover{transform:translateY(-1px);filter:brightness(1.06);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 12px 26px -12px rgba(21,33,31,.8)}
+.pri:active{transform:translateY(0) scale(.99)}
+.pill,.chip{border-radius:999px;border:1px solid rgba(21,33,31,.10);background:rgba(255,255,255,.7);color:#15211f;transition:background .2s,border-color .2s,color .2s}
+.pill:hover,.chip:hover{border-color:rgba(14,90,92,.35);background:#fff}
+:root[data-t=dark] .pill,:root[data-t=dark] .chip{background:rgba(21,33,31,.6);color:#dce5e3;border-color:rgba(228,241,240,.18)}
+.bar{height:8px;border-radius:999px;background:rgba(21,33,31,.08);overflow:hidden}
+.bar>i,.bar>span,.bar>div{background:linear-gradient(90deg,#5f6b69,#e4f1f0,#0e5a5c);border-radius:999px;box-shadow:0 0 12px -2px rgba(14,90,92,.45)}
+.hero,.hero2{background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(232,236,236,.85));border:1px solid rgba(21,33,31,.07);border-radius:24px;box-shadow:0 24px 48px -30px rgba(21,33,31,.45)}
+:root[data-t=dark] .hero,:root[data-t=dark] .hero2{background:linear-gradient(135deg,rgba(21,33,31,.95),rgba(21,33,31,.9));border-color:rgba(228,241,240,.12)}
+.toast{border-radius:14px;background:rgba(21,33,31,.92);color:#f5f8f7;box-shadow:0 18px 40px -16px rgba(21,33,31,.6);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+:focus-visible{outline:2px solid #5f6b69;outline-offset:2px}
+::selection{background:rgba(14,90,92,.25)}
+::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-thumb{background:rgba(14,90,92,.25);border-radius:999px;border:3px solid transparent;background-clip:padding-box}
+
+/* ===== Project Shobdo design system ===== */
+body{background:#f5f8f7;color:#15211f;background-image:none;-webkit-font-smoothing:antialiased}
+:root[data-t=dark] body{background:#15211f;color:#f5f8f7;background-image:none}
+h1,h2,h3,h4{color:#15211f;font-weight:650;letter-spacing:-.01em}
+p,small,.mu,.stl,.lgtag{color:#5f6b69}
+a{color:#0e5a5c}a:hover{color:#0a4446}
+::selection{background:#e4f1f0}
+:focus-visible{outline:2px solid #0e5a5c;outline-offset:2px}
+/* surfaces */
+.card,.hero,.hero2,.card.hero,.toast-card{background:#ffffff;border:1px solid #dce5e3;border-radius:16px;box-shadow:0 1px 2px rgba(21,33,31,.04);transition:box-shadow .2s,border-color .2s}
+.card:hover{box-shadow:0 4px 14px rgba(21,33,31,.06);border-color:#dce5e3;transform:none}
+:root[data-t=dark] .card,:root[data-t=dark] .hero,:root[data-t=dark] .hero2{background:#22332f;border-color:#3a4b49}
+/* navigation */
+aside{background:#ffffff;border-right:1px solid #dce5e3;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+aside a{color:#5f6b69}
+aside a:hover{background:#f5f8f7;color:#15211f}
+aside a.on{background:#f5f8f7;color:#0e5a5c;box-shadow:inset 3px 0 0 #0e5a5c;font-weight:600}
+aside a.on svg{color:#0e5a5c}
+:root[data-t=dark] aside{background:#22332f;border-right-color:#3a4b49}
+/* buttons */
+.pri,button.pri{background:#0e5a5c;color:#ffffff;border:0;border-radius:10px;box-shadow:none;font-weight:600;transition:background .15s}
+.pri:hover,button.pri:hover{background:#0a4446;filter:none;transform:none;box-shadow:none}
+.pri:active{transform:none}
+.pill,.chip,button.pill,button.chip{background:#ffffff;color:#0e5a5c;border:1px solid #dce5e3;border-radius:999px;box-shadow:none}
+.pill:hover,.chip:hover{background:#f5f8f7;border-color:#dce5e3}
+.chip.hi,.chip.on{background:#e4f1f0;color:#0e5a5c;border-color:#e4f1f0}
+/* search & inputs */
+input,select,textarea{background:#ffffff;color:#15211f;border:1px solid #dce5e3;border-radius:10px;font:inherit}
+input::placeholder,textarea::placeholder{color:#5f6b69;opacity:1}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#0e5a5c;box-shadow:0 0 0 3px #e4f1f0}
+:root[data-t=dark] input,:root[data-t=dark] select,:root[data-t=dark] textarea{background:#22332f;color:#f5f8f7;border-color:#3a4b49}
+/* vocabulary cards */
+.wd .bn{color:#0e5a5c}
+.wd h2,.wd h3,.wd .w{color:#15211f}
+.badge{background:#e4f1f0;color:#0e5a5c;border:0;border-radius:999px;font-weight:600;font-size:.78rem;padding:.15rem .6rem}
+/* quiz options */
+.opt{background:#ffffff;border:1px solid #dce5e3;color:#15211f;border-radius:12px;box-shadow:none;transition:border-color .15s,background .15s}
+.opt:hover{border-color:#0e5a5c}
+.opt.sel{border-color:#0e5a5c;background:#f5f8f7}
+.opt.ok{border-color:#3f7d5a;background:#eaf4ed;color:#15211f}
+.opt.err{border-color:#b84a4a;background:#f9eaea;color:#15211f}
+/* feedback states */
+.ok:not(.opt){background:#eaf4ed;color:#3f7d5a}
+.err:not(.opt){background:#f9eaea;color:#b84a4a}
+.warn:not(.opt){background:#fbf1dd;color:#c58a3a}
+:root[data-t=dark] .ok:not(.opt){background:#1f3428;color:#7fb897}
+:root[data-t=dark] .err:not(.opt){background:#3d2727;color:#d98c8c}
+:root[data-t=dark] .warn:not(.opt){background:#3a2c1a;color:#e0b26a}
+/* progress */
+.bar{background:#dce5e3;border-radius:999px;overflow:hidden;height:8px;box-shadow:none}
+.bar>i,.bar>span,.bar>div{background:#0e5a5c;border-radius:999px;box-shadow:none}
+:root[data-t=dark] .bar{background:#3a4b49}
+/* toast & scrollbars */
+.toast{background:#15211f;color:#f5f8f7;border-radius:12px;box-shadow:0 8px 24px -10px rgba(21,33,31,.45);-webkit-backdrop-filter:none;backdrop-filter:none}
+::-webkit-scrollbar-thumb{background:#dce5e3;border:3px solid transparent;background-clip:padding-box}
+/* subtle AI and highlight surfaces */
+.tour,.tour-hi{background:#f5f8f7;border:1px solid #e4f1f0;color:#15211f}
+
+/* ===== Visibility fixes ===== */
+.hero2{background:#0e5a5c;border-color:transparent;color:#ffffff;box-shadow:0 8px 24px -14px rgba(14,90,92,.55)}
+.hero2 h1,.hero2 h2,.hero2 h3,.hero2 p,.hero2 small,.hero2 .mu,.hero2 .stl,.hero2 .lgtag{color:#ffffff}
+.hero2 .mu,.hero2 small{opacity:.88}
+.hero2 svg text{fill:#ffffff}
+.hero2 .b{background:#15211f;color:#ffffff}
+:root[data-t=dark] h1,:root[data-t=dark] h2,:root[data-t=dark] h3,:root[data-t=dark] h4,:root[data-t=dark] .wd h2,:root[data-t=dark] .wd h3,:root[data-t=dark] .wd .w{color:#f5f8f7}
+:root[data-t=dark] p,:root[data-t=dark] li,:root[data-t=dark] span,:root[data-t=dark] small{color:inherit}
+:root[data-t=dark] .mu,:root[data-t=dark] .stl,:root[data-t=dark] small.mu{color:#9fb0ad}
+:root[data-t=dark] .bn,:root[data-t=dark] .wd .bn{color:#7fb8b4}
+:root[data-t=dark] .opt{background:#22332f;color:#f5f8f7;border-color:#3a4b49}
+:root[data-t=dark] .opt.sel{background:#24413f;border-color:#7fb8b4}
+:root[data-t=dark] .opt.ok{background:#1f3428;border-color:#3f7d5a;color:#f5f8f7}
+:root[data-t=dark] .opt.err{background:#3d2727;border-color:#b84a4a;color:#f5f8f7}
+:root[data-t=dark] .badge{background:#24413f;color:#7fb8b4}
+:root[data-t=dark] aside a{color:#9fb0ad}
+:root[data-t=dark] aside a.on{background:#24413f;color:#f5f8f7;box-shadow:inset 3px 0 0 #7fb8b4}
+:root[data-t=dark] .pill,:root[data-t=dark] .chip{background:#22332f;color:#7fb8b4;border-color:#3a4b49}
+:root[data-t=dark] .card p,:root[data-t=dark] .card h2,:root[data-t=dark] .card h3{color:inherit}
+:root[data-t=dark] .card{color:#f5f8f7}
+
+/* ===== Shobdo warm editorial system ===== */
+body{background:#f5f8f7;color:#15211f;-webkit-font-smoothing:antialiased;background-image:none}
+h1,h2,h3,.wd h2,.wd h3,.lgt,.lgt2{color:#15211f;font-weight:600;letter-spacing:-.005em}
+h4,h5{color:#3a4b49;font-weight:600}
+p{color:#15211f}
+.mu,.stl,small,.lgtag,.bn-sub,.pron,.ipa{color:#5f6b69}
+::selection{background:#f0ddd3}
+:focus-visible{outline:2px solid #0e5a5c;outline-offset:2px}
+a{color:#0e5a5c}a:hover{color:#0a4446}
+/* surfaces: white cards on warm background */
+.card,.hero,.card.hero,.toast-card{background:#ffffff;border:1px solid #dce5e3;border-radius:16px;box-shadow:0 1px 2px rgba(21,33,31,.05);transition:border-color .2s,box-shadow .2s}
+.card:hover{box-shadow:0 6px 18px rgba(21,33,31,.07);border-color:#dce5e3;transform:none}
+.card .bn,.card .meaning{color:#3a4b49}
+/* hero: espresso panel with warm text */
+.hero2{background:#15211f;color:#f5f8f7;border:0;border-radius:20px;box-shadow:0 14px 30px -20px rgba(21,33,31,.6)}
+.hero2 h1,.hero2 h2,.hero2 h3,.hero2 p,.hero2 small,.hero2 .mu,.hero2 .stl,.hero2 .lgtag{color:#f5f8f7}
+.hero2 .mu,.hero2 small{opacity:.82}
+.hero2 svg text{fill:#f5f8f7}
+.hero2 .b{background:#0e5a5c;color:#ffffff;border-radius:999px}
+/* navigation */
+aside{background:#ffffff;border-right:1px solid #dce5e3;box-shadow:none}
+aside a{color:#5f6b69;border-radius:10px}
+aside a:hover{background:#f5f8f7;color:#15211f}
+aside a.on{background:#e4f1f0;color:#0e5a5c;box-shadow:inset 3px 0 0 #0e5a5c;font-weight:600}
+aside a.on svg{color:#0e5a5c}
+/* buttons */
+.pri,button.pri{background:#0e5a5c;color:#ffffff;border:0;border-radius:999px;box-shadow:none;font-weight:600;transition:background .15s}
+.pri:hover,button.pri:hover{background:#0a4446;transform:none;box-shadow:none;filter:none}
+.pri:active{transform:none}
+.pill,.chip,button.pill,button.chip{background:#ffffff;color:#3a4b49;border:1px solid #dce5e3;border-radius:999px;box-shadow:none}
+.pill:hover,.chip:hover{background:#f5f8f7;color:#15211f}
+.chip.hi,.chip.on{background:#e4f1f0;color:#0e5a5c;border-color:#bfdcd9}
+/* inputs */
+input,select,textarea{background:#ffffff;color:#15211f;border:1px solid #dce5e3;border-radius:12px;font:inherit}
+input::placeholder,textarea::placeholder{color:#5f6b69;opacity:1}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#0e5a5c;box-shadow:0 0 0 3px #e4f1f0}
+/* vocabulary cards */
+.wd h2,.wd h3,.wd .w{color:#15211f}
+.wd .bn{color:#3a4b49}
+.badge{background:#e4f1f0;color:#0e5a5c;border:0;border-radius:999px;font-weight:600;font-size:.76rem;padding:.12rem .6rem;letter-spacing:.02em}
+/* quiz */
+.opt{background:#ffffff;border:1px solid #dce5e3;color:#15211f;border-radius:12px;box-shadow:none}
+.opt:hover{border-color:#7fb8b4}
+.opt.sel{border-color:#0e5a5c;background:#e4f1f0}
+.opt.ok{border-color:#3f7d5a;background:#eaf4ed;color:#15211f}
+.opt.err{border-color:#b84a4a;background:#f9eaea;color:#15211f}
+/* feedback states */
+.ok:not(.opt){background:#eaf4ed;color:#3f7d5a}
+.err:not(.opt){background:#f9eaea;color:#b84a4a}
+.warn:not(.opt){background:#fbf1dd;color:#c58a3a}
+/* progress */
+.bar{background:#dce5e3;border-radius:999px;overflow:hidden;height:8px;box-shadow:none}
+.bar>i,.bar>span,.bar>div{background:#0e5a5c;border-radius:999px;box-shadow:none}
+/* toast, scrollbars, AI and tour tints */
+.toast{background:#15211f;color:#f5f8f7;border-radius:12px;box-shadow:0 10px 24px -12px rgba(21,33,31,.5);-webkit-backdrop-filter:none;backdrop-filter:none}
+::-webkit-scrollbar-thumb{background:#cfd9d7;border:3px solid transparent;background-clip:padding-box}
+.tour,.tour-hi{background:#e4f1f0;border:1px solid #bfdcd9;color:#15211f}
+/* dark theme: espresso surfaces, warm light text */
+:root[data-t=dark] body{background:#15211f;color:#f5f8f7}
+:root[data-t=dark] h1,:root[data-t=dark] h2,:root[data-t=dark] h3,:root[data-t=dark] .wd h2,:root[data-t=dark] .wd h3,:root[data-t=dark] .wd .w{color:#f5f8f7}
+:root[data-t=dark] p{color:#f5f8f7}
+:root[data-t=dark] .mu,:root[data-t=dark] .stl,:root[data-t=dark] small{color:#b7c6c3}
+:root[data-t=dark] .card,:root[data-t=dark] .hero{background:#22332f;border-color:#3a4b49;color:#f5f8f7}
+:root[data-t=dark] .card .bn,:root[data-t=dark] .wd .bn{color:#bfdcd9}
+:root[data-t=dark] aside{background:#22332f;border-right-color:#3a4b49}
+:root[data-t=dark] aside a{color:#b7c6c3}
+:root[data-t=dark] aside a.on{background:#24413f;color:#f5f8f7;box-shadow:inset 3px 0 0 #7fb8b4}
+:root[data-t=dark] .opt{background:#22332f;color:#f5f8f7;border-color:#3a4b49}
+:root[data-t=dark] .opt.sel{background:#24413f;border-color:#7fb8b4}
+:root[data-t=dark] input,:root[data-t=dark] select,:root[data-t=dark] textarea{background:#22332f;color:#f5f8f7;border-color:#3a4b49}
+:root[data-t=dark] .pill,:root[data-t=dark] .chip{background:#22332f;color:#bfdcd9;border-color:#3a4b49}
+:root[data-t=dark] .badge{background:#24413f;color:#bfdcd9}
+:root[data-t=dark] .bar{background:#3a4b49}
+:root[data-t=dark] .toast{background:#f5f8f7;color:#15211f}
+</style>
 <script>
 try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist()}catch(_){}
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
@@ -4109,7 +4274,7 @@ if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))addEventLis
 (()=>{const std=matchMedia('(display-mode: standalone)').matches||navigator.standalone;if(std)return;
 let dis=false;try{dis=localStorage.getItem('pv_inst_x')==='1'}catch(_){}if(dis)return;
 const ios=/iphone|ipad|ipod/i.test(navigator.userAgent)&&!window.MSStream;let dp=null,tip=false;
-const st=document.createElement('style');st.textContent='#instbar{position:fixed;left:0;right:0;margin:0 auto;width:max-content;max-width:calc(100vw - 32px);box-sizing:border-box;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:70;display:flex;align-items:center;gap:.6rem;padding:.5rem .5rem .5rem 1rem;background:var(--card,#fff);color:var(--tx,#2a2440);border:1px solid var(--bd,#e7e0f6);border-radius:16px;box-shadow:0 8px 24px rgba(84,51,181,.22);font-size:.88rem;line-height:1.3}#instbar[hidden]{display:none}#instbar span{min-width:0;flex:1 1 auto}#instbar button{font:inherit;cursor:pointer;border:0;border-radius:999px}#instgo{background:var(--pr,#7c5cd6);color:#fff;padding:.4rem .9rem;font-weight:600;flex:none}#instx{background:transparent;color:var(--mu,#766f92);font-size:1.2rem;line-height:1;padding:.2rem .5rem;flex:none}';document.head.appendChild(st);
+const st=document.createElement('style');st.textContent='#instbar{position:fixed;left:0;right:0;margin:0 auto;width:max-content;max-width:calc(100vw - 32px);box-sizing:border-box;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:70;display:flex;align-items:center;gap:.6rem;padding:.5rem .5rem .5rem 1rem;background:var(--card,#fff);color:var(--tx,#15211f);border:1px solid var(--bd,#dce5e3);border-radius:16px;box-shadow:0 8px 24px rgba(21,33,31,.22);font-size:.88rem;line-height:1.3}#instbar[hidden]{display:none}#instbar span{min-width:0;flex:1 1 auto}#instbar button{font:inherit;cursor:pointer;border:0;border-radius:999px}#instgo{background:var(--pr,#0e5a5c);color:#fff;padding:.4rem .9rem;font-weight:600;flex:none}#instx{background:transparent;color:var(--mu,#0e5a5c);font-size:1.2rem;line-height:1;padding:.2rem .5rem;flex:none}';document.head.appendChild(st);
 const b=document.createElement('div');b.id='instbar';b.hidden=true;b.setAttribute('role','region');b.innerHTML='<span id="insttx"></span><button id="instgo" type="button"></button><button id="instx" type="button">×</button>';
 const bn=()=>document.documentElement.lang==='bn';
 function paint(){const T=bn()?{a:'Project শব্দ ইনস্টল করুন',g:'ইনস্টল',i:'শেয়ার বাটনে ট্যাপ করে “Add to Home Screen” বেছে নিন',c:'বন্ধ করুন',ok:'ঠিক আছে'}:{a:'Install Project শব্দ on your device',g:'Install',i:'Tap Share, then “Add to Home Screen”',c:'Close',ok:'Got it'};

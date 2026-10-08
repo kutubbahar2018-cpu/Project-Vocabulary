@@ -1,4 +1,4 @@
-# Project শব্দ
+# Posh (Project শব্দ)
 
 **প্রতিদিন নতুন শব্দ, প্রতিদিন নতুন তুমি · New words every day. A new you.**
 
@@ -33,7 +33,7 @@ A free vocabulary app for English learners in Bangladesh, with English and Benga
 | `index.html` | The whole app (pages, word lists, quizzes and styles) |
 | `manifest.webmanifest` | Name, colors and icons for installing the app |
 | `sw.js` | Lets the app open offline |
-| `icons/` | App icons (`icon-192.png`, `icon-512.png`, `maskable-512.png`, `apple-touch-icon.png`) |
+| `icons/` | App icons (Posh logo) (`icon-192.png`, `icon-512.png`, `maskable-512.png`, `apple-touch-icon.png`) |
 
 Keep `manifest.webmanifest`, `sw.js` and the `icons` folder in the same place as `index.html`.
 
@@ -49,10 +49,6 @@ If people still see an old version after an update, open `sw.js` and change the 
 ## Where progress is saved
 
 Progress, favorites and quiz history are saved **only in each learner's own browser**. Nothing is sent to a server. Clearing the browser's site data, using a private tab, or switching to another device or browser starts fresh.
-
-## Anonymous usage counts
-
-The live site uses [GoatCounter](https://www.goatcounter.com/) to count visits and a few actions (for example a level finished or a quiz taken). It uses no cookies and never sends usernames, words learned or any other personal data. It only runs on the github.io site, not when the page is opened from a file.
 
 ## Credits
 
