@@ -1,7 +1,7 @@
 {
  "name": "Project শব্দ",
  "short_name": "Project শব্দ",
- "description": "Ten words a day. প্রতিদিন দশ শব্দ।",
+ "description": "New words every day. প্রতিদিন নতুন শব্দ।",
  "start_url": "./index.html",
  "scope": "./",
  "display": "standalone",
