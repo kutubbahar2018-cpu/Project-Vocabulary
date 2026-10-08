@@ -4122,4 +4122,17 @@ if(ios)addEventListener('load',()=>setTimeout(show,2500));
 new MutationObserver(()=>{if(!b.hidden)paint()}).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 })();
 </script>
+<script>
+/* Anonymous usage counts with GoatCounter (free, no cookies, no usernames or learner data). Runs only on github.io. */
+(()=>{const CODE='projectshabdo';if(!/\.github\.io$/.test(location.hostname))return;
+const sc=document.createElement('script');sc.async=true;sc.src='https://gc.zgo.at/count.js';sc.dataset.goatcounter='https://'+CODE+'.goatcounter.com/count';sc.dataset.goatcounterSettings='{"no_onload":true}';
+const gc=o=>{try{window.goatcounter&&window.goatcounter.count&&window.goatcounter.count(o)}catch(_){}},ev=n=>gc({path:'event/'+n,title:n,event:true});
+const SP=['day','section','quiz','vocab','recall','review','progress'];let last='';
+const view=()=>{try{const h=(location.hash||'#/dashboard').slice(1),pg=h.split('/')[1]||'dashboard';const p=!S||!S.user?'/login':(SP.includes(pg)?'/'+CUR+h:h);if(p===last)return;last=p;gc({path:p,title:p})}catch(_){}};
+sc.onload=view;document.head.appendChild(sc);
+addEventListener('hashchange',()=>{setTimeout(view,30);try{if(location.hash==='#/result'&&S.last){const q=S.last.pct;ev('quiz-finished/'+CUR+'/'+(q>=90?'90-100':q>=70?'70-89':q>=50?'50-69':'0-49'))}}catch(_){}});
+document.addEventListener('click',e=>{try{const t=e.target.closest('[data-a]');if(t){const a=t.dataset.a,d=t.dataset.day;if(a==='learnall')ev('level-complete/'+CUR+'/'+d);else if(a==='startq')ev('quiz-start/'+CUR+(d?'/'+d:''));else if(a==='mega')ev((t.dataset.k==='final'?'final':'mega')+'-start/'+CUR)}if(e.target.closest('#langbtn'))setTimeout(()=>ev('language/'+document.documentElement.lang),60)}catch(_){}},true);
+addEventListener('appinstalled',()=>ev('app-installed'));
+})();
+</script>
 </body></html>
